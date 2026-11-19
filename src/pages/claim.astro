@@ -1,0 +1,104 @@
+---
+import Base from "../layouts/Base.astro";
+import { contactEmail, paymentsArePlaceholders, tiers } from "../config";
+import { href } from "../lib/url";
+
+const description = "Claim, feature, or sponsor your federal contractor listing on Recompetes. The underlying directory stays free.";
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Is the directory free?",
+      acceptedAnswer: { "@type": "Answer", text: "Yes. Every contractor page is built from public USAspending data and stays readable without an account. Paid tiers add a badge, your own description, and placement." },
+    },
+    {
+      "@type": "Question",
+      name: "When does a badge go live?",
+      acceptedAnswer: { "@type": "Answer", text: "After checkout, email the Stripe receipt and your UEI. The listing is updated in data/sponsors.json and appears on the next site build, which runs daily." },
+    },
+    {
+      "@type": "Question",
+      name: "Can I cancel?",
+      acceptedAnswer: { "@type": "Answer", text: "Email the contact address from the receipt and the placement is removed on the next update. Annual plans are prepaid for the year." },
+    },
+  ],
+};
+const placeholder = paymentsArePlaceholders();
+---
+
+<Base title="Claim or feature your company" description={description} schema={schema}>
+  <div class="wrap page-head">
+    <p class="crumbs"><a href={href()}>Home</a> / Claim</p>
+    <p class="eyebrow">For contractors</p>
+    <h1>Put your company where capture teams are already looking.</h1>
+    <p class="lede">The public record is the listing. You pay to claim the words around it, wear a badge, and sit at the top of the agency and NAICS pages where your work actually shows up.</p>
+  </div>
+
+  <div class="wrap section" data-pricing data-billing="annual">
+    <div class="seg">
+      <button type="button" data-billing="monthly" aria-pressed="false">Monthly</button>
+      <button type="button" data-billing="annual" aria-pressed="true">Annual · 2 months free</button>
+    </div>
+    <div class="grid-3" style="margin-top:1rem;">
+    {tiers.map((tier) => (
+      <article class:list={["price", { featured: tier.featured }]}>
+        {tier.featured && <span class="ribbon">Most useful</span>}
+        <p class="eyebrow">{tier.kicker}</p>
+        <h2>{tier.name}</h2>
+        <p class="cost num" data-price="annual">${tier.annual.toLocaleString("en-US")}<span> / year</span></p>
+        <p class="cost num" data-price="monthly" hidden>${tier.monthly.toLocaleString("en-US")}<span> / month</span></p>
+        <ul>
+          {tier.points.map((point) => <li>{point}</li>)}
+        </ul>
+        <a class="btn" data-price="annual" href={tier.annualUrl}>Choose {tier.name} annual</a>
+        <a class="btn" data-price="monthly" hidden href={tier.monthlyUrl}>Choose {tier.name} monthly</a>
+      </article>
+    ))}
+    </div>
+  </div>
+
+  {placeholder && (
+    <div class="wrap" style="margin-top:1rem;">
+      <p class="note">Checkout buttons point at placeholder Stripe Payment Links. Replace them in <code>src/config.ts</code> before you send anyone here to pay.</p>
+    </div>
+  )}
+
+  <div class="wrap split section">
+    <div class="specimen">
+      <p class="eyebrow">Example listing</p>
+      <p class="badge badge-featured">Featured</p>
+      <h2 style="font-size:1.8rem;">Northwind Federal Services</h2>
+      <p class="meta-line">This card is a specimen, not a real contractor in the directory.</p>
+      <p style="margin-top:0.6rem;">A featured company gets a badge, a website, and one paragraph in its own voice, pinned above the public-record rank on the pages it buys.</p>
+    </div>
+    <div class="stack">
+      <h2>What happens after you pay</h2>
+      <p>There is no account to manage in v1. Email the Stripe receipt and your UEI to <a href={`mailto:${contactEmail}`}>{contactEmail}</a>. Say which tier you bought and, for a sponsorship, which agency or NAICS page.</p>
+      <p>The placement is a record in <code>data/sponsors.json</code>. The next daily build publishes the badge, the blurb, and the slot. Cancel the same way and it comes off the next build.</p>
+      <p><a href={href("advertise/")}>See the placements on the advertise page</a></p>
+    </div>
+  </div>
+
+  <div class="wrap section stack">
+    <h2>Questions</h2>
+    <details class="panel" style="padding:0.9rem 1rem;" open>
+      <summary>What do I get if I never pay?</summary>
+      <p class="meta-line">The same public-record page as everyone else: obligations, awards, agencies, and end dates. No badge and no blurb.</p>
+    </details>
+    <details class="panel" style="padding:0.9rem 1rem;">
+      <summary>Do you change the dollar figures?</summary>
+      <p class="meta-line">No. Obligations, dates, and award text stay sourced from USAspending. A paid listing adds your description and placement. It does not rewrite the record.</p>
+    </details>
+    <details class="panel" style="padding:0.9rem 1rem;">
+      <summary>Which page would a sponsorship buy?</summary>
+      <p class="meta-line">One agency page or one NAICS page, plus the unit at the top of the Recompete Radar. First request, first page, unless that page is already taken.</p>
+    </details>
+  </div>
+</Base>
+
+<script>
+  import { bindPricing } from "../scripts/pricing";
+  document.querySelectorAll<HTMLElement>("[data-pricing]").forEach((root) => bindPricing(root));
+</script>

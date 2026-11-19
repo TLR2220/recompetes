@@ -1,0 +1,38 @@
+---
+import Base from "../layouts/Base.astro";
+import { meta } from "../lib/data";
+import { href } from "../lib/url";
+
+const description = "Search Recompetes for a contractor, agency, NAICS code, recompete, or SAM.gov notice.";
+const prefill = Astro.url.searchParams.get("q") ?? "";
+---
+
+<Base title="Search the directory" description={description}>
+  <div class="wrap page-head">
+    <p class="crumbs"><a href={href()}>Home</a> / Search</p>
+    <p class="eyebrow">Search</p>
+    <h1>Find a company, a code, or a contract.</h1>
+    <p class="lede">Search runs in your browser over the daily index. Profiled contractors open here. Everyone else links out to the USAspending record.</p>
+  </div>
+  <div
+    class="wrap section stack"
+    id="search-app"
+    data-base={import.meta.env.BASE_URL}
+    data-version={meta.generated_at}
+  >
+    <form class="search" role="search">
+      <label class="sr-only" for="site-search">Search</label>
+      <input id="site-search" name="q" value={prefill} placeholder="Try Leidos, 541330, or Veterans Affairs" autocomplete="off" />
+      <button class="btn" type="submit">Search</button>
+    </form>
+    <p data-search-status class="meta-line">Type at least two characters.</p>
+    <div data-search-results class="stack"></div>
+    <noscript><p class="empty">Search needs JavaScript. The contractor, agency, NAICS, radar, and notice pages are still fully readable without it.</p></noscript>
+  </div>
+</Base>
+
+<script>
+  import { runSearch } from "../scripts/search";
+  const root = document.getElementById("search-app");
+  if (root) runSearch(root);
+</script>

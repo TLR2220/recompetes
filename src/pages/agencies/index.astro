@@ -1,0 +1,31 @@
+---
+import Base from "../../layouts/Base.astro";
+import { agencies, meta, recompetes } from "../../lib/data";
+import { money } from "../../lib/format";
+import { href } from "../../lib/url";
+
+const counts = new Map<string, number>();
+for (const row of recompetes) {
+  if (row.days < 0 || !row.agency_slug) continue;
+  counts.set(row.agency_slug, (counts.get(row.agency_slug) || 0) + 1);
+}
+const description = "Federal awarding agencies ranked by contract obligations, with the primes that hold the work and the awards coming to an end.";
+---
+
+<Base title="Federal agencies" description={description}>
+  <div class="wrap page-head">
+    <p class="crumbs"><a href={href()}>Home</a> / Agencies</p>
+    <p class="eyebrow">Agencies</p>
+    <h1>The buyers behind the obligations.</h1>
+    <p class="lede">Top awarding departments by contract obligations, {meta.labels.obligations_window}. Open a department for its largest primes and the tracked recompetes.</p>
+  </div>
+  <div class="wrap cards section">
+    {agencies.map((agency) => (
+      <a class="card" href={href(`agencies/${agency.slug}/`)}>
+        <h3>{agency.name}</h3>
+        <div class="amount num">{money(agency.amount)}</div>
+        <p class="meta-line">{counts.get(agency.slug) || 0} tracked recompetes · {agency.contractors.length} top primes listed</p>
+      </a>
+    ))}
+  </div>
+</Base>

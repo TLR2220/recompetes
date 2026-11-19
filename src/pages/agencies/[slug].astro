@@ -1,0 +1,84 @@
+---
+import Base from "../../layouts/Base.astro";
+import SponsorSlot from "../../components/SponsorSlot.astro";
+import { agencies, contractors, recompetes, sponsors, tierRank } from "../../lib/data";
+import { daysLabel, money, prettyDate, urgency } from "../../lib/format";
+import { absolute, href } from "../../lib/url";
+import type { Agency } from "../../lib/types";
+
+export function getStaticPaths() {
+  return agencies.map((agency) => ({ params: { slug: agency.slug }, props: { agency } }));
+}
+interface Props { agency: Agency; }
+const { agency } = Astro.props;
+const placement = sponsors.agencies[agency.slug] ?? null;
+const radar = recompetes.filter((row) => row.days >= 0 && (row.agency_slug === agency.slug || row.agency === agency.name));
+const pinned = contractors.filter((contractor) => {
+  const tier = tierRank(contractor.slug);
+  return tier < 3 && contractor.agencies.some((item) => item.slug === agency.slug || item.name === agency.name);
+});
+const seen = new Set(pinned.map((row) => row.name.toUpperCase()));
+const leaders = [
+  ...pinned.map((row) => ({
+    name: row.name,
+    slug: row.slug,
+    amount: row.agencies.find((item) => item.slug === agency.slug || item.name === agency.name)?.amount || row.total_obligations,
+    usaspending_url: row.usaspending_url,
+  })),
+  ...agency.contractors.filter((row) => !seen.has(row.name.toUpperCase())),
+];
+const description = `${agency.name} contract obligations, top prime contractors, and tracked awards coming to an end.`;
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "GovernmentOrganization",
+  name: agency.name,
+  url: absolute(`agencies/${agency.slug}/`),
+  sameAs: agency.usaspending_url || undefined,
+};
+---
+
+<Base title={`${agency.name} contractors and recompetes`} description={description} schema={schema}>
+  <div class="wrap page-head">
+    <p class="crumbs"><a href={href()}>Home</a> / <a href={href("agencies/")}>Agencies</a> / {agency.name}</p>
+    <p class="eyebrow">{agency.code || "Awarding agency"}</p>
+    <h1>{agency.name}</h1>
+    <p class="lede">{money(agency.amount)} in contract obligations across the tracked window. The primes below are who USAspending ranks at the top of that spend. Recompetes are limited to awards we already track on profiled contractors.</p>
+    <div class="toolbar" style="margin-top:0.8rem;">
+      {agency.usaspending_url && <a class="btn secondary small" href={agency.usaspending_url} target="_blank" rel="noopener noreferrer">Open on USAspending</a>}
+    </div>
+  </div>
+  <div class="wrap section"><SponsorSlot placement={placement} label="agency page" /></div>
+  <section class="wrap section">
+    <h2>Top primes</h2>
+    <div class="cards" style="margin-top:0.8rem;">
+      {leaders.map((row) => (
+        <article class="card">
+          <h3>{row.slug ? <a href={href(`contractors/${row.slug}/`)}>{row.name}</a> : row.name}</h3>
+          <div class="amount num">{money(row.amount)}</div>
+          {!row.slug && row.usaspending_url && <p class="meta-line"><a href={row.usaspending_url} target="_blank" rel="noopener noreferrer">View on USAspending</a></p>}
+        </article>
+      ))}
+    </div>
+  </section>
+  <section class="wrap section">
+    <div class="section-head"><div><h2>Recompetes at this agency</h2><p>{radar.length ? "From the profiled-contractor award set." : "None of the profiled awards at this agency end inside the horizon."}</p></div></div>
+    {radar.length > 0 && (
+      <div class="panel">
+        <table>
+          <thead><tr><th>Contract</th><th>Incumbent</th><th>Obligated</th><th>End</th><th>Left</th></tr></thead>
+          <tbody>
+            {radar.map((row) => (
+              <tr data-end={row.end} data-urgency={urgency(row.days)}>
+                <td data-label="Contract"><div class="desc">{row.description}</div></td>
+                <td data-label="Incumbent"><a href={href(`contractors/${row.slug}/`)}>{row.incumbent}</a></td>
+                <td class="num" data-label="Obligated">{money(row.amount)}</td>
+                <td class="num" data-label="End">{prettyDate(row.end)}</td>
+                <td data-label="Left"><span class="days-pill"><span data-days-label>{daysLabel(row.days)}</span></span></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    )}
+  </section>
+</Base>

@@ -1,0 +1,171 @@
+---
+import Base from "../../layouts/Base.astro";
+import Badge from "../../components/Badge.astro";
+import { contractors, meta, profileOf } from "../../lib/data";
+import { daysLabel, money, moneyFull, place, prettyDate, urgency } from "../../lib/format";
+import { absolute, href } from "../../lib/url";
+import type { Contractor } from "../../lib/types";
+
+export function getStaticPaths() {
+  return contractors.map((contractor) => ({
+    params: { slug: contractor.slug },
+    props: { contractor },
+  }));
+}
+
+interface Props { contractor: Contractor; }
+const { contractor } = Astro.props;
+const placement = profileOf(contractor.slug);
+const horizon = meta.labels.recompete_horizon_days;
+const minimum = meta.labels.recompete_min;
+const upcoming = contractor.awards
+  .filter((award) => {
+    if (!award.end || award.amount < minimum) return false;
+    const end = Date.parse(`${award.end}T00:00:00Z`);
+    const today = Date.parse(`${meta.generated_at.slice(0, 10)}T00:00:00Z`);
+    const days = Math.round((end - today) / 86_400_000);
+    return days >= 0 && days <= horizon;
+  })
+  .sort((a, b) => a.end.localeCompare(b.end));
+const maxNaics = Math.max(1, ...contractor.naics.map((row) => row.amount));
+const where = place(contractor.location);
+const description = `${contractor.name}${where ? `, ${where}` : ""} — ${money(contractor.total_obligations)} in reported contract obligations (${meta.labels.obligations_window}). Award history, agencies, NAICS, and recompetes.`;
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: contractor.name,
+  identifier: contractor.uei || undefined,
+  url: absolute(`contractors/${contractor.slug}/`),
+  address: contractor.location.city || contractor.location.state
+    ? {
+        "@type": "PostalAddress",
+        streetAddress: contractor.location.line || undefined,
+        addressLocality: contractor.location.city || undefined,
+        addressRegion: contractor.location.state || undefined,
+        postalCode: contractor.location.zip || undefined,
+        addressCountry: contractor.location.country || "US",
+      }
+    : undefined,
+  sameAs: contractor.usaspending_url || undefined,
+};
+const crumbs = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: absolute() },
+    { "@type": "ListItem", position: 2, name: "Contractors", item: absolute("contractors/") },
+    { "@type": "ListItem", position: 3, name: contractor.name, item: absolute(`contractors/${contractor.slug}/`) },
+  ],
+};
+---
+
+<Base title={`${contractor.name} federal contracts`} description={description} schema={[schema, crumbs]}>
+  <article class="wrap page-head">
+    <p class="crumbs"><a href={href()}>Home</a> / <a href={href("contractors/")}>Contractors</a> / {contractor.name}</p>
+    <p class="eyebrow">{contractor.uei ? `UEI ${contractor.uei}` : "Federal prime contractor"}</p>
+    <h1>{contractor.name}</h1>
+    <p class="lede">{where || "Registered address is on the USAspending record."}{contractor.parent_name && contractor.parent_name !== contractor.name ? ` Parent on file: ${contractor.parent_name}.` : ""}</p>
+    <div class="tags">
+      <Badge tier={placement?.tier} />
+      {contractor.small_business && <span class="tag">Small business</span>}
+      {contractor.business_types.map((chip) => <span class="tag">{chip}</span>)}
+    </div>
+    <div class="toolbar" style="margin-top:1rem;">
+      {placement?.url && <a class="btn small" href={placement.url} target="_blank" rel="noopener noreferrer">Company site</a>}
+      {contractor.usaspending_url && <a class="btn secondary small" href={contractor.usaspending_url} target="_blank" rel="noopener noreferrer">USAspending profile</a>}
+      <a class="btn-quiet" href={href("claim/")}>{placement ? "Manage this listing" : "Claim this listing"}</a>
+    </div>
+    {placement?.blurb && <blockquote class="callout warm" style="margin-top:1rem;">{placement.blurb}</blockquote>}
+  </article>
+
+  <div class="wrap kpis">
+    <div class="stat"><b class="num">{money(contractor.total_obligations)}</b><span>Obligated {meta.labels.obligations_window}</span></div>
+    <div class="stat"><b class="num">{contractor.awards.length}</b><span>Largest awards tracked since {meta.labels.awards_since}</span></div>
+    <div class="stat"><b class="num">{upcoming.length}</b><span>Of those ending within {meta.labels.recompete_horizon}</span></div>
+    <div class="stat"><b class="num">{contractor.next_recompete ? prettyDate(contractor.next_recompete.end) : "—"}</b><span>Next tracked end date</span></div>
+  </div>
+
+  <div class="wrap split section">
+    <section class="panel" style="padding:1rem 1.1rem;">
+      <h2>NAICS</h2>
+      <p class="meta-line" style="margin:0.3rem 0 0.9rem;">Contract obligations in the window, by NAICS.</p>
+      {contractor.naics.length ? contractor.naics.map((row) => (
+        <div class="bar-row">
+          <div class="top"><a href={href(`naics/${row.code}/`)}>{row.code} {row.name}</a><span class="num">{money(row.amount)}</span></div>
+          <div class="track"><span style={`--w:${Math.max(4, (row.amount / maxNaics) * 100)}%`}></span></div>
+        </div>
+      )) : <p class="meta-line">NAICS mix was not returned for this recipient.</p>}
+    </section>
+    <section class="panel" style="padding:1rem 1.1rem;">
+      <h2>Agencies</h2>
+      <p class="meta-line" style="margin:0.3rem 0 0.9rem;">Among the largest awards we track for this company.</p>
+      {contractor.agencies.length ? (
+        <ul class="stack" style="list-style:none;padding:0;margin:0;">
+          {contractor.agencies.map((agency) => (
+            <li style="display:flex;justify-content:space-between;gap:1rem;">
+              {agency.slug ? <a href={href(`agencies/${agency.slug}/`)}>{agency.name}</a> : <span>{agency.name}</span>}
+              <span class="num">{money(agency.amount)}</span>
+            </li>
+          ))}
+        </ul>
+      ) : <p class="meta-line">No awarding agency was attached to the awards in this snapshot.</p>}
+    </section>
+  </div>
+
+  <section class="wrap section">
+    <div class="section-head">
+      <div>
+        <h2>Recompetes coming up</h2>
+        <p>Awards over {moneyFull(minimum)} with an end date inside {meta.labels.recompete_horizon}.</p>
+      </div>
+    </div>
+    {upcoming.length ? (
+      <div class="panel">
+        <table>
+          <thead><tr><th>Award</th><th>Agency</th><th>Obligated</th><th>End</th><th>Left</th></tr></thead>
+          <tbody>
+            {upcoming.map((award) => {
+              const days = award.end ? Math.round((Date.parse(`${award.end}T00:00:00Z`) - Date.parse(`${meta.generated_at.slice(0, 10)}T00:00:00Z`)) / 86_400_000) : null;
+              return (
+                <tr data-end={award.end} data-urgency={urgency(days)}>
+                  <td data-label="Award"><div class="desc">{award.description}</div><div class="meta-line">{[award.id, award.type, award.naics ? `NAICS ${award.naics}` : ""].filter(Boolean).join(" · ")}</div></td>
+                  <td data-label="Agency">{award.agency}</td>
+                  <td class="num" data-label="Obligated">{money(award.amount)}</td>
+                  <td class="num" data-label="End">{prettyDate(award.end)}</td>
+                  <td data-label="Left"><span class="days-pill"><span data-days-label>{daysLabel(days)}</span></span></td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+    ) : <p class="empty">None of the largest tracked awards end inside {meta.labels.recompete_horizon}. The history below is still the right place to see what this company holds.</p>}
+  </section>
+
+  <section class="wrap section">
+    <div class="section-head">
+      <div>
+        <h2>Largest awards</h2>
+        <p>Definitive contracts, delivery orders, BPA calls, and IDVs with an action since {meta.labels.awards_since}. This is not a complete history.</p>
+      </div>
+    </div>
+    <div class="panel">
+      <table>
+        <thead><tr><th>Award</th><th>Agency</th><th>Obligated</th><th>Period</th></tr></thead>
+        <tbody>
+          {contractor.awards.map((award) => (
+            <tr>
+              <td data-label="Award">
+                <div class="desc">{award.usaspending_url ? <a href={award.usaspending_url} target="_blank" rel="noopener noreferrer">{award.description}</a> : award.description}</div>
+                <div class="meta-line">{[award.id, award.type, award.set_aside, award.naics_name || (award.naics ? `NAICS ${award.naics}` : ""), award.psc ? `PSC ${award.psc}` : ""].filter(Boolean).join(" · ")}</div>
+              </td>
+              <td data-label="Agency">{award.agency}{award.subagency ? <div class="meta-line">{award.subagency}</div> : null}</td>
+              <td class="num" data-label="Obligated">{money(award.amount)}</td>
+              <td class="num" data-label="Period">{prettyDate(award.start)} – {prettyDate(award.end)}{award.potential_end && award.potential_end !== award.end ? <div class="meta-line">Options through {prettyDate(award.potential_end)}</div> : null}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+</Base>

@@ -1,0 +1,59 @@
+---
+import Base from "../layouts/Base.astro";
+import { meta } from "../lib/data";
+import { freshLabel, moneyFull, prettyDate } from "../lib/format";
+import { absolute, href } from "../lib/url";
+
+const description = "How Recompetes defines a recompete, which public sources it uses, and what the daily snapshot leaves out.";
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    ["What counts as a recompete?", "A prime award in the profiled set with at least the minimum obligated amount and a current end date, or last date to order for a vehicle, inside the published horizon. It is a signal that the term is ending, not a statement that the agency will compete the follow-on."],
+    ["Where does the data come from?", "USAspending spending-by-category and spending-by-award endpoints, plus the public SAM.gov Contract Opportunities CSV. No API key is required. Award detail is read for the largest radar rows so NAICS and set-aside can be shown."],
+    ["How often does it update?", "A scheduled job rebuilds the snapshot every day. If a source fails, the previous file for that source stays in place."],
+    ["Is this a government site?", "No. Recompetes is an independent directory. Confirm decisions on USAspending and SAM.gov."],
+  ].map(([name, text]) => ({
+    "@type": "Question",
+    name,
+    acceptedAnswer: { "@type": "Answer", text },
+  })),
+};
+const usa = meta.sources.usaspending;
+const sam = meta.sources.sam;
+---
+
+<Base title="Methodology and sources" description={description} schema={schema}>
+  <div class="wrap page-head">
+    <p class="crumbs"><a href={href()}>Home</a> / About</p>
+    <p class="eyebrow">About the data</p>
+    <h1>Public records, read narrowly on purpose.</h1>
+    <p class="lede">{freshLabel(meta.generated_at)}. Obligations cover {meta.labels.obligations_window}. Award histories start with actions since {meta.labels.awards_since}. The radar horizon is {meta.labels.recompete_horizon} and the floor is {moneyFull(meta.labels.recompete_min)} obligated.</p>
+  </div>
+  <div class="wrap section stack">
+    <section>
+      <h2>Who is profiled</h2>
+      <p>The directory profiles the largest prime recipients of contract obligations in the window: definitive contracts, delivery orders, BPA calls, and purchase orders for the ranking, then the largest awards and vehicles for each profile. One legal name keeps a single page, the record with the fuller award list. A wider set of names is searchable and links to USAspending when there is no profile yet.</p>
+    </section>
+    <section>
+      <h2>What a recompete is here</h2>
+      <p>{meta.methodology.recompetes} Subcontracts are not included. Classified work that never reaches these public feeds is not included. A bridge, an extension, or an unexercised option can move the real date. The page says so, and every award links back to USAspending.</p>
+    </section>
+    <section>
+      <h2>Sources</h2>
+      <ul>
+        <li><a href="https://api.usaspending.gov" target="_blank" rel="noopener noreferrer">USAspending API</a> — recipient, agency, and NAICS rankings; award search; recipient profiles; award detail for the largest radar rows. Last attempt {prettyDate(usa.fetched_at)}. {usa.ok ? "Succeeded." : "Failed, previous snapshot kept."} {usa.kept_previous ? "Previous file retained." : ""}</li>
+        <li><a href="https://sam.gov/data-services/" target="_blank" rel="noopener noreferrer">SAM.gov Contract Opportunities public extract</a> — newest active notices, no API key. Last attempt {prettyDate(sam.fetched_at)}. {sam.ok ? "Succeeded." : "Failed, previous notices kept."} {sam.extract_modified ? `Extract timestamp ${sam.extract_modified}.` : ""}</li>
+      </ul>
+    </section>
+    <section>
+      <h2>What we leave out on purpose</h2>
+      <p>Grants, loans, and micropurchases. A page for every award or every notice — those stay on the source systems, linked from here. Individual opportunity pages would blow past a sensible static-site file count without making the radar better.</p>
+    </section>
+    <section>
+      <h2>Freshness</h2>
+      <p>The daily job fetches each source on its own. A failure, or a response too thin to trust, does not overwrite the last good file. The header date is the snapshot time, not a claim that every upstream system published that morning. SAM’s extract usually lags the website by about a day.</p>
+    </section>
+    <p><a href={absolute("feed.xml")}>Subscribe to the RSS feed</a> of the radar and the newest notices.</p>
+  </div>
+</Base>

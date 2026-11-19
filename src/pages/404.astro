@@ -1,0 +1,17 @@
+---
+import Base from "../layouts/Base.astro";
+import { href } from "../lib/url";
+---
+
+<Base title="Page not found" description="That page is not in the Recompetes directory.">
+  <div class="wrap page-head">
+    <p class="eyebrow">404</p>
+    <h1>That page is not in the snapshot.</h1>
+    <p class="lede">The directory changes when the daily data job runs. The radar, the contractor list, and search are the reliable doors back in.</p>
+    <div class="toolbar" style="margin-top:1rem;">
+      <a class="btn" href={href()}>Home</a>
+      <a class="btn secondary" href={href("search/")}>Search</a>
+      <a class="btn-quiet" href={href("recompetes/")}>Radar</a>
+    </div>
+  </div>
+</Base>

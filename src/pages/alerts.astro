@@ -1,0 +1,55 @@
+---
+import Base from "../layouts/Base.astro";
+import { alertsEndpoint, contactEmail } from "../config";
+import { href } from "../lib/url";
+
+const description = "Email alerts for large federal awards coming to the end of their term.";
+const prefill = Astro.url.searchParams.get("email") ?? "";
+---
+
+<Base title="Recompete alerts" description={description}>
+  <div class="wrap page-head">
+    <p class="crumbs"><a href={href()}>Home</a> / Alerts</p>
+    <p class="eyebrow">Alerts</p>
+    <h1>The radar, without the tab.</h1>
+    <p class="lede">A short note when large awards enter the window you care about. The list is the same public snapshot as the site. You choose the horizon, the dollar floor, and an optional NAICS or agency.</p>
+  </div>
+  <div class="wrap section" style="max-width:40rem;">
+    <form
+      class="stack form-card panel"
+      data-alerts-form
+      data-endpoint={alertsEndpoint}
+      method="post"
+      action={alertsEndpoint || undefined}
+    >
+      <label class="hp">Company website<input type="text" name="company_website" tabindex="-1" autocomplete="off" /></label>
+      <label class="field"><span>Work email</span><input name="email" type="email" required placeholder="you@company.com" value={prefill} autocomplete="email" /></label>
+      <label class="field"><span>Horizon</span>
+        <select name="horizon">
+          <option value="90">90 days</option>
+          <option value="180" selected>180 days</option>
+          <option value="365">12 months</option>
+          <option value="540">18 months</option>
+        </select>
+      </label>
+      <label class="field"><span>Minimum obligated amount</span>
+        <select name="min_amount">
+          <option value="5000000">$5 million</option>
+          <option value="25000000">$25 million</option>
+          <option value="100000000">$100 million</option>
+        </select>
+      </label>
+      <label class="field"><span>NAICS, if you have one</span><input name="naics" placeholder="541330" inputmode="numeric" /></label>
+      <label class="field"><span>Agency, if you have one</span><input name="agency" placeholder="Department of Veterans Affairs" /></label>
+      <button class="btn" type="submit">Join the alert list</button>
+      <p class="form-msg" data-form-msg></p>
+      <p class="meta-line">The form posts to the endpoint in <code>src/config.ts</code>. Until that is set, nothing is stored. Questions go to <a href={`mailto:${contactEmail}`}>{contactEmail}</a>.</p>
+    </form>
+  </div>
+</Base>
+
+<script>
+  import { bindAlerts } from "../scripts/alerts";
+  const form = document.querySelector<HTMLFormElement>("[data-alerts-form]");
+  if (form) bindAlerts(form);
+</script>

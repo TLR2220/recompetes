@@ -1,0 +1,92 @@
+name: Daily data and GitHub Pages
+
+on:
+  schedule:
+    # 12:20 UTC, after SAM.gov's early-morning extract refresh.
+    - cron: "20 12 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+# A data commit includes [data] so the push it creates does not deploy twice.
+concurrency:
+  group: recompetes-pages
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    if: ${{ github.event_name != 'push' || !contains(github.event.head_commit.message, '[data]') }}
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Refresh public contract data
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        run: python3 scripts/update_data.py
+
+      - name: Commit snapshot
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/meta.json data/contractors.json data/agencies.json data/naics.json data/recompetes.json data/opportunities.json data/index.json
+          if git diff --cached --quiet; then
+            echo "No data changes"
+          else
+            git commit -m "Update federal contract data snapshot [data]"
+            git push
+          fi
+
+      - name: Configure GitHub Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Resolve site URL and base path
+        id: site
+        run: |
+          BASE="${{ vars.BASE_PATH }}"
+          SITE="${{ vars.SITE_URL }}"
+          if [ -z "$BASE" ]; then BASE="${{ steps.pages.outputs.base_path }}"; fi
+          if [ -z "$SITE" ]; then SITE="${{ steps.pages.outputs.origin }}"; fi
+          if [ -z "$BASE" ]; then BASE="/"; fi
+          echo "base=$BASE" >> "$GITHUB_OUTPUT"
+          echo "site=$SITE" >> "$GITHUB_OUTPUT"
+
+      - name: Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install and build
+        env:
+          BASE_PATH: ${{ steps.site.outputs.base }}
+          SITE_URL: ${{ steps.site.outputs.site }}
+          ASTRO_TELEMETRY_DISABLED: "1"
+        run: |
+          npm ci
+          npm test
+          npm run build
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

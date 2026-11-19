@@ -1,0 +1,24 @@
+---
+import type { Placement } from "../lib/types";
+import { href } from "../lib/url";
+interface Props {
+  placement: Placement | null;
+  label: string;
+}
+const { placement, label } = Astro.props;
+---
+
+{placement ? (
+  <aside class="slot filled">
+    <p class="eyebrow">Sponsored</p>
+    <p class="who"><a href={placement.url} target="_blank" rel="sponsored noopener noreferrer">{placement.name}</a></p>
+    {placement.blurb && <p class="lede" style="font-size:1rem;">{placement.blurb}</p>}
+  </aside>
+) : (
+  <aside class="slot">
+    <p class="eyebrow">Sponsor</p>
+    <p class="who">This {label} placement is open.</p>
+    <p class="meta-line">Put a company next to the incumbents and the work that is about to end.</p>
+    <p style="margin-top:0.8rem;"><a class="btn brass small" href={href("claim/")}>Feature your company</a></p>
+  </aside>
+)}

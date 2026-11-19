@@ -1,0 +1,97 @@
+---
+import Base from "../../layouts/Base.astro";
+import { meta, opportunities } from "../../lib/data";
+import { openNotice, prettyDate } from "../../lib/format";
+import { href } from "../../lib/url";
+
+const types = [...new Set(opportunities.map((row) => row.type).filter(Boolean))].sort();
+const agencies = [...new Set(opportunities.map((row) => row.agency).filter(Boolean))].sort();
+const description = "Latest active contract notices from the public SAM.gov Contract Opportunities extract, filterable by type, set-aside, and agency.";
+---
+
+<Base title="SAM.gov contract notices" description={description}>
+  <div class="wrap page-head">
+    <p class="crumbs"><a href={href()}>Home</a> / Opportunities</p>
+    <p class="eyebrow">Live feed</p>
+    <h1>What agencies just put on the street.</h1>
+    <p class="lede">The newest active notices in the daily SAM.gov Contract Opportunities extract. Descriptions and contacts are the public notice text. Award notices are in the file but hidden until you ask for them.</p>
+  </div>
+  <div class="wrap section" data-filter-root>
+    <div class="filters">
+      <label class="field"><span>Search</span><input data-filter-q placeholder="Title, agency, solicitation, NAICS" /></label>
+      <label class="field"><span>Type</span>
+        <select data-filter-type>
+          <option value="open">Open notices</option>
+          <option value="">Every type</option>
+          {types.map((type) => <option value={type}>{type}</option>)}
+        </select>
+      </label>
+      <label class="field"><span>Set-aside</span>
+        <select data-filter-setaside>
+          <option value="">Any</option>
+          <option value="open">No set-aside</option>
+          <option value="small">Small business</option>
+          <option value="8a">8(a)</option>
+          <option value="sdvosb">SDVOSB</option>
+          <option value="wosb">WOSB</option>
+          <option value="hubzone">HUBZone</option>
+        </select>
+      </label>
+      <label class="field"><span>Agency</span>
+        <select data-filter-agency>
+          <option value="">All</option>
+          {agencies.map((name) => <option value={name}>{name}</option>)}
+        </select>
+      </label>
+    </div>
+    <div class="toolbar">
+      <label class="field" style="min-width:12rem;"><span>Sort</span>
+        <select data-filter-sort>
+          <option value="posted-desc">Newest posted</option>
+          <option value="deadline-asc">Deadline</option>
+        </select>
+      </label>
+      <p class="count-line" data-filter-count></p>
+    </div>
+    <div class="stack">
+      {opportunities.map((notice) => (
+        <a
+          class="notice"
+          href={notice.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          data-item
+          data-open={openNotice(notice.type) ? "1" : "0"}
+          data-type={notice.type}
+          data-setaside={notice.set_aside_bucket}
+          data-agency={notice.agency}
+          data-posted={notice.posted_at || notice.posted}
+          data-deadline={notice.deadline || "9999-99-99"}
+          data-text={`${notice.title} ${notice.agency} ${notice.office} ${notice.solicitation} ${notice.naics} ${notice.description} ${notice.state}`}
+        >
+          <header>
+            <h3>{notice.title}</h3>
+            <span class="tag">{notice.type}</span>
+          </header>
+          <p class="meta-line">{notice.agency}{notice.office ? ` · ${notice.office}` : ""}</p>
+          <p class="meta-line">
+            Posted {prettyDate(notice.posted)}
+            {notice.deadline ? ` · Respond by ${prettyDate(notice.deadline)}` : ""}
+            {notice.naics ? ` · NAICS ${notice.naics}` : ""}
+            {notice.solicitation ? ` · ${notice.solicitation}` : ""}
+          </p>
+          <p class="meta-line">{notice.set_aside}{notice.state ? ` · ${notice.city ? `${notice.city}, ` : ""}${notice.state}` : ""}</p>
+          {notice.description && <p class="clamp" style="margin-top:0.45rem;">{notice.description}</p>}
+          {notice.contact_email && <p class="meta-line">Point of contact {notice.contact_name ? `${notice.contact_name} · ` : ""}{notice.contact_email}</p>}
+        </a>
+      ))}
+    </div>
+    <p class="empty" data-filter-empty hidden>No notices match. Clear the type or set-aside filter.</p>
+    <p class="note" style="margin-top:1rem;">A notice posted late in the day usually appears in the next rebuild. Snapshot refreshed {prettyDate(meta.generated_at)}.</p>
+  </div>
+</Base>
+
+<script>
+  import { bindFilters } from "../../scripts/filters";
+  document.querySelectorAll<HTMLElement>("[data-filter-root]").forEach((root) => bindFilters(root));
+</script>

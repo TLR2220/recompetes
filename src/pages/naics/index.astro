@@ -1,0 +1,38 @@
+---
+import Base from "../../layouts/Base.astro";
+import { meta, naicsPages } from "../../lib/data";
+import { money } from "../../lib/format";
+import { href } from "../../lib/url";
+
+const groups = new Map<string, typeof naicsPages>();
+for (const row of naicsPages) {
+  const key = row.sector_name || "Other";
+  groups.set(key, [...(groups.get(key) || []), row]);
+}
+const description = "Federal contract obligations by NAICS code, with the contractors that hold the work.";
+---
+
+<Base title="NAICS categories" description={description}>
+  <div class="wrap page-head">
+    <p class="crumbs"><a href={href()}>Home</a> / NAICS</p>
+    <p class="eyebrow">Categories</p>
+    <h1>The work, by NAICS.</h1>
+    <p class="lede">The codes with the most contract obligations from {meta.labels.obligations_window}. Open one for the primes and any tracked recompetes carrying that code.</p>
+  </div>
+  <div class="wrap section stack">
+    {[...groups.entries()].map(([sector, rows]) => (
+      <section>
+        <h2>{sector}</h2>
+        <div class="cards" style="margin-top:0.7rem;">
+          {rows.map((row) => (
+            <a class="card" href={href(`naics/${row.code}/`)}>
+              <p class="eyebrow">{row.code}</p>
+              <h3>{row.name}</h3>
+              <div class="amount num">{money(row.amount)}</div>
+            </a>
+          ))}
+        </div>
+      </section>
+    ))}
+  </div>
+</Base>

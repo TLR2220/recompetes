@@ -1,0 +1,126 @@
+---
+import Base from "../../layouts/Base.astro";
+import SponsorSlot from "../../components/SponsorSlot.astro";
+import { meta, recompetes, sponsors } from "../../lib/data";
+import { daysLabel, money, moneyFull, prettyDate, sectorName, urgency } from "../../lib/format";
+import { absolute, href } from "../../lib/url";
+
+const agencies = [...new Set(recompetes.map((row) => row.agency).filter(Boolean))].sort();
+const sectors = [...new Set(recompetes.map((row) => row.naics.slice(0, 2)).filter(Boolean))].sort();
+const description = `Large federal awards whose current end date falls inside ${meta.labels.recompete_horizon}. Incumbent, agency, obligated amount, and end date, updated daily.`;
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Recompete Radar",
+  description,
+  url: absolute("recompetes/"),
+  itemListElement: recompetes.filter((row) => row.days >= 0).slice(0, 30).map((row, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    name: row.description,
+    url: absolute(`contractors/${row.slug}/`),
+  })),
+};
+---
+
+<Base title="Recompete Radar" description={description} schema={schema}>
+  <div class="wrap page-head">
+    <p class="crumbs"><a href={href()}>Home</a> / Radar</p>
+    <p class="eyebrow">Recompete Radar</p>
+    <h1>Awards large enough to plan around.</h1>
+    <p class="lede">These are prime contracts and vehicles from the contractors we profile. Each one has at least {moneyFull(meta.labels.recompete_min)} obligated and a current end date, or last date to order, inside {meta.labels.recompete_horizon}. Options can still be exercised. Treat the date as a signal.</p>
+  </div>
+  <div class="wrap section" data-filter-root>
+    <SponsorSlot placement={sponsors.radar} label="radar" />
+    <div class="filters" style="margin-top:0.9rem;">
+      <label class="field"><span>Search</span><input data-filter-q placeholder="Incumbent, agency, keyword, PIID" /></label>
+      <label class="field"><span>Agency</span>
+        <select data-filter-agency>
+          <option value="">All agencies</option>
+          {agencies.map((name) => <option value={name}>{name}</option>)}
+        </select>
+      </label>
+      <label class="field"><span>Sector</span>
+        <select data-filter-sector>
+          <option value="">All sectors</option>
+          {sectors.map((code) => <option value={code}>{sectorName(code)}</option>)}
+        </select>
+      </label>
+      <label class="field"><span>Minimum</span>
+        <select data-filter-min>
+          <option value="0">$5 million</option>
+          <option value="25000000">$25 million</option>
+          <option value="100000000">$100 million</option>
+          <option value="500000000">$500 million</option>
+        </select>
+      </label>
+    </div>
+    <div class="toolbar">
+      <div class="chips" role="group" aria-label="Horizon">
+        <button type="button" data-horizon-btn="90">90 days</button>
+        <button type="button" data-horizon-btn="180">180 days</button>
+        <button type="button" data-horizon-btn="365" aria-pressed="true">12 months</button>
+        <button type="button" data-horizon-btn="540">18 months</button>
+      </div>
+      <label class="check"><input type="checkbox" data-filter-past /> Include awards that ended in the last {meta.labels.past_days} days</label>
+      <label class="field" style="min-width:12rem;"><span>Sort</span>
+        <select data-filter-sort>
+          <option value="days-asc">Ending soonest</option>
+          <option value="amount-desc">Largest obligated</option>
+          <option value="name-asc">Incumbent</option>
+        </select>
+      </label>
+      <p class="count-line" data-filter-count></p>
+    </div>
+    <div class="panel">
+      <table>
+        <thead>
+          <tr>
+            <th>Contract</th>
+            <th>Incumbent</th>
+            <th>Agency</th>
+            <th>Obligated</th>
+            <th>Current end</th>
+            <th>Left</th>
+          </tr>
+        </thead>
+        <tbody>
+          {recompetes.map((row) => (
+            <tr
+              data-item
+              data-end={row.end}
+              data-days={row.days}
+              data-amount={row.amount}
+              data-agency={row.agency}
+              data-sector={row.naics.slice(0, 2)}
+              data-name={row.incumbent}
+              data-text={`${row.description} ${row.incumbent} ${row.agency} ${row.subagency} ${row.naics} ${row.award_id} ${row.set_aside}`}
+              data-urgency={urgency(row.days)}
+            >
+              <td data-label="Contract">
+                <div class="desc">{row.description}</div>
+                <div class="meta-line">{[row.type, row.award_id, row.naics ? `NAICS ${row.naics}` : "", row.set_aside].filter(Boolean).join(" · ")}</div>
+                {row.potential_end && row.potential_end !== row.end && <div class="meta-line">Options through {prettyDate(row.potential_end)}</div>}
+              </td>
+              <td data-label="Incumbent"><a href={href(`contractors/${row.slug}/`)}>{row.incumbent}</a></td>
+              <td data-label="Agency">
+                {row.agency_slug ? <a href={href(`agencies/${row.agency_slug}/`)}>{row.agency}</a> : row.agency}
+                {row.subagency && <div class="meta-line">{row.subagency}</div>}
+              </td>
+              <td class="num" data-label="Obligated">{money(row.amount)}</td>
+              <td class="num" data-label="Current end">{prettyDate(row.end)}</td>
+              <td data-label="Left"><span class="days-pill"><span data-days-label>{daysLabel(row.days)}</span></span></td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <p class="empty" data-filter-empty hidden>No awards match these filters. Widen the horizon or lower the minimum.</p>
+    <p class="note" style="margin-top:1rem;">Amounts are total obligations reported for the award, not the value left to compete. Records without a NAICS code are missing it in the summary feed; the largest awards are enriched from the award detail when USAspending provides it.</p>
+  </div>
+</Base>
+
+<script>
+  import { bindFilters } from "../../scripts/filters";
+  document.querySelectorAll<HTMLElement>("[data-filter-root]").forEach((root) => bindFilters(root));
+</script>

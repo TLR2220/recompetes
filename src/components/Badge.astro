@@ -1,0 +1,6 @@
+---
+interface Props { tier?: string | null; }
+const { tier } = Astro.props;
+const label = tier === "sponsor" ? "Sponsor" : tier === "featured" ? "Featured" : tier === "claimed" ? "Claimed" : "";
+---
+{label && <span class={`badge badge-${tier}`}>{label}</span>}

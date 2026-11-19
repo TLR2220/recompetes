@@ -1,0 +1,1164 @@
+{
+  "agencies": [
+    {
+      "slug": "department-of-defense",
+      "name": "Department of Defense",
+      "code": "DOD",
+      "amount": 1449046967647,
+      "contractors": [
+        {
+          "name": "LOCKHEED MARTIN CORPORATION",
+          "slug": "lockheed-martin-corporation-xfjmys",
+          "uei": "G4KDGE4JFFK7",
+          "recipient_id": "6cf5fb1b-4988-d087-5dc1-70939d8fc6c4-C",
+          "amount": 63788669681,
+          "usaspending_url": "https://www.usaspending.gov/recipient/6cf5fb1b-4988-d087-5dc1-70939d8fc6c4-C/latest"
+        },
+        {
+          "name": "ELECTRIC BOAT CORPORATION",
+          "slug": "electric-boat-corporation-e7bekj",
+          "uei": "E7BEKJ4V9528",
+          "recipient_id": "d5ab5f51-db3a-a26f-96a1-1b24c3e2802c-C",
+          "amount": 42869047496,
+          "usaspending_url": "https://www.usaspending.gov/recipient/d5ab5f51-db3a-a26f-96a1-1b24c3e2802c-C/latest"
+        },
+        {
+          "name": "LOCKHEED MARTIN CORPORATION",
+          "slug": "lockheed-martin-corporation-xfjmys",
+          "uei": "XFJMYSYFJEK4",
+          "recipient_id": "779b3e3e-364f-7cbc-28a4-a2b4484b86f4-C",
+          "amount": 38176665268,
+          "usaspending_url": "https://www.usaspending.gov/recipient/779b3e3e-364f-7cbc-28a4-a2b4484b86f4-C/latest"
+        },
+        {
+          "name": "RAYTHEON COMPANY",
+          "slug": "raytheon-company-xsv6az",
+          "uei": "VTEWM5QSE598",
+          "recipient_id": "01c4a3a3-b4c5-ce4e-822b-d17f09985001-C",
+          "amount": 31304190198,
+          "usaspending_url": "https://www.usaspending.gov/recipient/01c4a3a3-b4c5-ce4e-822b-d17f09985001-C/latest"
+        },
+        {
+          "name": "RTX CORPORATION",
+          "slug": "rtx-corporation-qn1bcf",
+          "uei": "QN1BCFY7JDJ5",
+          "recipient_id": "62e141b3-4887-5b39-6b75-eace9326395c-C",
+          "amount": 22376707674,
+          "usaspending_url": "https://www.usaspending.gov/recipient/62e141b3-4887-5b39-6b75-eace9326395c-C/latest"
+        },
+        {
+          "name": "THE BOEING COMPANY",
+          "slug": "the-boeing-company-jjm4fr",
+          "uei": "JJM4FRDZJDX1",
+          "recipient_id": "9ab85632-42cc-5fa4-2a9c-d734034ddd33-C",
+          "amount": 21289889186,
+          "usaspending_url": "https://www.usaspending.gov/recipient/9ab85632-42cc-5fa4-2a9c-d734034ddd33-C/latest"
+        },
+        {
+          "name": "HUMANA GOVERNMENT BUSINESS INC",
+          "slug": "humana-government-business-inc-ze6zm6",
+          "uei": "ZE6ZM6NKSV43",
+          "recipient_id": "1068e466-707d-6b6f-367f-0255fab79b8c-C",
+          "amount": 20175882997,
+          "usaspending_url": "https://www.usaspending.gov/recipient/1068e466-707d-6b6f-367f-0255fab79b8c-C/latest"
+        },
+        {
+          "name": "AMERISOURCEBERGEN DRUG CORP",
+          "slug": "amerisourcebergen-drug-corp-kabzk8",
+          "uei": "KABZK8W6PQT3",
+          "recipient_id": "edc402f7-abac-eafe-2aae-3fdcd8d1bb8a-C",
+          "amount": 20105872704,
+          "usaspending_url": "https://www.usaspending.gov/recipient/edc402f7-abac-eafe-2aae-3fdcd8d1bb8a-C/latest"
+        }
+      ],
+      "usaspending_url": "https://www.usaspending.gov/agency/department-of-defense"
+    },
+    {
+      "slug": "department-of-veterans-affairs",
+      "name": "Department of Veterans Affairs",
+      "code": "VA",
+      "amount": 236755874193,
+      "contractors": [
+        {
+          "name": "OPTUM PUBLIC SECTOR SOLUTIONS, INC.",
+          "slug": "optum-public-sector-solutions-inc-xmuzgj",
+          "uei": "XMUZGJN98231",
+          "recipient_id": "41694631-0b0f-72ed-221b-29193c88f0d2-C",
+          "amount": 65127507344,
+          "usaspending_url": "https://www.usaspending.gov/recipient/41694631-0b0f-72ed-221b-29193c88f0d2-C/latest"
+        },
+        {
+          "name": "MCKESSON CORPORATION",
+          "slug": "mckesson-corporation-s1rukw",
+          "uei": "S1RUKWWRYFL6",
+          "recipient_id": "b54de748-ee64-a1e6-546e-e7007b054797-C",
+          "amount": 34686362699,
+          "usaspending_url": "https://www.usaspending.gov/recipient/b54de748-ee64-a1e6-546e-e7007b054797-C/latest"
+        },
+        {
+          "name": "TRIWEST HEALTHCARE ALLIANCE CORP",
+          "slug": "triwest-healthcare-alliance-corp-j7m9hp",
+          "uei": "J7M9HPTGJ1S9",
+          "recipient_id": "bf1220c1-2373-042a-e8e1-33d5a29639d0-C",
+          "amount": 30043842410,
+          "usaspending_url": "https://www.usaspending.gov/recipient/bf1220c1-2373-042a-e8e1-33d5a29639d0-C/latest"
+        },
+        {
+          "name": "QTC MEDICAL SERVICES INC",
+          "slug": "",
+          "uei": "GN8YP96TMPK6",
+          "recipient_id": "bed6217b-c46e-3951-fe4c-dab140bb2125-C",
+          "amount": 7123236250,
+          "usaspending_url": "https://www.usaspending.gov/recipient/bed6217b-c46e-3951-fe4c-dab140bb2125-C/latest"
+        },
+        {
+          "name": "OPTUMSERVE HEALTH SERVICES, INC.",
+          "slug": "",
+          "uei": "G5XXLHZSW8X3",
+          "recipient_id": "f14c78b7-70f6-df32-45ed-a5f56e1b9f70-C",
+          "amount": 6045160550,
+          "usaspending_url": "https://www.usaspending.gov/recipient/f14c78b7-70f6-df32-45ed-a5f56e1b9f70-C/latest"
+        },
+        {
+          "name": "VETERANS EVALUATION SERVICES, INC",
+          "slug": "",
+          "uei": "MT6ZNX9BMGB7",
+          "recipient_id": "3a7a135e-cda1-0c2c-9d9b-8d44ffede757-C",
+          "amount": 4930909474,
+          "usaspending_url": "https://www.usaspending.gov/recipient/3a7a135e-cda1-0c2c-9d9b-8d44ffede757-C/latest"
+        },
+        {
+          "name": "ORACLE HEALTH GOVERNMENT SERVICES, INC.",
+          "slug": "",
+          "uei": "DT2KS3HH5FP5",
+          "recipient_id": "9232b26d-789d-bdd2-5a6d-28714f1dfa2c-C",
+          "amount": 3958118289,
+          "usaspending_url": "https://www.usaspending.gov/recipient/9232b26d-789d-bdd2-5a6d-28714f1dfa2c-C/latest"
+        },
+        {
+          "name": "LOYAL SOURCE GOVERNMENT SERVICES LLC",
+          "slug": "",
+          "uei": "Y54FQAPG4TN5",
+          "recipient_id": "a11a2c49-b200-c5b0-6719-7b2d0bb9764c-C",
+          "amount": 2857533743,
+          "usaspending_url": "https://www.usaspending.gov/recipient/a11a2c49-b200-c5b0-6719-7b2d0bb9764c-C/latest"
+        }
+      ],
+      "usaspending_url": "https://www.usaspending.gov/agency/department-of-veterans-affairs"
+    },
+    {
+      "slug": "department-of-energy",
+      "name": "Department of Energy",
+      "code": "DOE",
+      "amount": 155873777305,
+      "contractors": [
+        {
+          "name": "NATIONAL TECHNOLOGY & ENGINEERING SOLUTIONS OF SANDIA, LLC",
+          "slug": "national-technology-and-engineering-solutions-of-sandia-lujepc",
+          "uei": "LUJEPCRRT377",
+          "recipient_id": "b52d549e-73f7-a818-8c63-4a75904c9df5-C",
+          "amount": 16744770970,
+          "usaspending_url": "https://www.usaspending.gov/recipient/b52d549e-73f7-a818-8c63-4a75904c9df5-C/latest"
+        },
+        {
+          "name": "TRIAD NATIONAL SECURITY, LLC",
+          "slug": "triad-national-security-llc-x7wus5",
+          "uei": "X7WUS5LRBQU3",
+          "recipient_id": "59ab4d30-abec-ded6-33c4-5d9f37fd2da0-C",
+          "amount": 16728536963,
+          "usaspending_url": "https://www.usaspending.gov/recipient/59ab4d30-abec-ded6-33c4-5d9f37fd2da0-C/latest"
+        },
+        {
+          "name": "LAWRENCE LIVERMORE NATIONAL SECURITY, LLC",
+          "slug": "lawrence-livermore-national-security-llc-pm52lc",
+          "uei": "PM52LCJH72T9",
+          "recipient_id": "6d990129-9566-ff86-e9ae-7c6eeef1df7c-C",
+          "amount": 11061179812,
+          "usaspending_url": "https://www.usaspending.gov/recipient/6d990129-9566-ff86-e9ae-7c6eeef1df7c-C/latest"
+        },
+        {
+          "name": "CONSOLIDATED NUCLEAR SECURITY, LLC",
+          "slug": "consolidated-nuclear-security-llc-ewv8qk",
+          "uei": "EWV8QKG1JUV7",
+          "recipient_id": "3c1a340d-2613-1609-93ce-eb1aba0559b5-C",
+          "amount": 10012466103,
+          "usaspending_url": "https://www.usaspending.gov/recipient/3c1a340d-2613-1609-93ce-eb1aba0559b5-C/latest"
+        },
+        {
+          "name": "UT-BATTELLE LLC",
+          "slug": "ut-battelle-llc-zlhjj5",
+          "uei": "ZLHJJ57QA2H8",
+          "recipient_id": "c236f280-8198-3109-89dd-96eca764ec43-C",
+          "amount": 8519744536,
+          "usaspending_url": "https://www.usaspending.gov/recipient/c236f280-8198-3109-89dd-96eca764ec43-C/latest"
+        },
+        {
+          "name": "SAVANNAH RIVER NUCLEAR SOLUTIONS LLC",
+          "slug": "",
+          "uei": "XLQ7CKUSQSD5",
+          "recipient_id": "f59302ac-85a9-ee1a-4813-9b07f3377a40-C",
+          "amount": 7836208083,
+          "usaspending_url": "https://www.usaspending.gov/recipient/f59302ac-85a9-ee1a-4813-9b07f3377a40-C/latest"
+        },
+        {
+          "name": "HONEYWELL FEDERAL MANUFACTURING & TECHNOLOGIES, LLC",
+          "slug": "",
+          "uei": "DMEGBYTVBQS5",
+          "recipient_id": "9e9725ba-e023-684e-6d7f-f9de4201578f-C",
+          "amount": 6525386732,
+          "usaspending_url": "https://www.usaspending.gov/recipient/9e9725ba-e023-684e-6d7f-f9de4201578f-C/latest"
+        },
+        {
+          "name": "BATTELLE ENERGY ALLIANCE, LLC",
+          "slug": "",
+          "uei": "HG7XL5RBNX55",
+          "recipient_id": "094b64c8-bbe6-5af3-2b26-c52e97d87eba-C",
+          "amount": 6294622869,
+          "usaspending_url": "https://www.usaspending.gov/recipient/094b64c8-bbe6-5af3-2b26-c52e97d87eba-C/latest"
+        }
+      ],
+      "usaspending_url": "https://www.usaspending.gov/agency/department-of-energy"
+    },
+    {
+      "slug": "department-of-homeland-security",
+      "name": "Department of Homeland Security",
+      "code": "DHS",
+      "amount": 126711528409,
+      "contractors": [
+        {
+          "name": "FISHER SAND & GRAVEL CO",
+          "slug": "fisher-sand-and-gravel-co-xavbda",
+          "uei": "XAVBDA4D13N7",
+          "recipient_id": "fa0b2d2c-6660-adbe-e0ea-4035b15e4cbd-C",
+          "amount": 14402267256,
+          "usaspending_url": "https://www.usaspending.gov/recipient/fa0b2d2c-6660-adbe-e0ea-4035b15e4cbd-C/latest"
+        },
+        {
+          "name": "BARNARD CONSTRUCTION COMPANY, INCORPORATED",
+          "slug": "",
+          "uei": "LEGGW1TNMVC9",
+          "recipient_id": "cbd00b80-79b9-687c-5847-be4d1bf8750e-C",
+          "amount": 4782911109,
+          "usaspending_url": "https://www.usaspending.gov/recipient/cbd00b80-79b9-687c-5847-be4d1bf8750e-C/latest"
+        },
+        {
+          "name": "BCCG A JOINT VENTURE",
+          "slug": "",
+          "uei": "VNQTYNAV9C25",
+          "recipient_id": "6a7d8bd5-7ff0-a23d-26fe-cef66843cff8-C",
+          "amount": 3564739025,
+          "usaspending_url": "https://www.usaspending.gov/recipient/6a7d8bd5-7ff0-a23d-26fe-cef66843cff8-C/latest"
+        },
+        {
+          "name": "DAVIE DEFENSE INC.",
+          "slug": "",
+          "uei": "DYABDAZV92C1",
+          "recipient_id": "5031fdd2-5638-1b1c-9677-dc765a235f9b-C",
+          "amount": 3531500000,
+          "usaspending_url": "https://www.usaspending.gov/recipient/5031fdd2-5638-1b1c-9677-dc765a235f9b-C/latest"
+        },
+        {
+          "name": "SOUTHWEST VALLEY CONSTRUCTORS CO",
+          "slug": "",
+          "uei": "W31DQKBPJCD3",
+          "recipient_id": "50730e17-bc78-a2a6-9220-91b71f88258c-C",
+          "amount": 2823410739,
+          "usaspending_url": "https://www.usaspending.gov/recipient/50730e17-bc78-a2a6-9220-91b71f88258c-C/latest"
+        },
+        {
+          "name": "CSI AVIATION, INC",
+          "slug": "",
+          "uei": "D5BNEHB3UL89",
+          "recipient_id": "965e0a8e-62bd-79ee-4305-1f66e9bc7c87-C",
+          "amount": 2566521666,
+          "usaspending_url": "https://www.usaspending.gov/recipient/965e0a8e-62bd-79ee-4305-1f66e9bc7c87-C/latest"
+        },
+        {
+          "name": "SLS FEDERAL SERVICES LLC",
+          "slug": "",
+          "uei": "VLDKT27H2AG1",
+          "recipient_id": "fdc361df-c43a-750c-1330-a98395979fe8-C",
+          "amount": 2377125800,
+          "usaspending_url": "https://www.usaspending.gov/recipient/fdc361df-c43a-750c-1330-a98395979fe8-C/latest"
+        },
+        {
+          "name": "SPENCER CONSTRUCTION LLC",
+          "slug": "",
+          "uei": "MKMNZ369ZB59",
+          "recipient_id": "148518d6-82fd-540c-2ffd-74c9fad5b562-C",
+          "amount": 2364407122,
+          "usaspending_url": "https://www.usaspending.gov/recipient/148518d6-82fd-540c-2ffd-74c9fad5b562-C/latest"
+        }
+      ],
+      "usaspending_url": "https://www.usaspending.gov/agency/department-of-homeland-security"
+    },
+    {
+      "slug": "general-services-administration",
+      "name": "General Services Administration",
+      "code": "GSA",
+      "amount": 80197861604,
+      "contractors": [
+        {
+          "name": "BOOZ ALLEN HAMILTON INC",
+          "slug": "booz-allen-hamilton-inc-jcbmlg",
+          "uei": "JCBMLGPE6Z71",
+          "recipient_id": "ffca72e5-fba2-798a-6969-2a6c45e9f985-C",
+          "amount": 8176153774,
+          "usaspending_url": "https://www.usaspending.gov/recipient/ffca72e5-fba2-798a-6969-2a6c45e9f985-C/latest"
+        },
+        {
+          "name": "SCIENCE APPLICATIONS INTERNATIONAL CORPORATION",
+          "slug": "science-applications-international-corporation-mmlkpw",
+          "uei": "MMLKPW9JLX64",
+          "recipient_id": "20af0683-f17d-1f8f-38ee-2f11bd124559-C",
+          "amount": 3492022714,
+          "usaspending_url": "https://www.usaspending.gov/recipient/20af0683-f17d-1f8f-38ee-2f11bd124559-C/latest"
+        },
+        {
+          "name": "GENERAL DYNAMICS INFORMATION TECHNOLOGY, INC.",
+          "slug": "general-dynamics-information-technology-inc-smnwm6",
+          "uei": "SMNWM6HN79X5",
+          "recipient_id": "455555be-773d-eab1-1e6b-7b94400b757e-C",
+          "amount": 2980372717,
+          "usaspending_url": "https://www.usaspending.gov/recipient/455555be-773d-eab1-1e6b-7b94400b757e-C/latest"
+        },
+        {
+          "name": "CACI, INC. - FEDERAL",
+          "slug": "caci-inc-federal-n3pbja",
+          "uei": "N3PBJAVNKF61",
+          "recipient_id": "28eee911-76af-7147-f760-4ec5f90bec2d-C",
+          "amount": 2972581403,
+          "usaspending_url": "https://www.usaspending.gov/recipient/28eee911-76af-7147-f760-4ec5f90bec2d-C/latest"
+        },
+        {
+          "name": "HII MISSION TECHNOLOGIES CORP",
+          "slug": "",
+          "uei": "G5H7HWC4L2R5",
+          "recipient_id": "af71a671-8628-cf92-9d09-39fda820ddac-C",
+          "amount": 2714644074,
+          "usaspending_url": "https://www.usaspending.gov/recipient/af71a671-8628-cf92-9d09-39fda820ddac-C/latest"
+        },
+        {
+          "name": "DELOITTE CONSULTING LLP",
+          "slug": "deloitte-consulting-llp-ckv2l9",
+          "uei": "CKV2L9GZKJK3",
+          "recipient_id": "92663aec-4451-0476-502b-d8c6919e98e0-C",
+          "amount": 2148136201,
+          "usaspending_url": "https://www.usaspending.gov/recipient/92663aec-4451-0476-502b-d8c6919e98e0-C/latest"
+        },
+        {
+          "name": "PERATON INC.",
+          "slug": "",
+          "uei": "ZBPQEJVECCT4",
+          "recipient_id": "129fccb1-783c-9fd1-7b6d-6ddea65ace79-C",
+          "amount": 2107042341,
+          "usaspending_url": "https://www.usaspending.gov/recipient/129fccb1-783c-9fd1-7b6d-6ddea65ace79-C/latest"
+        },
+        {
+          "name": "FORD MOTOR CO",
+          "slug": "",
+          "uei": "QD3MLADL7366",
+          "recipient_id": "4a8a3973-3640-6b1b-95a5-c93d26884389-C",
+          "amount": 1858918669,
+          "usaspending_url": "https://www.usaspending.gov/recipient/4a8a3973-3640-6b1b-95a5-c93d26884389-C/latest"
+        }
+      ],
+      "usaspending_url": "https://www.usaspending.gov/agency/general-services-administration"
+    },
+    {
+      "slug": "department-of-health-and-human-services",
+      "name": "Department of Health and Human Services",
+      "code": "HHS",
+      "amount": 76927862617,
+      "contractors": [
+        {
+          "name": "GENERAL DYNAMICS INFORMATION TECHNOLOGY, INC.",
+          "slug": "general-dynamics-information-technology-inc-smnwm6",
+          "uei": "SMNWM6HN79X5",
+          "recipient_id": "455555be-773d-eab1-1e6b-7b94400b757e-C",
+          "amount": 2763764327,
+          "usaspending_url": "https://www.usaspending.gov/recipient/455555be-773d-eab1-1e6b-7b94400b757e-C/latest"
+        },
+        {
+          "name": "ADVANCED TECHNOLOGY INTERNATIONAL",
+          "slug": "",
+          "uei": "LDMMF472BB93",
+          "recipient_id": "2308f9b4-daa6-7448-2621-356e83baa206-C",
+          "amount": 2679857826,
+          "usaspending_url": "https://www.usaspending.gov/recipient/2308f9b4-daa6-7448-2621-356e83baa206-C/latest"
+        },
+        {
+          "name": "MAXIMUS FEDERAL SERVICES, INC.",
+          "slug": "",
+          "uei": "TREKW6J3QSF5",
+          "recipient_id": "f87b435f-0b05-95c9-7c0e-e60df7cdff50-C",
+          "amount": 2465435785,
+          "usaspending_url": "https://www.usaspending.gov/recipient/f87b435f-0b05-95c9-7c0e-e60df7cdff50-C/latest"
+        },
+        {
+          "name": "LEIDOS BIOMEDICAL RESEARCH INC",
+          "slug": "",
+          "uei": "HV8BH9BPG8Y9",
+          "recipient_id": "277c2f00-0fc5-832e-69d3-accd25c68bfc-C",
+          "amount": 2206534638,
+          "usaspending_url": "https://www.usaspending.gov/recipient/277c2f00-0fc5-832e-69d3-accd25c68bfc-C/latest"
+        },
+        {
+          "name": "DELOITTE CONSULTING LLP",
+          "slug": "deloitte-consulting-llp-ckv2l9",
+          "uei": "CKV2L9GZKJK3",
+          "recipient_id": "92663aec-4451-0476-502b-d8c6919e98e0-C",
+          "amount": 1451116061,
+          "usaspending_url": "https://www.usaspending.gov/recipient/92663aec-4451-0476-502b-d8c6919e98e0-C/latest"
+        },
+        {
+          "name": "BOOZ ALLEN HAMILTON INC",
+          "slug": "booz-allen-hamilton-inc-jcbmlg",
+          "uei": "JCBMLGPE6Z71",
+          "recipient_id": "ffca72e5-fba2-798a-6969-2a6c45e9f985-C",
+          "amount": 1252220113,
+          "usaspending_url": "https://www.usaspending.gov/recipient/ffca72e5-fba2-798a-6969-2a6c45e9f985-C/latest"
+        },
+        {
+          "name": "CARAHSOFT TECHNOLOGY CORP",
+          "slug": "",
+          "uei": "DT8KJHZXVJH5",
+          "recipient_id": "4e74aeb5-dd21-20a7-63bd-e9f934d69583-C",
+          "amount": 965792961,
+          "usaspending_url": "https://www.usaspending.gov/recipient/4e74aeb5-dd21-20a7-63bd-e9f934d69583-C/latest"
+        },
+        {
+          "name": "RESEARCH TRIANGLE INSTITUTE",
+          "slug": "",
+          "uei": "JJHCMK4NT5N3",
+          "recipient_id": "8303ed9b-9fb4-3e90-ca81-50bbcf400948-C",
+          "amount": 921042539,
+          "usaspending_url": "https://www.usaspending.gov/recipient/8303ed9b-9fb4-3e90-ca81-50bbcf400948-C/latest"
+        }
+      ],
+      "usaspending_url": "https://www.usaspending.gov/agency/department-of-health-and-human-services"
+    },
+    {
+      "slug": "national-aeronautics-and-space-administration",
+      "name": "National Aeronautics and Space Administration",
+      "code": "NASA",
+      "amount": 48163420638,
+      "contractors": [
+        {
+          "name": "CALIFORNIA INSTITUTE OF TECHNOLOGY",
+          "slug": "",
+          "uei": "YC1YP79BFD19",
+          "recipient_id": "6e76fa33-2d96-c636-941c-bca1997db076-C",
+          "amount": 6804183431,
+          "usaspending_url": "https://www.usaspending.gov/recipient/6e76fa33-2d96-c636-941c-bca1997db076-C/latest"
+        },
+        {
+          "name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+          "slug": "space-exploration-technologies-corp-c6m7c2",
+          "uei": "C6M7C2FLKER5",
+          "recipient_id": "8a3a5525-3218-a488-db0e-4823241ceb90-C",
+          "amount": 3657331064,
+          "usaspending_url": "https://www.usaspending.gov/recipient/8a3a5525-3218-a488-db0e-4823241ceb90-C/latest"
+        },
+        {
+          "name": "THE BOEING COMPANY",
+          "slug": "the-boeing-company-jjm4fr",
+          "uei": "SML4NN2CT556",
+          "recipient_id": "3632dc26-45b8-9d0e-1128-63e866708c8f-C",
+          "amount": 3414357038,
+          "usaspending_url": "https://www.usaspending.gov/recipient/3632dc26-45b8-9d0e-1128-63e866708c8f-C/latest"
+        },
+        {
+          "name": "LOCKHEED MARTIN CORP",
+          "slug": "",
+          "uei": "FYHNA5WC8XD7",
+          "recipient_id": "6e7a895c-aa57-8600-2a8a-4e237f6213f6-C",
+          "amount": 1727271584,
+          "usaspending_url": "https://www.usaspending.gov/recipient/6e7a895c-aa57-8600-2a8a-4e237f6213f6-C/latest"
+        },
+        {
+          "name": "THE JOHNS HOPKINS UNIVERSITY APPLIED PHYSICS LABORATORY LLC",
+          "slug": "",
+          "uei": "C1HBCJ9RMBV3",
+          "recipient_id": "4eae43e5-e1f1-0e77-b2fe-09a12a9a552c-C",
+          "amount": 1479481382,
+          "usaspending_url": "https://www.usaspending.gov/recipient/4eae43e5-e1f1-0e77-b2fe-09a12a9a552c-C/latest"
+        },
+        {
+          "name": "BLUE ORIGIN WASHINGTON, LLC",
+          "slug": "",
+          "uei": "SH2ER4W6LH13",
+          "recipient_id": "0347a12c-6b74-43ee-1e94-4986e09d6a5e-C",
+          "amount": 1332413927,
+          "usaspending_url": "https://www.usaspending.gov/recipient/0347a12c-6b74-43ee-1e94-4986e09d6a5e-C/latest"
+        },
+        {
+          "name": "KBR WYLE SERVICES, LLC",
+          "slug": "",
+          "uei": "HYBLSJAMM2F4",
+          "recipient_id": "eb13e842-2068-e3ee-0453-d02b9582e5cd-C",
+          "amount": 1189899367,
+          "usaspending_url": "https://www.usaspending.gov/recipient/eb13e842-2068-e3ee-0453-d02b9582e5cd-C/latest"
+        },
+        {
+          "name": "PERATON INC.",
+          "slug": "",
+          "uei": "ZBPQEJVECCT4",
+          "recipient_id": "129fccb1-783c-9fd1-7b6d-6ddea65ace79-C",
+          "amount": 1156833924,
+          "usaspending_url": "https://www.usaspending.gov/recipient/129fccb1-783c-9fd1-7b6d-6ddea65ace79-C/latest"
+        }
+      ],
+      "usaspending_url": "https://www.usaspending.gov/agency/national-aeronautics-and-space-administration"
+    },
+    {
+      "slug": "department-of-agriculture",
+      "name": "Department of Agriculture",
+      "code": "USDA",
+      "amount": 32460180714,
+      "contractors": [
+        {
+          "name": "TYSON FOODS INC.",
+          "slug": "",
+          "uei": "DX7AU4JMLPC7",
+          "recipient_id": "388ab88d-74c2-54ac-19e4-cb2df60ad520-C",
+          "amount": 691733772,
+          "usaspending_url": "https://www.usaspending.gov/recipient/388ab88d-74c2-54ac-19e4-cb2df60ad520-C/latest"
+        },
+        {
+          "name": "PERIMETER SOLUTIONS LP",
+          "slug": "",
+          "uei": "QGUQWSU5AHB4",
+          "recipient_id": "d7665c4a-faef-2a5a-e1c1-ac4f097e6df0-C",
+          "amount": 617769018,
+          "usaspending_url": "https://www.usaspending.gov/recipient/d7665c4a-faef-2a5a-e1c1-ac4f097e6df0-C/latest"
+        },
+        {
+          "name": "PACIFIC COAST PRODUCERS",
+          "slug": "",
+          "uei": "RNUGGJVG1RK8",
+          "recipient_id": "c273eb48-d122-a5f1-8037-040e89c0d237-C",
+          "amount": 368904609,
+          "usaspending_url": "https://www.usaspending.gov/recipient/c273eb48-d122-a5f1-8037-040e89c0d237-C/latest"
+        },
+        {
+          "name": "AERO-FLITE, INC.",
+          "slug": "",
+          "uei": "QLPVYV6GY874",
+          "recipient_id": "ec5d53c4-2721-05e4-205e-d7bdf5d8cc60-C",
+          "amount": 340389514,
+          "usaspending_url": "https://www.usaspending.gov/recipient/ec5d53c4-2721-05e4-205e-d7bdf5d8cc60-C/latest"
+        },
+        {
+          "name": "BONGARDS CREAMERIES",
+          "slug": "",
+          "uei": "TTB1W4DXY7L5",
+          "recipient_id": "52c30402-8c7a-bfb2-3d4f-40a7b1ef4d90-C",
+          "amount": 316971215,
+          "usaspending_url": "https://www.usaspending.gov/recipient/52c30402-8c7a-bfb2-3d4f-40a7b1ef4d90-C/latest"
+        },
+        {
+          "name": "CARAHSOFT TECHNOLOGY CORP",
+          "slug": "",
+          "uei": "DT8KJHZXVJH5",
+          "recipient_id": "4e74aeb5-dd21-20a7-63bd-e9f934d69583-C",
+          "amount": 298101559,
+          "usaspending_url": "https://www.usaspending.gov/recipient/4e74aeb5-dd21-20a7-63bd-e9f934d69583-C/latest"
+        },
+        {
+          "name": "HELICOPTER EXPRESS LLC",
+          "slug": "",
+          "uei": "RH1LCNXGVHL7",
+          "recipient_id": "5529ee70-ad5a-4cb5-05d9-d3b33d834118-C",
+          "amount": 281512479,
+          "usaspending_url": "https://www.usaspending.gov/recipient/5529ee70-ad5a-4cb5-05d9-d3b33d834118-C/latest"
+        },
+        {
+          "name": "ASSOCIATED MILK PRODUCERS INC",
+          "slug": "",
+          "uei": "HSY2YML3VMQ7",
+          "recipient_id": "a9414861-272b-30e3-68c7-b2551f46810a-C",
+          "amount": 266526342,
+          "usaspending_url": "https://www.usaspending.gov/recipient/a9414861-272b-30e3-68c7-b2551f46810a-C/latest"
+        }
+      ],
+      "usaspending_url": "https://www.usaspending.gov/agency/department-of-agriculture"
+    },
+    {
+      "slug": "department-of-transportation",
+      "name": "Department of Transportation",
+      "code": "DOT",
+      "amount": 32158435074,
+      "contractors": [
+        {
+          "name": "HARRIS CORPORATION",
+          "slug": "",
+          "uei": "E98VT6T8R7E1",
+          "recipient_id": "0fee4ffe-0a02-2e9b-6dad-4bb544bb2ac9-C",
+          "amount": 2639392187,
+          "usaspending_url": "https://www.usaspending.gov/recipient/0fee4ffe-0a02-2e9b-6dad-4bb544bb2ac9-C/latest"
+        },
+        {
+          "name": "TOTE SERVICES, LLC",
+          "slug": "",
+          "uei": "UFQGBQM3JDY5",
+          "recipient_id": "6c48f956-83a6-813a-8495-68275f67c840-C",
+          "amount": 1058619074,
+          "usaspending_url": "https://www.usaspending.gov/recipient/6c48f956-83a6-813a-8495-68275f67c840-C/latest"
+        },
+        {
+          "name": "CROWLEY GOVERNMENT SERVICES, INC.",
+          "slug": "",
+          "uei": "VMEFT5X61JT9",
+          "recipient_id": "572e442b-f0f8-e4ab-6a99-b97521c958ef-C",
+          "amount": 983662028,
+          "usaspending_url": "https://www.usaspending.gov/recipient/572e442b-f0f8-e4ab-6a99-b97521c958ef-C/latest"
+        },
+        {
+          "name": "RAYTHEON COMPANY",
+          "slug": "raytheon-company-xsv6az",
+          "uei": "YD6LTFVUZNG1",
+          "recipient_id": "b91e6418-aa27-f6c2-90a9-1545753a6d15-C",
+          "amount": 967845741,
+          "usaspending_url": "https://www.usaspending.gov/recipient/b91e6418-aa27-f6c2-90a9-1545753a6d15-C/latest"
+        },
+        {
+          "name": "FREQUENTIS USA, INC",
+          "slug": "",
+          "uei": "P35CUAWMBQ19",
+          "recipient_id": "18631843-bc06-8595-d577-8bae98c7e6c4-C",
+          "amount": 821355763,
+          "usaspending_url": "https://www.usaspending.gov/recipient/18631843-bc06-8595-d577-8bae98c7e6c4-C/latest"
+        },
+        {
+          "name": "ROHDE & SCHWARZ USA, INC.",
+          "slug": "",
+          "uei": "F4FLM3NP2N46",
+          "recipient_id": "088e65c2-2b0e-9b5c-d6fd-207142152cda-C",
+          "amount": 723857585,
+          "usaspending_url": "https://www.usaspending.gov/recipient/088e65c2-2b0e-9b5c-d6fd-207142152cda-C/latest"
+        },
+        {
+          "name": "PTSI MANAGED SERVICES INC",
+          "slug": "",
+          "uei": "V6HHNX7LE717",
+          "recipient_id": "1b34c273-b52d-9dd4-5c61-1098530dd984-C",
+          "amount": 633484192,
+          "usaspending_url": "https://www.usaspending.gov/recipient/1b34c273-b52d-9dd4-5c61-1098530dd984-C/latest"
+        },
+        {
+          "name": "CDW GOVERNMENT LLC",
+          "slug": "",
+          "uei": "PHZDZ8SJ5CM1",
+          "recipient_id": "5f4e5d33-10ef-b0cc-1f33-8835b33808f1-C",
+          "amount": 605735583,
+          "usaspending_url": "https://www.usaspending.gov/recipient/5f4e5d33-10ef-b0cc-1f33-8835b33808f1-C/latest"
+        }
+      ],
+      "usaspending_url": "https://www.usaspending.gov/agency/department-of-transportation"
+    },
+    {
+      "slug": "department-of-state",
+      "name": "Department of State",
+      "code": "DOS",
+      "amount": 31345934621,
+      "contractors": [
+        {
+          "name": "XATOR LLC",
+          "slug": "",
+          "uei": "ZJFDNMA46LT9",
+          "recipient_id": "e3be6629-1714-1015-6fc5-92ae6e24ccb1-C",
+          "amount": 1794389482,
+          "usaspending_url": "https://www.usaspending.gov/recipient/e3be6629-1714-1015-6fc5-92ae6e24ccb1-C/latest"
+        },
+        {
+          "name": "CADDELL CONSTRUCTION CO. (DE), LLC",
+          "slug": "",
+          "uei": "ELJMJND6DDF3",
+          "recipient_id": "1ee271cd-2103-5e4c-ba2d-a3386ac33049-C",
+          "amount": 1707955554,
+          "usaspending_url": "https://www.usaspending.gov/recipient/1ee271cd-2103-5e4c-ba2d-a3386ac33049-C/latest"
+        },
+        {
+          "name": "CGI FEDERAL INC.",
+          "slug": "",
+          "uei": "TRKEP1HEBNS5",
+          "recipient_id": "d86df7af-f6c1-a07a-ccc4-ec74331bafc5-C",
+          "amount": 1185763009,
+          "usaspending_url": "https://www.usaspending.gov/recipient/d86df7af-f6c1-a07a-ccc4-ec74331bafc5-C/latest"
+        },
+        {
+          "name": "GENERAL DYNAMICS INFORMATION TECHNOLOGY, INC.",
+          "slug": "general-dynamics-information-technology-inc-smnwm6",
+          "uei": "SMNWM6HN79X5",
+          "recipient_id": "455555be-773d-eab1-1e6b-7b94400b757e-C",
+          "amount": 881345470,
+          "usaspending_url": "https://www.usaspending.gov/recipient/455555be-773d-eab1-1e6b-7b94400b757e-C/latest"
+        },
+        {
+          "name": "SCIENCE APPLICATIONS INTERNATIONAL CORPORATION",
+          "slug": "science-applications-international-corporation-mmlkpw",
+          "uei": "MMLKPW9JLX64",
+          "recipient_id": "20af0683-f17d-1f8f-38ee-2f11bd124559-C",
+          "amount": 635237849,
+          "usaspending_url": "https://www.usaspending.gov/recipient/20af0683-f17d-1f8f-38ee-2f11bd124559-C/latest"
+        },
+        {
+          "name": "ACCENTURE FEDERAL SERVICES LLC",
+          "slug": "accenture-federal-services-llc-c47bna",
+          "uei": "C47BNA8GM833",
+          "recipient_id": "d41a6b8a-9d6a-0d28-7e24-989e31731aad-C",
+          "amount": 610222842,
+          "usaspending_url": "https://www.usaspending.gov/recipient/d41a6b8a-9d6a-0d28-7e24-989e31731aad-C/latest"
+        },
+        {
+          "name": "PAE GOVERNMENT SERVICES, INC.",
+          "slug": "",
+          "uei": "JENBF1KKWZ93",
+          "recipient_id": "fd602973-d119-7ced-a3e7-11ecee5a9318-C",
+          "amount": 598095485,
+          "usaspending_url": "https://www.usaspending.gov/recipient/fd602973-d119-7ced-a3e7-11ecee5a9318-C/latest"
+        }
+      ],
+      "usaspending_url": "https://www.usaspending.gov/agency/department-of-state"
+    },
+    {
+      "slug": "department-of-justice",
+      "name": "Department of Justice",
+      "code": "DOJ",
+      "amount": 29308862605,
+      "contractors": [
+        {
+          "name": "METROPOLITAN SECURITY SERVICES, INC.",
+          "slug": "",
+          "uei": "M8XJCDL1AE26",
+          "recipient_id": "835e42fb-f461-4e30-e17e-3205a1805635-C",
+          "amount": 1644005839,
+          "usaspending_url": "https://www.usaspending.gov/recipient/835e42fb-f461-4e30-e17e-3205a1805635-C/latest"
+        },
+        {
+          "name": "BRASFIELD & GORRIE LLC",
+          "slug": "",
+          "uei": "TWVGJRMK6Z78",
+          "recipient_id": "a4499a6f-2139-8774-afa2-247720ff681c-C",
+          "amount": 733847010,
+          "usaspending_url": "https://www.usaspending.gov/recipient/a4499a6f-2139-8774-afa2-247720ff681c-C/latest"
+        },
+        {
+          "name": "MCKESSON CORPORATION",
+          "slug": "mckesson-corporation-s1rukw",
+          "uei": "S1RUKWWRYFL6",
+          "recipient_id": "b54de748-ee64-a1e6-546e-e7007b054797-C",
+          "amount": 662429133,
+          "usaspending_url": "https://www.usaspending.gov/recipient/b54de748-ee64-a1e6-546e-e7007b054797-C/latest"
+        },
+        {
+          "name": "NAPHCARE LLC",
+          "slug": "",
+          "uei": "GB3CE4QXH6A4",
+          "recipient_id": "d11fd97e-be81-3cac-3a64-cda5ed4b8619-C",
+          "amount": 562905206,
+          "usaspending_url": "https://www.usaspending.gov/recipient/d11fd97e-be81-3cac-3a64-cda5ed4b8619-C/latest"
+        },
+        {
+          "name": "CGI FEDERAL INC.",
+          "slug": "",
+          "uei": "TRKEP1HEBNS5",
+          "recipient_id": "d86df7af-f6c1-a07a-ccc4-ec74331bafc5-C",
+          "amount": 523865016,
+          "usaspending_url": "https://www.usaspending.gov/recipient/d86df7af-f6c1-a07a-ccc4-ec74331bafc5-C/latest"
+        },
+        {
+          "name": "THE GEO GROUP, INC.",
+          "slug": "",
+          "uei": "JMLKZZ1NL2Z6",
+          "recipient_id": "9b308edb-a62c-659b-704b-ef4e5cf3f795-C",
+          "amount": 519677312,
+          "usaspending_url": "https://www.usaspending.gov/recipient/9b308edb-a62c-659b-704b-ef4e5cf3f795-C/latest"
+        },
+        {
+          "name": "AT&T ENTERPRISES, LLC",
+          "slug": "",
+          "uei": "MX89BGD5FK75",
+          "recipient_id": "d96f3486-0fa5-045a-5da7-9cffc0b4a114-C",
+          "amount": 447501727,
+          "usaspending_url": "https://www.usaspending.gov/recipient/d96f3486-0fa5-045a-5da7-9cffc0b4a114-C/latest"
+        },
+        {
+          "name": "FORFEITURE SUPPORT ASSOCIATES LLC",
+          "slug": "",
+          "uei": "KJV1FNRCA649",
+          "recipient_id": "24515b84-620e-1924-974e-c6d0b649f793-C",
+          "amount": 431538619,
+          "usaspending_url": "https://www.usaspending.gov/recipient/24515b84-620e-1924-974e-c6d0b649f793-C/latest"
+        }
+      ],
+      "usaspending_url": "https://www.usaspending.gov/agency/department-of-justice"
+    },
+    {
+      "slug": "department-of-the-treasury",
+      "name": "Department of the Treasury",
+      "code": "TREAS",
+      "amount": 25487941549,
+      "contractors": [
+        {
+          "name": "STONEX FINANCIAL LTD",
+          "slug": "",
+          "uei": "ZRGFMMN3RXV8",
+          "recipient_id": "9e88e310-e87a-d26a-2ddb-dd18f27b49a5-C",
+          "amount": 3565104324,
+          "usaspending_url": "https://www.usaspending.gov/recipient/9e88e310-e87a-d26a-2ddb-dd18f27b49a5-C/latest"
+        },
+        {
+          "name": "ASAHI REFINING USA INC",
+          "slug": "",
+          "uei": "GL5NPDBBRMC8",
+          "recipient_id": "bb19d6bf-9975-f10a-ee78-4404ebdc6d61-C",
+          "amount": 1328997987,
+          "usaspending_url": "https://www.usaspending.gov/recipient/bb19d6bf-9975-f10a-ee78-4404ebdc6d61-C/latest"
+        },
+        {
+          "name": "FCN, INC.",
+          "slug": "",
+          "uei": "JEANDJTZ8HJ3",
+          "recipient_id": "3792ca7f-d5d2-d89c-872b-8c64e4e6390e-C",
+          "amount": 1132712584,
+          "usaspending_url": "https://www.usaspending.gov/recipient/3792ca7f-d5d2-d89c-872b-8c64e4e6390e-C/latest"
+        },
+        {
+          "name": "ACCENTURE FEDERAL SERVICES LLC",
+          "slug": "accenture-federal-services-llc-c47bna",
+          "uei": "C47BNA8GM833",
+          "recipient_id": "d41a6b8a-9d6a-0d28-7e24-989e31731aad-C",
+          "amount": 970455488,
+          "usaspending_url": "https://www.usaspending.gov/recipient/d41a6b8a-9d6a-0d28-7e24-989e31731aad-C/latest"
+        },
+        {
+          "name": "DELOITTE CONSULTING LLP",
+          "slug": "deloitte-consulting-llp-ckv2l9",
+          "uei": "CKV2L9GZKJK3",
+          "recipient_id": "92663aec-4451-0476-502b-d8c6919e98e0-C",
+          "amount": 823599866,
+          "usaspending_url": "https://www.usaspending.gov/recipient/92663aec-4451-0476-502b-d8c6919e98e0-C/latest"
+        },
+        {
+          "name": "SCIENCE APPLICATIONS INTERNATIONAL CORPORATION",
+          "slug": "science-applications-international-corporation-mmlkpw",
+          "uei": "MMLKPW9JLX64",
+          "recipient_id": "20af0683-f17d-1f8f-38ee-2f11bd124559-C",
+          "amount": 607986121,
+          "usaspending_url": "https://www.usaspending.gov/recipient/20af0683-f17d-1f8f-38ee-2f11bd124559-C/latest"
+        },
+        {
+          "name": "CRANE & CO., INC.",
+          "slug": "",
+          "uei": "N4GVXK9MVN18",
+          "recipient_id": "57d990eb-6c0b-82fd-a854-5b67e14a3b54-C",
+          "amount": 584011477,
+          "usaspending_url": "https://www.usaspending.gov/recipient/57d990eb-6c0b-82fd-a854-5b67e14a3b54-C/latest"
+        },
+        {
+          "name": "A-MARK PRECIOUS METALS, INC.",
+          "slug": "",
+          "uei": "CJZ8EW1Q7JJ6",
+          "recipient_id": "15780210-826c-b52c-a2ea-4323ae3a95f8-C",
+          "amount": 583801198,
+          "usaspending_url": "https://www.usaspending.gov/recipient/15780210-826c-b52c-a2ea-4323ae3a95f8-C/latest"
+        }
+      ],
+      "usaspending_url": "https://www.usaspending.gov/agency/department-of-the-treasury"
+    },
+    {
+      "slug": "department-of-the-interior",
+      "name": "Department of the Interior",
+      "code": "DOI",
+      "amount": 21707344530,
+      "contractors": [
+        {
+          "name": "GENERAL DYNAMICS INFORMATION TECHNOLOGY, INC.",
+          "slug": "general-dynamics-information-technology-inc-smnwm6",
+          "uei": "SMNWM6HN79X5",
+          "recipient_id": "455555be-773d-eab1-1e6b-7b94400b757e-C",
+          "amount": 737941203,
+          "usaspending_url": "https://www.usaspending.gov/recipient/455555be-773d-eab1-1e6b-7b94400b757e-C/latest"
+        },
+        {
+          "name": "NW CONSTRUCTION, INC",
+          "slug": "",
+          "uei": "SNSLU2QXJ7Z5",
+          "recipient_id": "e130b27b-e353-3fa4-e8d1-31e07705bef6-C",
+          "amount": 463236424,
+          "usaspending_url": "https://www.usaspending.gov/recipient/e130b27b-e353-3fa4-e8d1-31e07705bef6-C/latest"
+        },
+        {
+          "name": "ACACIA CENTER FOR JUSTICE",
+          "slug": "",
+          "uei": "CAJ4W5QGNKK9",
+          "recipient_id": "495d2928-798d-131c-100e-b49633d4814e-C",
+          "amount": 387572859,
+          "usaspending_url": "https://www.usaspending.gov/recipient/495d2928-798d-131c-100e-b49633d4814e-C/latest"
+        },
+        {
+          "name": "GUIDEHOUSE INC.",
+          "slug": "",
+          "uei": "N9NJK877QJK9",
+          "recipient_id": "a0cb5664-8703-c7dc-a188-4a96f90a16c9-C",
+          "amount": 367269043,
+          "usaspending_url": "https://www.usaspending.gov/recipient/a0cb5664-8703-c7dc-a188-4a96f90a16c9-C/latest"
+        },
+        {
+          "name": "FAMILY ENDEAVORS, INC.",
+          "slug": "",
+          "uei": "PC1AM3TAQXD8",
+          "recipient_id": "145a4154-d747-d57b-bd6a-5c438e9f82d5-C",
+          "amount": 346528245,
+          "usaspending_url": "https://www.usaspending.gov/recipient/145a4154-d747-d57b-bd6a-5c438e9f82d5-C/latest"
+        },
+        {
+          "name": "KIEWIT INFRASTRUCTURE WEST CO.",
+          "slug": "",
+          "uei": "KGG6RMJ7D9P8",
+          "recipient_id": "d0dc1da3-ded5-f485-0458-2b2a216eab92-C",
+          "amount": 321189373,
+          "usaspending_url": "https://www.usaspending.gov/recipient/d0dc1da3-ded5-f485-0458-2b2a216eab92-C/latest"
+        },
+        {
+          "name": "TEPA EC, LLC",
+          "slug": "",
+          "uei": "EZMNZ2HYHFB7",
+          "recipient_id": "4b8e00aa-a1d6-5a4e-f421-1306b34b15db-C",
+          "amount": 299920542,
+          "usaspending_url": "https://www.usaspending.gov/recipient/4b8e00aa-a1d6-5a4e-f421-1306b34b15db-C/latest"
+        },
+        {
+          "name": "JACOBS PROJECT MANAGEMENT CO.",
+          "slug": "",
+          "uei": "WEBHVDKSC4T5",
+          "recipient_id": "5521702c-202f-629f-0a01-680223d0224a-C",
+          "amount": 271036182,
+          "usaspending_url": "https://www.usaspending.gov/recipient/5521702c-202f-629f-0a01-680223d0224a-C/latest"
+        }
+      ],
+      "usaspending_url": "https://www.usaspending.gov/agency/department-of-the-interior"
+    },
+    {
+      "slug": "department-of-commerce",
+      "name": "Department of Commerce",
+      "code": "DOC",
+      "amount": 14575783823,
+      "contractors": [
+        {
+          "name": "REED TECHNOLOGY AND INFORMATION SERVICES LLC",
+          "slug": "",
+          "uei": "M8U2V6FM8643",
+          "recipient_id": "d47bd370-ec68-903e-abd0-30da9aa1c18e-C",
+          "amount": 588453758,
+          "usaspending_url": "https://www.usaspending.gov/recipient/d47bd370-ec68-903e-abd0-30da9aa1c18e-C/latest"
+        },
+        {
+          "name": "GENERAL DYNAMICS INFORMATION TECHNOLOGY, INC.",
+          "slug": "general-dynamics-information-technology-inc-smnwm6",
+          "uei": "SMNWM6HN79X5",
+          "recipient_id": "455555be-773d-eab1-1e6b-7b94400b757e-C",
+          "amount": 528381290,
+          "usaspending_url": "https://www.usaspending.gov/recipient/455555be-773d-eab1-1e6b-7b94400b757e-C/latest"
+        },
+        {
+          "name": "LOCKHEED MARTIN CORPORATION",
+          "slug": "lockheed-martin-corporation-xfjmys",
+          "uei": "HDHVQ4EF8A89",
+          "recipient_id": "4de935fd-7eb9-654c-bd76-c9bd3a6943db-C",
+          "amount": 489927931,
+          "usaspending_url": "https://www.usaspending.gov/recipient/4de935fd-7eb9-654c-bd76-c9bd3a6943db-C/latest"
+        },
+        {
+          "name": "EARTH RESOURCES TECHNOLOGY, LLC",
+          "slug": "",
+          "uei": "DFH4YBBMYMU8",
+          "recipient_id": "157986dd-1d51-b2f0-1f9a-af1c5d1bb5c3-C",
+          "amount": 371156024,
+          "usaspending_url": "https://www.usaspending.gov/recipient/157986dd-1d51-b2f0-1f9a-af1c5d1bb5c3-C/latest"
+        },
+        {
+          "name": "SCIENCE APPLICATIONS INTERNATIONAL CORPORATION",
+          "slug": "science-applications-international-corporation-mmlkpw",
+          "uei": "MMLKPW9JLX64",
+          "recipient_id": "20af0683-f17d-1f8f-38ee-2f11bd124559-C",
+          "amount": 359308601,
+          "usaspending_url": "https://www.usaspending.gov/recipient/20af0683-f17d-1f8f-38ee-2f11bd124559-C/latest"
+        },
+        {
+          "name": "ACCENTURE FEDERAL SERVICES LLC",
+          "slug": "accenture-federal-services-llc-c47bna",
+          "uei": "C47BNA8GM833",
+          "recipient_id": "d41a6b8a-9d6a-0d28-7e24-989e31731aad-C",
+          "amount": 344090503,
+          "usaspending_url": "https://www.usaspending.gov/recipient/d41a6b8a-9d6a-0d28-7e24-989e31731aad-C/latest"
+        },
+        {
+          "name": "PERATON INC.",
+          "slug": "",
+          "uei": "ZBPQEJVECCT4",
+          "recipient_id": "129fccb1-783c-9fd1-7b6d-6ddea65ace79-C",
+          "amount": 299463333,
+          "usaspending_url": "https://www.usaspending.gov/recipient/129fccb1-783c-9fd1-7b6d-6ddea65ace79-C/latest"
+        },
+        {
+          "name": "LYNKER CORPORATION",
+          "slug": "",
+          "uei": "MCLPKDBCDKY7",
+          "recipient_id": "769ae6c2-ab99-6c7c-d5a0-192e3904c1d4-C",
+          "amount": 275852271,
+          "usaspending_url": "https://www.usaspending.gov/recipient/769ae6c2-ab99-6c7c-d5a0-192e3904c1d4-C/latest"
+        }
+      ],
+      "usaspending_url": "https://www.usaspending.gov/agency/department-of-commerce"
+    },
+    {
+      "slug": "agency-for-international-development",
+      "name": "Agency for International Development",
+      "code": "USAID",
+      "amount": 12569851921,
+      "contractors": [
+        {
+          "name": "CHEMONICS INTERNATIONAL, INC.",
+          "slug": "",
+          "uei": "DSUSFJFR9A33",
+          "recipient_id": "71710641-1c0a-d4c7-a593-1c039ee88fa2-C",
+          "amount": 2828898342,
+          "usaspending_url": "https://www.usaspending.gov/recipient/71710641-1c0a-d4c7-a593-1c039ee88fa2-C/latest"
+        },
+        {
+          "name": "DOMESTIC AWARDEES (UNDISCLOSED)",
+          "slug": "",
+          "uei": "KA5HQCLKUVW1",
+          "recipient_id": "b34cb2e3-60c2-69e0-9288-a94226437041-C",
+          "amount": 2268504806,
+          "usaspending_url": "https://www.usaspending.gov/recipient/b34cb2e3-60c2-69e0-9288-a94226437041-C/latest"
+        },
+        {
+          "name": "DAI GLOBAL LLC",
+          "slug": "",
+          "uei": "JKMEF5QVJK24",
+          "recipient_id": "f5131cc3-19f5-1683-c880-bdc9614ba308-C",
+          "amount": 741780277,
+          "usaspending_url": "https://www.usaspending.gov/recipient/f5131cc3-19f5-1683-c880-bdc9614ba308-C/latest"
+        },
+        {
+          "name": "CREDENCE MANAGEMENT SOLUTIONS LIMITED LIABILITY COMPANY",
+          "slug": "",
+          "uei": "FZNCSKF4X6D9",
+          "recipient_id": "421be47b-ffc8-a394-1f62-a25955938c63-C",
+          "amount": 469273936,
+          "usaspending_url": "https://www.usaspending.gov/recipient/421be47b-ffc8-a394-1f62-a25955938c63-C/latest"
+        },
+        {
+          "name": "ABT GLOBAL LLC",
+          "slug": "",
+          "uei": "C9S1NLQ67626",
+          "recipient_id": "4b2f02c9-273a-8c69-ef1f-2e98bf47f78b-C",
+          "amount": 360158241,
+          "usaspending_url": "https://www.usaspending.gov/recipient/4b2f02c9-273a-8c69-ef1f-2e98bf47f78b-C/latest"
+        },
+        {
+          "name": "FAMILY HEALTH INTERNATIONAL",
+          "slug": "",
+          "uei": "VRAASTY11EA3",
+          "recipient_id": "ce3945f4-76a8-ff4b-68a5-6562e575fc0c-C",
+          "amount": 317026922,
+          "usaspending_url": "https://www.usaspending.gov/recipient/ce3945f4-76a8-ff4b-68a5-6562e575fc0c-C/latest"
+        },
+        {
+          "name": "RESEARCH TRIANGLE INSTITUTE",
+          "slug": "",
+          "uei": "JJHCMK4NT5N3",
+          "recipient_id": "8303ed9b-9fb4-3e90-ca81-50bbcf400948-C",
+          "amount": 253364347,
+          "usaspending_url": "https://www.usaspending.gov/recipient/8303ed9b-9fb4-3e90-ca81-50bbcf400948-C/latest"
+        },
+        {
+          "name": "ARD, INC.",
+          "slug": "",
+          "uei": "VHLHREH8Y7R4",
+          "recipient_id": "55a19c14-2f82-31dd-9643-80a659c49fb0-C",
+          "amount": 193972386,
+          "usaspending_url": "https://www.usaspending.gov/recipient/55a19c14-2f82-31dd-9643-80a659c49fb0-C/latest"
+        }
+      ],
+      "usaspending_url": "https://www.usaspending.gov/agency/agency-for-international-development"
+    },
+    {
+      "slug": "department-of-education",
+      "name": "Department of Education",
+      "code": "ED",
+      "amount": 8109193707,
+      "contractors": [
+        {
+          "name": "ACCENTURE FEDERAL SERVICES LLC",
+          "slug": "accenture-federal-services-llc-c47bna",
+          "uei": "C47BNA8GM833",
+          "recipient_id": "d41a6b8a-9d6a-0d28-7e24-989e31731aad-C",
+          "amount": 1141836822,
+          "usaspending_url": "https://www.usaspending.gov/recipient/d41a6b8a-9d6a-0d28-7e24-989e31731aad-C/latest"
+        },
+        {
+          "name": "NELNET SERVICING LLC",
+          "slug": "",
+          "uei": "MNXKQ62J7AE8",
+          "recipient_id": "cd787d0c-db43-3ebb-f395-dc3ed272e5e9-C",
+          "amount": 1109670332,
+          "usaspending_url": "https://www.usaspending.gov/recipient/cd787d0c-db43-3ebb-f395-dc3ed272e5e9-C/latest"
+        },
+        {
+          "name": "MAXIMUS EDUCATION LLC",
+          "slug": "",
+          "uei": "HSUVUJE1ESU7",
+          "recipient_id": "006841da-7298-d92c-02f0-ad58caa4eefa-C",
+          "amount": 806138758,
+          "usaspending_url": "https://www.usaspending.gov/recipient/006841da-7298-d92c-02f0-ad58caa4eefa-C/latest"
+        },
+        {
+          "name": "EDFINANCIAL SERVICES LLC",
+          "slug": "",
+          "uei": "TB69PMAFZSK8",
+          "recipient_id": "fda79c3f-1b49-fe91-889e-e7151ab415b2-C",
+          "amount": 705961485,
+          "usaspending_url": "https://www.usaspending.gov/recipient/fda79c3f-1b49-fe91-889e-e7151ab415b2-C/latest"
+        },
+        {
+          "name": "MISSOURI HIGHER EDUCATION LOAN AUTHORITY",
+          "slug": "",
+          "uei": "N76QY63KMM18",
+          "recipient_id": "b005fff7-e9e3-cf0e-af12-6810483a15a1-C",
+          "amount": 676519028,
+          "usaspending_url": "https://www.usaspending.gov/recipient/b005fff7-e9e3-cf0e-af12-6810483a15a1-C/latest"
+        },
+        {
+          "name": "MAXIMUS FEDERAL SERVICES, INC.",
+          "slug": "",
+          "uei": "TREKW6J3QSF5",
+          "recipient_id": "f87b435f-0b05-95c9-7c0e-e60df7cdff50-C",
+          "amount": 455931983,
+          "usaspending_url": "https://www.usaspending.gov/recipient/f87b435f-0b05-95c9-7c0e-e60df7cdff50-C/latest"
+        },
+        {
+          "name": "GENERAL DYNAMICS INFORMATION TECHNOLOGY, INC.",
+          "slug": "general-dynamics-information-technology-inc-smnwm6",
+          "uei": "SMNWM6HN79X5",
+          "recipient_id": "455555be-773d-eab1-1e6b-7b94400b757e-C",
+          "amount": 270150814,
+          "usaspending_url": "https://www.usaspending.gov/recipient/455555be-773d-eab1-1e6b-7b94400b757e-C/latest"
+        },
+        {
+          "name": "WESTAT, INC.",
+          "slug": "",
+          "uei": "NVUWAFWQ57S5",
+          "recipient_id": "1a05eb77-da74-5790-7cc1-11f261fd252e-C",
+          "amount": 233895511,
+          "usaspending_url": "https://www.usaspending.gov/recipient/1a05eb77-da74-5790-7cc1-11f261fd252e-C/latest"
+        }
+      ],
+      "usaspending_url": "https://www.usaspending.gov/agency/department-of-education"
+    }
+  ]
+}

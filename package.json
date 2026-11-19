@@ -1,0 +1,19 @@
+{
+  "name": "recompetes",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "data": "python3 scripts/update_data.py",
+    "predev": "python3 scripts/stage_public_data.py",
+    "prebuild": "python3 scripts/stage_public_data.py",
+    "dev": "astro dev --host 127.0.0.1 --port 4817",
+    "build": "astro build",
+    "preview": "astro preview --host 127.0.0.1 --port 4817",
+    "test": "python3 scripts/test_transform.py"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.6",
+    "astro": "^5.18.2"
+  }
+}

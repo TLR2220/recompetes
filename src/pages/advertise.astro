@@ -1,0 +1,38 @@
+---
+import Base from "../layouts/Base.astro";
+import { contactEmail, tiers } from "../config";
+import { href } from "../lib/url";
+import { agencies, contractors, naicsPages, upcomingRecompetes } from "../lib/data";
+
+const description = "Sponsor a Recompetes page. Placements sit on the radar, agency pages, and NAICS pages that capture teams already use.";
+---
+
+<Base title="Advertise on Recompetes" description={description}>
+  <div class="wrap page-head">
+    <p class="crumbs"><a href={href()}>Home</a> / Advertise</p>
+    <p class="eyebrow">Sponsors</p>
+    <h1>Buy the spot next to the work, not a banner on a blog.</h1>
+    <p class="lede">Recompetes is a new directory. Early sponsors are buying placement on pages built to rank for contractor names, agencies, and NAICS codes. There is no impression guarantee and no invented traffic number.</p>
+  </div>
+  <div class="wrap stats">
+    <div class="stat"><b class="num">{contractors.length}</b><span>Profiled contractor pages</span></div>
+    <div class="stat"><b class="num">{agencies.length}</b><span>Agency pages</span></div>
+    <div class="stat"><b class="num">{naicsPages.length}</b><span>NAICS pages</span></div>
+    <div class="stat"><b class="num">{upcomingRecompetes().length}</b><span>Awards on the radar</span></div>
+  </div>
+  <div class="wrap grid-3 section">
+    {tiers.map((tier) => (
+      <article class="price">
+        <p class="eyebrow">{tier.name}</p>
+        <p class="cost num">${tier.annual.toLocaleString("en-US")}<span> / year</span></p>
+        <ul>{tier.points.map((point) => <li>{point}</li>)}</ul>
+      </article>
+    ))}
+  </div>
+  <div class="wrap section stack">
+    <h2>Where a unit shows up</h2>
+    <p>The radar page, each agency page, and each NAICS page has one sponsored slot. Empty slots say so. A filled slot is labeled Sponsored and links with <code>rel="sponsored"</code>.</p>
+    <p>Featured contractors are also pinned ahead of the public-record rank on the agency and NAICS pages where their own awards sit, and they can appear in the homepage row.</p>
+    <p>To reserve a page, write <a href={`mailto:${contactEmail}`}>{contactEmail}</a> or start from the <a href={href("claim/")}>pricing page</a>. Include the UEI and the page you want.</p>
+  </div>
+</Base>
