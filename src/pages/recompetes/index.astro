@@ -1,24 +1,27 @@
 ---
 import Base from "../../layouts/Base.astro";
 import SponsorSlot from "../../components/SponsorSlot.astro";
-import { meta, recompetes, sponsors } from "../../lib/data";
-import { daysLabel, money, moneyFull, prettyDate, sectorName, urgency } from "../../lib/format";
+import highlightsFile from "../../../data/highlights.json";
+import { meta, sponsors } from "../../lib/data";
+import { moneyFull } from "../../lib/format";
 import { absolute, href } from "../../lib/url";
+import type { RadarRow } from "../../lib/types";
 
-const agencies = [...new Set(recompetes.map((row) => row.agency).filter(Boolean))].sort();
-const sectors = [...new Set(recompetes.map((row) => row.naics.slice(0, 2)).filter(Boolean))].sort();
-const description = `Large federal awards whose current end date falls inside ${meta.labels.recompete_horizon}. Incumbent, agency, obligated amount, and end date, updated daily.`;
+const preview = (highlightsFile as { radar: RadarRow[] }).radar;
+const count = meta.counts?.recompetes ?? preview.length;
+const description = `${count.toLocaleString("en-US")} federal awards of at least ${moneyFull(meta.labels.recompete_min)} with an end date inside ${meta.labels.recompete_horizon}. Filter by agency, state, set-aside, NAICS, and value.`;
 const schema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
   name: "Recompete Radar",
   description,
   url: absolute("recompetes/"),
-  itemListElement: recompetes.filter((row) => row.days >= 0).slice(0, 30).map((row, index) => ({
+  numberOfItems: count,
+  itemListElement: preview.slice(0, 20).map((row, index) => ({
     "@type": "ListItem",
     position: index + 1,
     name: row.description,
-    url: absolute(`contractors/${row.slug}/`),
+    url: row.slug ? absolute(`contractors/${row.slug}/`) : absolute("recompetes/"),
   })),
 };
 ---
@@ -27,100 +30,69 @@ const schema = {
   <div class="wrap page-head">
     <p class="crumbs"><a href={href()}>Home</a> / Radar</p>
     <p class="eyebrow">Recompete Radar</p>
-    <h1>Awards large enough to plan around.</h1>
-    <p class="lede">These are prime contracts and vehicles from the contractors we profile. Each one has at least {moneyFull(meta.labels.recompete_min)} obligated and a current end date, or last date to order, inside {meta.labels.recompete_horizon}. Options can still be exercised. Treat the date as a signal.</p>
+    <h1>{count.toLocaleString("en-US")} awards large enough to plan around.</h1>
+    <p class="lede">Prime contracts and delivery orders from the contractors we profile, with at least {moneyFull(meta.labels.recompete_min)} obligated and a current end date inside {meta.labels.recompete_horizon}. Filter it here. The full list stays in one file so the site does not mint a page per award.</p>
   </div>
-  <div class="wrap section" data-filter-root>
+  <div class="wrap section" id="radar-app" data-base={import.meta.env.BASE_URL} data-version={meta.generated_at}>
     <SponsorSlot placement={sponsors.radar} label="radar" />
     <div class="filters" style="margin-top:0.9rem;">
       <label class="field"><span>Search</span><input data-filter-q placeholder="Incumbent, agency, keyword, PIID" /></label>
-      <label class="field"><span>Agency</span>
-        <select data-filter-agency>
-          <option value="">All agencies</option>
-          {agencies.map((name) => <option value={name}>{name}</option>)}
-        </select>
-      </label>
-      <label class="field"><span>Sector</span>
-        <select data-filter-sector>
-          <option value="">All sectors</option>
-          {sectors.map((code) => <option value={code}>{sectorName(code)}</option>)}
-        </select>
-      </label>
-      <label class="field"><span>Minimum</span>
-        <select data-filter-min>
-          <option value="0">$5 million</option>
-          <option value="25000000">$25 million</option>
-          <option value="100000000">$100 million</option>
-          <option value="500000000">$500 million</option>
+      <label class="field"><span>Agency</span><select data-filter-agency><option value="">All agencies</option></select></label>
+      <label class="field"><span>State</span><select data-filter-state><option value="">All states</option></select></label>
+      <label class="field"><span>Set-aside status</span>
+        <select data-filter-setaside>
+          <option value="">Any</option>
+          <option value="small">Small business</option>
+          <option value="8a">8(a)</option>
+          <option value="sdvosb">SDVOSB</option>
+          <option value="wosb">WOSB</option>
+          <option value="hubzone">HUBZone</option>
         </select>
       </label>
     </div>
     <div class="toolbar">
-      <div class="chips" role="group" aria-label="Horizon">
-        <button type="button" data-horizon-btn="90">90 days</button>
-        <button type="button" data-horizon-btn="180">180 days</button>
-        <button type="button" data-horizon-btn="365" aria-pressed="true">12 months</button>
-        <button type="button" data-horizon-btn="540">18 months</button>
-      </div>
-      <label class="check"><input type="checkbox" data-filter-past /> Include awards that ended in the last {meta.labels.past_days} days</label>
-      <label class="field" style="min-width:12rem;"><span>Sort</span>
-        <select data-filter-sort>
-          <option value="days-asc">Ending soonest</option>
-          <option value="amount-desc">Largest obligated</option>
-          <option value="name-asc">Incumbent</option>
+      <label class="field"><span>NAICS starts with</span><input data-filter-naics inputmode="numeric" placeholder="5415" /></label>
+      <label class="field"><span>Minimum</span>
+        <select data-filter-min>
+          <option value="1000000">$1 million</option>
+          <option value="5000000">$5 million</option>
+          <option value="25000000">$25 million</option>
+          <option value="100000000">$100 million</option>
         </select>
       </label>
-      <p class="count-line" data-filter-count></p>
+      <label class="field"><span>Horizon</span>
+        <select data-filter-horizon>
+          <option value="90">90 days</option>
+          <option value="180">180 days</option>
+          <option value="365">12 months</option>
+          <option value="540" selected>18 months</option>
+        </select>
+      </label>
+      <label class="field"><span>Sort</span>
+        <select data-filter-sort>
+          <option value="days">Ending soonest</option>
+          <option value="amount">Largest obligated</option>
+          <option value="agency">Agency</option>
+          <option value="state">State</option>
+        </select>
+      </label>
+      <label class="check"><input type="checkbox" data-filter-past /> Include awards that ended in the last {meta.labels.past_days} days</label>
     </div>
+    <p class="count-line" data-radar-status>Loading the radar…</p>
     <div class="panel">
       <table>
-        <thead>
-          <tr>
-            <th>Contract</th>
-            <th>Incumbent</th>
-            <th>Agency</th>
-            <th>Obligated</th>
-            <th>Current end</th>
-            <th>Left</th>
-          </tr>
-        </thead>
-        <tbody>
-          {recompetes.map((row) => (
-            <tr
-              data-item
-              data-end={row.end}
-              data-days={row.days}
-              data-amount={row.amount}
-              data-agency={row.agency}
-              data-sector={row.naics.slice(0, 2)}
-              data-name={row.incumbent}
-              data-text={`${row.description} ${row.incumbent} ${row.agency} ${row.subagency} ${row.naics} ${row.award_id} ${row.set_aside}`}
-              data-urgency={urgency(row.days)}
-            >
-              <td data-label="Contract">
-                <div class="desc">{row.description}</div>
-                <div class="meta-line">{[row.type, row.award_id, row.naics ? `NAICS ${row.naics}` : "", row.set_aside].filter(Boolean).join(" · ")}</div>
-                {row.potential_end && row.potential_end !== row.end && <div class="meta-line">Options through {prettyDate(row.potential_end)}</div>}
-              </td>
-              <td data-label="Incumbent"><a href={href(`contractors/${row.slug}/`)}>{row.incumbent}</a></td>
-              <td data-label="Agency">
-                {row.agency_slug ? <a href={href(`agencies/${row.agency_slug}/`)}>{row.agency}</a> : row.agency}
-                {row.subagency && <div class="meta-line">{row.subagency}</div>}
-              </td>
-              <td class="num" data-label="Obligated">{money(row.amount)}</td>
-              <td class="num" data-label="Current end">{prettyDate(row.end)}</td>
-              <td data-label="Left"><span class="days-pill"><span data-days-label>{daysLabel(row.days)}</span></span></td>
-            </tr>
-          ))}
-        </tbody>
+        <thead><tr><th>Contract</th><th>Incumbent</th><th>Agency</th><th>Obligated</th><th>Current end</th><th>Left</th></tr></thead>
+        <tbody data-radar-body></tbody>
       </table>
     </div>
-    <p class="empty" data-filter-empty hidden>No awards match these filters. Widen the horizon or lower the minimum.</p>
-    <p class="note" style="margin-top:1rem;">Amounts are total obligations reported for the award, not the value left to compete. Records without a NAICS code are missing it in the summary feed; the largest awards are enriched from the award detail when USAspending provides it.</p>
+    <div class="pager" data-radar-pager></div>
+    <noscript><p class="empty">The full radar needs JavaScript. The homepage lists the soonest awards without it.</p></noscript>
+    <p class="note" style="margin-top:1rem;">Set-aside status is the contractor’s reported business type. Place of performance is the award’s state when USAspending has one, otherwise the contractor’s address. Amounts are obligations, not ceilings.</p>
   </div>
 </Base>
 
 <script>
-  import { bindFilters } from "../../scripts/filters";
-  document.querySelectorAll<HTMLElement>("[data-filter-root]").forEach((root) => bindFilters(root));
+  import { mountRadar } from "../../scripts/radar";
+  const root = document.getElementById("radar-app");
+  if (root) mountRadar(root);
 </script>

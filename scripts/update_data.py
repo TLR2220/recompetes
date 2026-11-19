@@ -814,6 +814,11 @@ def publish_usaspending(snapshot: dict[str, Any]) -> None:
 
 
 def main() -> int:
+    import incremental
+    return incremental.main()
+
+
+def _legacy_main() -> int:
     DATA.mkdir(parents=True, exist_ok=True)
     previous = {
         "contractors": load_json(DATA / "contractors.json"),

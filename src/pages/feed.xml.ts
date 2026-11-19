@@ -1,5 +1,11 @@
 import type { APIRoute } from "astro";
-import { meta, opportunities, recompetes } from "../lib/data";
+import recompetesFile from "../../data/recompetes.json";
+import opportunitiesFile from "../../data/opportunities.json";
+import { meta } from "../lib/data";
+import type { Opportunity, Recompete } from "../lib/types";
+
+const recompetes = (recompetesFile as { recompetes: Recompete[] }).recompetes;
+const opportunities = (opportunitiesFile as { opportunities: Opportunity[] }).opportunities;
 import { openNotice } from "../lib/format";
 import { absolute } from "../lib/url";
 

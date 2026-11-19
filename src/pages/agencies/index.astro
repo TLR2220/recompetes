@@ -1,14 +1,13 @@
 ---
 import Base from "../../layouts/Base.astro";
-import { agencies, meta, recompetes } from "../../lib/data";
+import agenciesFile from "../../../data/agencies.json";
+import { meta } from "../../lib/data";
+import type { Agency } from "../../lib/types";
+
 import { money } from "../../lib/format";
 import { href } from "../../lib/url";
 
-const counts = new Map<string, number>();
-for (const row of recompetes) {
-  if (row.days < 0 || !row.agency_slug) continue;
-  counts.set(row.agency_slug, (counts.get(row.agency_slug) || 0) + 1);
-}
+const agencies = (agenciesFile as { agencies: Agency[] }).agencies;
 const description = "Federal awarding agencies ranked by contract obligations, with the primes that hold the work and the awards coming to an end.";
 ---
 
@@ -24,7 +23,7 @@ const description = "Federal awarding agencies ranked by contract obligations, w
       <a class="card" href={href(`agencies/${agency.slug}/`)}>
         <h3>{agency.name}</h3>
         <div class="amount num">{money(agency.amount)}</div>
-        <p class="meta-line">{counts.get(agency.slug) || 0} tracked recompetes · {agency.contractors.length} top primes listed</p>
+        <p class="meta-line">{(agency.recompetes || []).length} tracked recompetes on this page · {agency.contractors.length} top primes</p>
       </a>
     ))}
   </div>

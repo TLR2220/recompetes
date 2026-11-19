@@ -33,12 +33,22 @@ What a profile is: one of the largest prime recipients in the obligation window.
 
 ## Daily job
 
-`.github/workflows/daily.yml` runs at 12:20 UTC and on manual dispatch.
+`.github/workflows/daily.yml` runs at 12:20 UTC and on manual dispatch. The job is incremental. `data/cache/` remembers who has already been indexed, so each run adds pages instead of starting over.
 
-1. `python3 scripts/update_data.py` fetches each source on its own.
-2. If a source errors, or comes back too thin to trust, the previous file for that source stays. The other source can still update.
-3. Changed data files are committed as `Update federal contract data snapshot [data]` and pushed. That commit message stops the push from starting a second deploy.
-4. The site is rebuilt and deployed to GitHub Pages.
+Each scheduled run:
+
+1. Refreshes page 1 of every leaderboard and advances a few more pages (`ALL_PAGES`, `SOCIO_PAGES`).
+2. Profiles the next batch of unprofiled firms (`PROFILE_BATCH`, default 250), preferring small-business and socioeconomic firms for about half the batch, then filling by obligations. The profile cap is 3,000 pages.
+3. Merges new SAM.gov notices into the existing feed, capped at 1,800.
+4. Rebuilds the radar (capped at 8,000 awards), state pages, and set-aside pages from the cache.
+5. If a source errors, the previous published files stay. A partial profile run is checkpointed every 40 firms.
+6. Changed data files are committed as `Update federal contract data snapshot [data]` and the site is deployed to GitHub Pages.
+
+To grow faster locally:
+
+```bash
+ALL_PAGES=20 SOCIO_PAGES=8 PROFILE_BATCH=500 python3 scripts/update_data.py
+```
 
 SAM.gov usually publishes the extract around 04:30 UTC. A notice posted late in the U.S. day often shows up the next morning.
 

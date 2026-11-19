@@ -1,0 +1,28 @@
+---
+import Base from "../../layouts/Base.astro";
+import statesFile from "../../../data/states.json";
+import { meta } from "../../lib/data";
+import { money } from "../../lib/format";
+import { href } from "../../lib/url";
+
+const states = (statesFile as { states: { code: string; name: string; obligation: number; contractor_count: number; recompete_count: number }[] }).states;
+const description = "Federal contractors and recompetes by place of performance, or by the contractor's address when the award does not report a state.";
+---
+
+<Base title="Contractors by state" description={description}>
+  <div class="wrap page-head">
+    <p class="crumbs"><a href={href()}>Home</a> / States</p>
+    <p class="eyebrow">Place of performance</p>
+    <h1>Where the work is actually done.</h1>
+    <p class="lede">Each state collects profiled contractors with an award performed there, or with an address on file there, plus the tracked awards ending inside {meta.labels.recompete_horizon}.</p>
+  </div>
+  <div class="wrap cards section">
+    {states.map((state) => (
+      <a class="card" href={href(`states/${state.code.toLowerCase()}/`)}>
+        <h3>{state.name}</h3>
+        <div class="amount num">{state.recompete_count.toLocaleString("en-US")}</div>
+        <p class="meta-line">recompetes · {state.contractor_count.toLocaleString("en-US")} contractors{state.obligation ? ` · ${money(state.obligation)} at addresses in-state` : ""}</p>
+      </a>
+    ))}
+  </div>
+</Base>

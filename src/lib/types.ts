@@ -61,6 +61,17 @@ export interface ContractorRef {
   usaspending_url: string;
 }
 
+export interface RadarRow {
+  description: string;
+  slug: string;
+  incumbent: string;
+  amount: number;
+  end: string;
+  days: number;
+  agency: string;
+  state?: string;
+}
+
 export interface Agency {
   slug: string;
   name: string;
@@ -68,6 +79,7 @@ export interface Agency {
   amount: number;
   contractors: ContractorRef[];
   usaspending_url: string;
+  recompetes?: RadarRow[];
 }
 
 export interface NaicsPage {
@@ -77,6 +89,7 @@ export interface NaicsPage {
   sector_name: string;
   amount: number;
   contractors: ContractorRef[];
+  recompetes?: RadarRow[];
 }
 
 export interface Recompete {
@@ -149,6 +162,14 @@ export interface Meta {
     recompete_horizon_days: number;
     recompete_min: number;
     past_days: number;
+  };
+  counts?: {
+    profiled: number;
+    searchable: number;
+    recompetes: number;
+    recompetes_all?: number;
+    states: number;
+    notices: number;
   };
   methodology: Record<string, string>;
   sources: {

@@ -353,6 +353,8 @@ td a:hover { text-decoration: underline; }
 }
 .check { display: flex; gap: 0.45rem; align-items: center; color: var(--muted); font-size: 0.92rem; }
 .count-line { color: var(--muted); font-size: 0.9rem; }
+.pager { display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: center; margin: 0.8rem 0; }
+.pager button[disabled] { opacity: 0.45; cursor: default; transform: none; }
 
 .grid-2, .grid-3, .cards, .split { display: grid; gap: 0.8rem; }
 .cards { grid-template-columns: 1fr; }

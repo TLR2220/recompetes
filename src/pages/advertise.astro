@@ -2,7 +2,7 @@
 import Base from "../layouts/Base.astro";
 import { contactEmail, tiers } from "../config";
 import { href } from "../lib/url";
-import { agencies, contractors, naicsPages, upcomingRecompetes } from "../lib/data";
+import { meta } from "../lib/data";
 
 const description = "Sponsor a Recompetes page. Placements sit on the radar, agency pages, and NAICS pages that capture teams already use.";
 ---
@@ -15,10 +15,10 @@ const description = "Sponsor a Recompetes page. Placements sit on the radar, age
     <p class="lede">Recompetes is a new directory. Early sponsors are buying placement on pages built to rank for contractor names, agencies, and NAICS codes. There is no impression guarantee and no invented traffic number.</p>
   </div>
   <div class="wrap stats">
-    <div class="stat"><b class="num">{contractors.length}</b><span>Profiled contractor pages</span></div>
-    <div class="stat"><b class="num">{agencies.length}</b><span>Agency pages</span></div>
-    <div class="stat"><b class="num">{naicsPages.length}</b><span>NAICS pages</span></div>
-    <div class="stat"><b class="num">{upcomingRecompetes().length}</b><span>Awards on the radar</span></div>
+    <div class="stat"><b class="num">{(meta.counts?.profiled ?? 0).toLocaleString("en-US")}</b><span>Profiled contractor pages</span></div>
+    <div class="stat"><b class="num">{(meta.counts?.states ?? 0).toLocaleString("en-US")}</b><span>State pages</span></div>
+    <div class="stat"><b class="num">5</b><span>Set-aside pages</span></div>
+    <div class="stat"><b class="num">{(meta.counts?.recompetes ?? 0).toLocaleString("en-US")}</b><span>Awards on the radar</span></div>
   </div>
   <div class="wrap grid-3 section">
     {tiers.map((tier) => (

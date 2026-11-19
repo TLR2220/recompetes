@@ -1,12 +1,14 @@
 ---
 import Base from "../../layouts/Base.astro";
 import Badge from "../../components/Badge.astro";
-import { contractors, meta, profileOf } from "../../lib/data";
+import contractorsFile from "../../../data/contractors.json";
+import { meta, profileOf } from "../../lib/data";
 import { daysLabel, money, moneyFull, place, prettyDate, urgency } from "../../lib/format";
 import { absolute, href } from "../../lib/url";
 import type { Contractor } from "../../lib/types";
 
 export function getStaticPaths() {
+  const contractors = (contractorsFile as { contractors: Contractor[] }).contractors;
   return contractors.map((contractor) => ({
     params: { slug: contractor.slug },
     props: { contractor },

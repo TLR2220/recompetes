@@ -454,3 +454,34 @@ def horizon_label(days: int) -> str:
 
 def add_days(day: date, count: int) -> str:
     return (day + timedelta(days=count)).isoformat()
+
+
+SOCIO_TAGS = {"small", "8a", "sdvosb", "wosb", "hubzone"}
+
+
+def select_cohort(rows: list[dict], cap: int, socio_share: float = 0.45) -> list[dict]:
+    """Pick profile pages: a share of socioeconomic firms, then the largest remaining."""
+    ranked = sorted(rows, key=lambda row: int(row.get("amount") or 0), reverse=True)
+    quota = int(cap * socio_share)
+    chosen: list[dict] = []
+    seen: set[str] = set()
+    socio_n = 0
+
+    def add(row: dict) -> bool:
+        rid = str(row.get("recipient_id") or "")
+        if not rid or rid in seen:
+            return False
+        seen.add(rid)
+        chosen.append(row)
+        return True
+
+    for row in ranked:
+        if socio_n >= quota:
+            break
+        if set(row.get("tags") or []) & SOCIO_TAGS and add(row):
+            socio_n += 1
+    for row in ranked:
+        if len(chosen) >= cap:
+            break
+        add(row)
+    return chosen[:cap]

@@ -1,32 +1,21 @@
 ---
 import Base from "../../layouts/Base.astro";
 import SponsorSlot from "../../components/SponsorSlot.astro";
-import { agencies, contractors, recompetes, sponsors, tierRank } from "../../lib/data";
+import agenciesFile from "../../../data/agencies.json";
+import { sponsors } from "../../lib/data";
 import { daysLabel, money, prettyDate, urgency } from "../../lib/format";
 import { absolute, href } from "../../lib/url";
 import type { Agency } from "../../lib/types";
 
 export function getStaticPaths() {
+  const agencies = (agenciesFile as { agencies: Agency[] }).agencies;
   return agencies.map((agency) => ({ params: { slug: agency.slug }, props: { agency } }));
 }
 interface Props { agency: Agency; }
 const { agency } = Astro.props;
 const placement = sponsors.agencies[agency.slug] ?? null;
-const radar = recompetes.filter((row) => row.days >= 0 && (row.agency_slug === agency.slug || row.agency === agency.name));
-const pinned = contractors.filter((contractor) => {
-  const tier = tierRank(contractor.slug);
-  return tier < 3 && contractor.agencies.some((item) => item.slug === agency.slug || item.name === agency.name);
-});
-const seen = new Set(pinned.map((row) => row.name.toUpperCase()));
-const leaders = [
-  ...pinned.map((row) => ({
-    name: row.name,
-    slug: row.slug,
-    amount: row.agencies.find((item) => item.slug === agency.slug || item.name === agency.name)?.amount || row.total_obligations,
-    usaspending_url: row.usaspending_url,
-  })),
-  ...agency.contractors.filter((row) => !seen.has(row.name.toUpperCase())),
-];
+const radar = agency.recompetes || [];
+const leaders = agency.contractors;
 const description = `${agency.name} contract obligations, top prime contractors, and tracked awards coming to an end.`;
 const schema = {
   "@context": "https://schema.org",

@@ -1,0 +1,74 @@
+---
+import Base from "../../layouts/Base.astro";
+import statesFile from "../../../data/states.json";
+import { daysLabel, money, prettyDate, urgency } from "../../lib/format";
+import { absolute, href } from "../../lib/url";
+import type { RadarRow } from "../../lib/types";
+
+interface StatePage {
+  code: string;
+  name: string;
+  obligation: number;
+  contractor_count: number;
+  recompete_count: number;
+  contractors: { name: string; slug: string; amount: number; usaspending_url?: string; tags?: string[] }[];
+  recompetes: RadarRow[];
+}
+export function getStaticPaths() {
+  const states = (statesFile as { states: StatePage[] }).states;
+  return states.map((state) => ({ params: { code: state.code.toLowerCase() }, props: { state } }));
+}
+interface Props { state: StatePage; }
+const { state } = Astro.props;
+const description = `${state.name} federal contractors and recompetes. ${state.contractor_count} profiled firms and ${state.recompete_count} awards ending soon.`;
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: `${state.name} federal contractors`,
+  description,
+  url: absolute(`states/${state.code.toLowerCase()}/`),
+};
+---
+
+<Base title={`${state.name} federal contractors and recompetes`} description={description} schema={schema}>
+  <div class="wrap page-head">
+    <p class="crumbs"><a href={href()}>Home</a> / <a href={href("states/")}>States</a> / {state.name}</p>
+    <p class="eyebrow">{state.code}</p>
+    <h1>{state.name}</h1>
+    <p class="lede">{state.contractor_count.toLocaleString("en-US")} profiled contractors have work performed here or an address on file here. {state.recompete_count.toLocaleString("en-US")} tracked awards in this state end inside the radar window. {state.obligation ? `${money(state.obligation)} is the obligation total for firms addressed in ${state.name}, not the value of every award performed here.` : ""}</p>
+  </div>
+  <section class="wrap section">
+    <h2>Contractors</h2>
+    <div class="cards" style="margin-top:0.8rem;">
+      {state.contractors.map((row) => (
+        <article class="card">
+          <h3>{row.slug ? <a href={href(`contractors/${row.slug}/`)}>{row.name}</a> : row.name}</h3>
+          <div class="amount num">{money(row.amount)}</div>
+          {row.tags && row.tags.length > 0 && <div class="tags">{row.tags.map((tag) => <span class="tag">{tag}</span>)}</div>}
+        </article>
+      ))}
+    </div>
+  </section>
+  <section class="wrap section">
+    <h2>Recompetes</h2>
+    {state.recompetes.length ? (
+      <div class="panel" style="margin-top:0.8rem;">
+        <table>
+          <thead><tr><th>Contract</th><th>Incumbent</th><th>Agency</th><th>Obligated</th><th>End</th><th>Left</th></tr></thead>
+          <tbody>
+            {state.recompetes.map((row) => (
+              <tr data-end={row.end} data-urgency={urgency(row.days)}>
+                <td data-label="Contract"><div class="desc">{row.description}</div></td>
+                <td data-label="Incumbent">{row.slug ? <a href={href(`contractors/${row.slug}/`)}>{row.incumbent}</a> : row.incumbent}</td>
+                <td data-label="Agency">{row.agency}</td>
+                <td class="num" data-label="Obligated">{money(row.amount)}</td>
+                <td class="num" data-label="End">{prettyDate(row.end)}</td>
+                <td data-label="Left"><span class="days-pill"><span data-days-label>{daysLabel(row.days)}</span></span></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    ) : <p class="empty">No tracked award in this state ends inside the current horizon.</p>}
+  </section>
+</Base>

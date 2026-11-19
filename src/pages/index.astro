@@ -1,19 +1,24 @@
 ---
 import Base from "../layouts/Base.astro";
-import Badge from "../components/Badge.astro";
-import { agencies, contractors, meta, opportunities, profileOf, upcomingRecompetes } from "../lib/data";
-import { daysLabel, freshLabel, money, openNotice, prettyDate, urgency } from "../lib/format";
+import highlightsFile from "../../data/highlights.json";
+import { meta } from "../lib/data";
+import { daysLabel, freshLabel, money, prettyDate, urgency } from "../lib/format";
 import { absolute, href } from "../lib/url";
 import { tiers } from "../config";
+import type { RadarRow } from "../lib/types";
 
-const upcoming = upcomingRecompetes();
-const hero = [...upcoming].filter((row) => row.amount >= 25_000_000).slice(0, 3);
-const heroRows = hero.length ? hero : upcoming.slice(0, 3);
-const radar = upcoming.slice(0, 8);
-const notices = opportunities.filter((row) => openNotice(row.type)).slice(0, 5);
-const obligationTotal = contractors.reduce((sum, row) => sum + row.total_obligations, 0);
-const radarDollars = upcoming.reduce((sum, row) => sum + row.amount, 0);
-const description = "Free directory of federal prime contractors and the large awards coming to the end of their term. Incumbent, agency, obligated value, and end date — updated daily from USAspending and SAM.gov.";
+const highlights = highlightsFile as {
+  hero: RadarRow[];
+  radar: RadarRow[];
+  contractors: { name: string; slug: string; amount: number; state?: string }[];
+  notices: { title: string; agency: string; posted: string; link: string; type: string; naics?: string; set_aside?: string; deadline?: string }[];
+  agencies: { slug: string; name: string; amount: number }[];
+  states: { code: string; name: string; recompete_count: number; contractor_count: number }[];
+  set_asides: { id: string; label: string; contractor_count: number; recompete_count: number }[];
+};
+const counts = meta.counts ?? { profiled: 0, searchable: 0, recompetes: 0, states: 0, notices: 0 };
+const heroRows = highlights.hero.length ? highlights.hero : highlights.radar.slice(0, 3);
+const description = "Free directory of federal prime contractors, small businesses, and the awards coming to the end of their term. Updated daily from USAspending and SAM.gov.";
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -31,11 +36,11 @@ const schema = {
     {
       "@type": "ItemList",
       name: "Recompete Radar",
-      itemListElement: radar.map((row, index) => ({
+      itemListElement: highlights.radar.map((row, index) => ({
         "@type": "ListItem",
         position: index + 1,
         name: `${row.description} — ${row.incumbent}`,
-        url: absolute(`contractors/${row.slug}/`),
+        url: row.slug ? absolute(`contractors/${row.slug}/`) : absolute("recompetes/"),
       })),
     },
   ],
@@ -48,17 +53,17 @@ const schema = {
       <div>
         <p class="eyebrow">Federal contractor directory · Free</p>
         <h1>See the contracts before they come back to market.</h1>
-        <p class="lede">Recompetes tracks incumbents, agencies, and end dates on the largest prime awards, then lines them up against the newest SAM.gov notices. No login. Rebuilt every day from public data.</p>
+        <p class="lede">Recompetes tracks incumbents, agencies, and end dates across thousands of primes and small businesses, then lines them up against the newest SAM.gov notices. No login. The index grows every day.</p>
         <form class="search" action={href("search/")} method="get" role="search">
           <label class="sr-only" for="site-search">Search the directory</label>
-          <input id="site-search" name="q" placeholder="Contractor, agency, NAICS, or keyword" autocomplete="off" />
+          <input id="site-search" name="q" placeholder="Contractor, agency, NAICS, state, or keyword" autocomplete="off" />
           <button class="btn" type="submit">Search</button>
         </form>
         <p class="hint">Press <kbd>/</kbd> to search · {freshLabel(meta.generated_at)} · Obligations {meta.labels.obligations_window}</p>
       </div>
       <div class="hero-stack" aria-label="Soonest large awards">
         {heroRows.map((row) => (
-          <a class="pulse-card" href={href(`contractors/${row.slug}/`)} data-end={row.end} data-urgency={urgency(row.days)}>
+          <a class="pulse-card" href={row.slug ? href(`contractors/${row.slug}/`) : href("recompetes/")} data-end={row.end} data-urgency={urgency(row.days)}>
             <div class="days-xl num"><span data-days-label>{daysLabel(row.days)}</span></div>
             <div>
               <strong>{row.description}</strong>
@@ -70,10 +75,10 @@ const schema = {
       </div>
     </div>
     <div class="wrap stats">
-      <div class="stat"><b class="num">{contractors.length}</b><span>Prime contractors profiled</span></div>
-      <div class="stat"><b class="num">{money(obligationTotal)}</b><span>Obligated to them, {meta.labels.obligations_window}</span></div>
-      <div class="stat"><b class="num">{upcoming.length}</b><span>Awards ending within {meta.labels.recompete_horizon}</span></div>
-      <div class="stat"><b class="num">{money(radarDollars)}</b><span>Obligated on those ending awards</span></div>
+      <div class="stat"><b class="num">{counts.profiled.toLocaleString("en-US")}</b><span>Contractor profiles</span></div>
+      <div class="stat"><b class="num">{counts.searchable.toLocaleString("en-US")}</b><span>Names in the searchable index</span></div>
+      <div class="stat"><b class="num">{counts.recompetes.toLocaleString("en-US")}</b><span>Awards ending within {meta.labels.recompete_horizon}</span></div>
+      <div class="stat"><b class="num">{counts.notices.toLocaleString("en-US")}</b><span>Active SAM notices in the feed</span></div>
     </div>
   </section>
 
@@ -82,45 +87,48 @@ const schema = {
       <div class="section-head">
         <div>
           <p class="eyebrow">Recompete Radar</p>
-          <h2>Large awards coming to an end.</h2>
+          <h2>Awards coming to an end.</h2>
         </div>
         <a class="btn-quiet" href={href("recompetes/")}>Open the full radar</a>
       </div>
-      <div data-filter-root>
-        <div class="chips" role="group" aria-label="Horizon">
-          <button type="button" data-horizon-btn="90">90 days</button>
-          <button type="button" data-horizon-btn="180" aria-pressed="true">180 days</button>
-          <button type="button" data-horizon-btn="365">12 months</button>
-          <button type="button" data-horizon-btn="540">18 months</button>
-        </div>
-        <p class="count-line" data-filter-count style="margin:0.6rem 0;"></p>
-        <div class="panel">
-          <table class="radar">
-            <thead>
-              <tr>
-                <th>Contract</th>
-                <th>Incumbent</th>
-                <th>Agency</th>
-                <th>Obligated</th>
-                <th>Current end</th>
-                <th>Left</th>
+      <div class="panel">
+        <table>
+          <thead>
+            <tr><th>Contract</th><th>Incumbent</th><th>Agency</th><th>Obligated</th><th>Current end</th><th>Left</th></tr>
+          </thead>
+          <tbody>
+            {highlights.radar.map((row) => (
+              <tr data-end={row.end} data-urgency={urgency(row.days)}>
+                <td data-label="Contract"><div class="desc">{row.description}</div></td>
+                <td data-label="Incumbent">{row.slug ? <a href={href(`contractors/${row.slug}/`)}>{row.incumbent}</a> : row.incumbent}</td>
+                <td data-label="Agency">{row.agency}</td>
+                <td class="num" data-label="Obligated">{money(row.amount)}</td>
+                <td class="num" data-label="Current end">{prettyDate(row.end)}</td>
+                <td data-label="Left"><span class="days-pill"><span data-days-label>{daysLabel(row.days)}</span></span></td>
               </tr>
-            </thead>
-            <tbody>
-              {radar.map((row) => (
-                <tr data-item data-end={row.end} data-days={row.days} data-amount={row.amount} data-text={`${row.description} ${row.incumbent} ${row.agency}`} data-urgency={urgency(row.days)}>
-                  <td data-label="Contract"><div class="desc">{row.description}</div><div class="meta-line">{row.type}{row.award_id ? ` · ${row.award_id}` : ""}</div></td>
-                  <td data-label="Incumbent"><a href={href(`contractors/${row.slug}/`)}>{row.incumbent}</a></td>
-                  <td data-label="Agency">{row.agency_slug ? <a href={href(`agencies/${row.agency_slug}/`)}>{row.agency}</a> : row.agency}</td>
-                  <td class="num" data-label="Obligated">{money(row.amount)}</td>
-                  <td class="num" data-label="Current end">{prettyDate(row.end)}</td>
-                  <td data-label="Left"><span class="days-pill"><span data-days-label>{daysLabel(row.days)}</span></span></td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Set-asides</p>
+          <h2>Small business, 8(a), SDVOSB, WOSB, HUBZone.</h2>
         </div>
-        <p class="empty" data-filter-empty hidden>Nothing in this window on the homepage slice. Open the full radar for every tracked award.</p>
+        <a class="btn-quiet" href={href("set-asides/")}>All set-aside pages</a>
+      </div>
+      <div class="cards">
+        {highlights.set_asides.map((item) => (
+          <a class="card" href={href(`set-asides/${item.id}/`)}>
+            <h3>{item.label}</h3>
+            <p class="meta-line">{item.contractor_count.toLocaleString("en-US")} profiled firms · {item.recompete_count.toLocaleString("en-US")} tracked recompetes</p>
+          </a>
+        ))}
       </div>
     </div>
   </section>
@@ -136,14 +144,13 @@ const schema = {
           <a class="btn-quiet" href={href("opportunities/")}>All notices</a>
         </div>
         <div class="stack">
-          {notices.map((notice) => (
+          {highlights.notices.map((notice) => (
             <a class="notice" href={notice.link} target="_blank" rel="noopener noreferrer">
               <header>
                 <h3>{notice.title}</h3>
                 <span class="tag">{notice.type}</span>
               </header>
-              <p class="meta-line">{notice.agency}{notice.naics ? ` · NAICS ${notice.naics}` : ""} · Posted {prettyDate(notice.posted)}</p>
-              <p class="meta-line">{notice.set_aside}{notice.deadline ? ` · Respond by ${prettyDate(notice.deadline)}` : ""}</p>
+              <p class="meta-line">{notice.agency} · Posted {prettyDate(notice.posted)}</p>
             </a>
           ))}
         </div>
@@ -151,16 +158,16 @@ const schema = {
       <div>
         <div class="section-head">
           <div>
-            <p class="eyebrow">Agencies</p>
-            <h2>Where the money sits.</h2>
+            <p class="eyebrow">Where the work is</p>
+            <h2>States with the most tracked ends.</h2>
           </div>
+          <a class="btn-quiet" href={href("states/")}>All states</a>
         </div>
         <div class="stack">
-          {agencies.slice(0, 6).map((agency) => (
-            <a class="card" href={href(`agencies/${agency.slug}/`)}>
-              <h3>{agency.name}</h3>
-              <div class="amount num">{money(agency.amount)}</div>
-              <p class="meta-line">Contract obligations, {meta.labels.obligations_window}</p>
+          {highlights.states.map((state) => (
+            <a class="card" href={href(`states/${state.code.toLowerCase()}/`)}>
+              <h3>{state.name}</h3>
+              <p class="meta-line">{state.recompete_count.toLocaleString("en-US")} recompetes · {state.contractor_count.toLocaleString("en-US")} contractors</p>
             </a>
           ))}
         </div>
@@ -172,24 +179,41 @@ const schema = {
     <div class="wrap">
       <div class="section-head">
         <div>
-          <p class="eyebrow">Contractors</p>
-          <h2>The primes we profile.</h2>
+          <p class="eyebrow">Directory</p>
+          <h2>Profiles, not just a rank.</h2>
         </div>
-        <a class="btn-quiet" href={href("contractors/")}>Browse the directory</a>
+        <a class="btn-quiet" href={href("contractors/")}>Browse contractors</a>
       </div>
       <div class="cards three">
-        {contractors.slice(0, 6).map((contractor) => {
-          const placement = profileOf(contractor.slug);
-          return (
-            <a class="card" href={href(`contractors/${contractor.slug}/`)}>
-              <Badge tier={placement?.tier} />
-              <h3>{contractor.name}</h3>
-              <div class="amount num">{money(contractor.total_obligations)}</div>
-              <p class="meta-line">{[contractor.location.city, contractor.location.state].filter(Boolean).join(", ") || "Address on file varies"}</p>
-              {contractor.next_recompete && <p class="meta-line">Next tracked end date {prettyDate(contractor.next_recompete.end)}</p>}
-            </a>
-          );
-        })}
+        {highlights.contractors.map((contractor) => (
+          <a class="card" href={href(`contractors/${contractor.slug}/`)}>
+            <h3>{contractor.name}</h3>
+            <div class="amount num">{money(contractor.amount)}</div>
+            <p class="meta-line">{contractor.state || "Address on the USAspending record"}</p>
+          </a>
+        ))}
+      </div>
+      <p class="meta-line" style="margin-top:0.8rem;">The other {Math.max(0, counts.searchable - counts.profiled).toLocaleString("en-US")} recipients are in search, linked through to USAspending until a profile is built.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Agencies</p>
+          <h2>Where the money sits.</h2>
+        </div>
+        <a class="btn-quiet" href={href("agencies/")}>All agencies</a>
+      </div>
+      <div class="cards three">
+        {highlights.agencies.map((agency) => (
+          <a class="card" href={href(`agencies/${agency.slug}/`)}>
+            <h3>{agency.name}</h3>
+            <div class="amount num">{money(agency.amount)}</div>
+            <p class="meta-line">Contract obligations, {meta.labels.obligations_window}</p>
+          </a>
+        ))}
       </div>
     </div>
   </section>
@@ -200,7 +224,6 @@ const schema = {
         <div>
           <p class="eyebrow">The directory stays free</p>
           <h2>Companies pay to be found. The data does not.</h2>
-          <p>Every listing starts from the public record. Claim it, feature it, or sponsor a page when you want capture teams to see you first.</p>
         </div>
       </div>
       <div class="grid-3">
@@ -216,26 +239,4 @@ const schema = {
       <p style="margin-top:1rem;"><a class="btn" href={href("claim/")}>See placements and pricing</a></p>
     </div>
   </section>
-
-  <section class="section">
-    <div class="wrap panel" style="padding:1.2rem 1.3rem;">
-      <div class="split" style="align-items:center;">
-        <div>
-          <p class="eyebrow">Alerts</p>
-          <h2>A short list of awards about to end.</h2>
-          <p class="lede" style="font-size:1.02rem;">Tell us the horizon and the floor. The digest is the radar, in your inbox, once delivery is connected.</p>
-        </div>
-        <form action={href("alerts/")} method="get" class="stack">
-          <label class="sr-only" for="alert-email">Work email</label>
-          <input id="alert-email" name="email" type="email" required placeholder="Work email" autocomplete="email" />
-          <button class="btn" type="submit">Get recompete alerts</button>
-        </form>
-      </div>
-    </div>
-  </section>
 </Base>
-
-<script>
-  import { bindFilters } from "../scripts/filters";
-  document.querySelectorAll<HTMLElement>("[data-filter-root]").forEach((root) => bindFilters(root));
-</script>

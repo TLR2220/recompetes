@@ -1,72 +1,49 @@
 ---
 import Base from "../../layouts/Base.astro";
-import Badge from "../../components/Badge.astro";
-import { contractors, meta, profileOf, tierRank } from "../../lib/data";
-import { money, place, prettyDate } from "../../lib/format";
+import { meta } from "../../lib/data";
 import { href } from "../../lib/url";
 
-const ordered = [...contractors].sort((a, b) => tierRank(a.slug) - tierRank(b.slug) || b.total_obligations - a.total_obligations);
-const states = [...new Set(contractors.map((row) => row.location.state).filter(Boolean))].sort();
-const description = `Profiles of the largest federal prime contractors: obligations, agencies, NAICS, and awards ending within ${meta.labels.recompete_horizon}.`;
+const counts = meta.counts ?? { profiled: 0, searchable: 0, recompetes: 0, states: 0, notices: 0 };
+const description = `${counts.profiled.toLocaleString("en-US")} federal contractor profiles, with ${(counts.searchable - counts.profiled).toLocaleString("en-US")} more names searchable. Obligations from ${meta.labels.obligations_window}.`;
 ---
 
 <Base title="Federal contractor directory" description={description}>
   <div class="wrap page-head">
     <p class="crumbs"><a href={href()}>Home</a> / Contractors</p>
     <p class="eyebrow">Directory</p>
-    <h1>The primes, with the work attached.</h1>
-    <p class="lede">These {contractors.length} companies are the largest prime recipients of contract obligations from {meta.labels.obligations_window}. Each profile lists their biggest awards with an action since {meta.labels.awards_since}, plus anything in that set ending inside {meta.labels.recompete_horizon}. Search finds a wider set of names that do not have a full profile yet.</p>
+    <h1>{counts.profiled.toLocaleString("en-US")} profiles. {counts.searchable.toLocaleString("en-US")} names.</h1>
+    <p class="lede">Profiles cover the largest primes and a deep cut of small and socioeconomic businesses, ranked by contract obligations from {meta.labels.obligations_window}. Everyone else in the index is searchable and opens on USAspending until a profile is added. The daily job keeps growing the list.</p>
   </div>
-  <div class="wrap section" data-filter-root>
+  <div class="wrap section" id="directory-app" data-base={import.meta.env.BASE_URL} data-version={meta.generated_at}>
     <div class="filters">
-      <label class="field"><span>Search</span><input data-filter-q placeholder="Name, UEI, agency, NAICS" /></label>
-      <label class="field"><span>State</span>
-        <select data-filter-state>
-          <option value="">All states</option>
-          {states.map((state) => <option value={state}>{state}</option>)}
+      <label class="field"><span>Search profiles</span><input data-filter-q placeholder="Name, UEI, agency" /></label>
+      <label class="field"><span>State</span><select data-filter-state><option value="">All states</option></select></label>
+      <label class="field"><span>Set-aside</span>
+        <select data-filter-setaside>
+          <option value="">Any</option>
+          <option value="small">Small business</option>
+          <option value="8a">8(a)</option>
+          <option value="sdvosb">SDVOSB</option>
+          <option value="wosb">WOSB</option>
+          <option value="hubzone">HUBZone</option>
         </select>
       </label>
       <label class="field"><span>Sort</span>
         <select data-filter-sort>
-          <option value="">Featured, then obligations</option>
-          <option value="amount-desc">Obligations</option>
-          <option value="name-asc">Name</option>
-          <option value="days-asc">Next end date</option>
+          <option value="amount">Obligations</option>
+          <option value="name">Name</option>
         </select>
       </label>
-      <p class="count-line" data-filter-count></p>
     </div>
-    <div class="cards three">
-      {ordered.map((contractor) => {
-        const placement = profileOf(contractor.slug);
-        const text = `${contractor.name} ${contractor.uei} ${contractor.location.state} ${contractor.agencies.map((a) => a.name).join(" ")} ${contractor.naics.map((n) => `${n.code} ${n.name}`).join(" ")}`;
-        return (
-          <a
-            class="card"
-            href={href(`contractors/${contractor.slug}/`)}
-            data-item
-            data-text={text}
-            data-state={contractor.location.state}
-            data-amount={contractor.total_obligations}
-            data-name={contractor.name}
-            data-days={contractor.next_recompete?.days ?? 99999}
-          >
-            <Badge tier={placement?.tier} />
-            <h3>{contractor.name}</h3>
-            <div class="amount num">{money(contractor.total_obligations)}</div>
-            <p class="meta-line">{place(contractor.location) || "Address on the USAspending record"}</p>
-            <p class="meta-line">{contractor.naics[0] ? `${contractor.naics[0].code} ${contractor.naics[0].name}` : "NAICS mix varies"}</p>
-            {contractor.next_recompete && <p class="meta-line">Next tracked end {prettyDate(contractor.next_recompete.end)} · {money(contractor.next_recompete.amount)}</p>}
-          </a>
-        );
-      })}
-    </div>
-    <p class="empty" data-filter-empty hidden>No profiled contractor matches. Try the full search for names we index but do not profile.</p>
-    <p style="margin-top:1rem;"><a href={href("search/")}>Search the wider name index</a></p>
+    <p class="count-line" data-dir-status>Loading profiles…</p>
+    <div class="cards three" data-dir-grid></div>
+    <div class="pager" data-dir-pager></div>
+    <p style="margin-top:0.6rem;"><a href={href("search/")}>Search the wider index, including firms without a profile yet</a></p>
   </div>
 </Base>
 
 <script>
-  import { bindFilters } from "../../scripts/filters";
-  document.querySelectorAll<HTMLElement>("[data-filter-root]").forEach((root) => bindFilters(root));
+  import { mountDirectory } from "../../scripts/directory";
+  const root = document.getElementById("directory-app");
+  if (root) mountDirectory(root);
 </script>

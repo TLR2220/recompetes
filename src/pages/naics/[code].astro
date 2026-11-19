@@ -1,24 +1,21 @@
 ---
 import Base from "../../layouts/Base.astro";
 import SponsorSlot from "../../components/SponsorSlot.astro";
-import { contractors, naicsPages, recompetes, sponsors, tierRank } from "../../lib/data";
+import naicsFile from "../../../data/naics.json";
+import { sponsors } from "../../lib/data";
 import { daysLabel, money, prettyDate, urgency } from "../../lib/format";
 import { absolute, href } from "../../lib/url";
 import type { NaicsPage } from "../../lib/types";
 
 export function getStaticPaths() {
+  const naicsPages = (naicsFile as { naics: NaicsPage[] }).naics;
   return naicsPages.map((entry) => ({ params: { code: entry.code }, props: { entry } }));
 }
 interface Props { entry: NaicsPage; }
 const { entry } = Astro.props;
 const placement = sponsors.naics[entry.code] ?? null;
-const radar = recompetes.filter((row) => row.days >= 0 && row.naics === entry.code);
-const pinned = contractors.filter((contractor) => tierRank(contractor.slug) < 3 && contractor.naics.some((row) => row.code === entry.code));
-const seen = new Set(pinned.map((row) => row.name.toUpperCase()));
-const leaders = [
-  ...pinned.map((row) => ({ name: row.name, slug: row.slug, amount: row.naics.find((item) => item.code === entry.code)?.amount || row.total_obligations, usaspending_url: row.usaspending_url })),
-  ...entry.contractors.filter((row) => !seen.has(row.name.toUpperCase())),
-];
+const radar = entry.recompetes || [];
+const leaders = entry.contractors;
 const description = `NAICS ${entry.code} ${entry.name}: federal contract obligations, top contractors, and recompetes.`;
 const schema = {
   "@context": "https://schema.org",

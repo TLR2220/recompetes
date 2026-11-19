@@ -83,6 +83,14 @@ class TransformTests(unittest.TestCase):
     def test_sector(self):
         self.assertEqual(rd.sector_for("541330")[1], "Professional, Scientific, and Technical Services")
 
+    def test_cohort_reserves_room_for_socioeconomic_firms(self):
+        rows = [{"recipient_id": f"g{i}", "amount": 1000 - i, "tags": []} for i in range(10)]
+        rows += [{"recipient_id": f"s{i}", "amount": 50 - i, "tags": ["small"]} for i in range(6)]
+        picked = rd.select_cohort(rows, cap=8, socio_share=0.5)
+        socio = [row for row in picked if "small" in row["tags"]]
+        self.assertEqual(len(picked), 8)
+        self.assertGreaterEqual(len(socio), 4)
+
 
 if __name__ == "__main__":
     unittest.main()

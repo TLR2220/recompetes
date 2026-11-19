@@ -1,0 +1,28 @@
+---
+import Base from "../../layouts/Base.astro";
+import file from "../../../data/setasides.json";
+import { money } from "../../lib/format";
+import { href } from "../../lib/url";
+
+const pages = (file as { set_asides: { id: string; label: string; lede: string; contractor_count: number; recompete_count: number; notice_count: number; obligation: number }[] }).set_asides;
+const description = "Federal contractor profiles and recompetes for small business, 8(a), SDVOSB, WOSB, and HUBZone firms.";
+---
+
+<Base title="Set-aside directory" description={description}>
+  <div class="wrap page-head">
+    <p class="crumbs"><a href={href()}>Home</a> / Set-asides</p>
+    <p class="eyebrow">Socioeconomic</p>
+    <h1>The pages capture teams actually search for.</h1>
+    <p class="lede">Each page lists profiled firms USAspending reports in that business category, the tracked awards they hold that are ending, and current SAM.gov notices carrying that set-aside.</p>
+  </div>
+  <div class="wrap cards section">
+    {pages.map((page) => (
+      <a class="card" href={href(`set-asides/${page.id}/`)}>
+        <h3>{page.label}</h3>
+        <div class="amount num">{money(page.obligation)}</div>
+        <p class="meta-line">{page.contractor_count.toLocaleString("en-US")} firms · {page.recompete_count.toLocaleString("en-US")} recompetes · {page.notice_count.toLocaleString("en-US")} notices</p>
+        <p class="meta-line">{page.lede}</p>
+      </a>
+    ))}
+  </div>
+</Base>

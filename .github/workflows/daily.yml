@@ -36,6 +36,11 @@ jobs:
 
       - name: Refresh public contract data
         if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        env:
+          PROFILE_BATCH: "250"
+          ALL_PAGES: "5"
+          SOCIO_PAGES: "3"
+          WORKERS: "8"
         run: python3 scripts/update_data.py
 
       - name: Commit snapshot
@@ -43,7 +48,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/meta.json data/contractors.json data/agencies.json data/naics.json data/recompetes.json data/opportunities.json data/index.json
+          git add data/meta.json data/contractors.json data/agencies.json data/naics.json data/recompetes.json data/opportunities.json data/index.json data/highlights.json data/states.json data/setasides.json data/cache
           if git diff --cached --quiet; then
             echo "No data changes"
           else

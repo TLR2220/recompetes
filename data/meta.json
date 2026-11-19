@@ -1,36 +1,44 @@
 {
-  "generated_at": "2026-11-19T08:39:28.407021+00:00",
+  "generated_at": "2026-11-19T09:23:51.352331+00:00",
   "labels": {
     "obligations_window": "Oct 1, 2023 – Nov 19, 2026",
-    "awards_since": "Oct 1, 2018",
+    "awards_since": "Oct 1, 2019",
     "recompete_horizon": "18 months",
     "recompete_horizon_days": 540,
-    "recompete_min": 5000000,
+    "recompete_min": 1000000,
     "past_days": 14
   },
+  "counts": {
+    "profiled": 2033,
+    "searchable": 6728,
+    "recompetes": 3699,
+    "recompetes_all": 3752,
+    "states": 56,
+    "notices": 905
+  },
   "methodology": {
-    "contractors": "Largest prime recipients by contract obligations since the window start.",
-    "awards": "Largest definitive contracts, delivery orders, BPA calls, and IDVs with an action since the awards-since date.",
-    "recompetes": "Those awards whose current end date, or last date to order, falls inside the horizon and clears the minimum obligated amount.",
-    "opportunities": "Newest active notices in the public SAM.gov Contract Opportunities extract."
+    "contractors": "Pre-rendered pages are a mix of the largest primes and socioeconomic firms (small business, 8(a), SDVOSB, WOSB, HUBZone). Everyone else in the index is searchable and links to USAspending.",
+    "awards": "Up to eight of each profiled contractor's largest definitive contracts, delivery orders, and BPA calls with an action since Oct 1, 2019.",
+    "recompetes": "Those awards with at least $1 million obligated and a current end date inside 18 months. Place of performance is the award's reported state, otherwise the contractor's address.",
+    "opportunities": "Active SAM.gov notices, merged forward each day and capped so the file stays small."
   },
   "sources": {
     "usaspending": {
       "ok": true,
-      "fetched_at": "2026-11-19T08:39:28.146024+00:00",
+      "fetched_at": "2026-11-19T09:23:51.352429+00:00",
       "error": null,
       "kept_previous": false,
-      "contractors": 35,
-      "searchable": 234,
-      "recompetes": 116,
+      "contractors": 2033,
+      "searchable": 6728,
+      "recompetes": 3699,
       "failures": 0
     },
     "sam": {
       "ok": true,
-      "fetched_at": "2026-11-19T08:39:28.407007+00:00",
+      "fetched_at": "2026-11-19T09:19:56.670982+00:00",
       "error": null,
       "kept_previous": false,
-      "notices": 400,
+      "notices": 905,
       "extract_modified": "Thu, 19 Nov 2026 04:30:19 GMT"
     }
   }

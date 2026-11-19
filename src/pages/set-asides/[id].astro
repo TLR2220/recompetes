@@ -1,0 +1,81 @@
+---
+import Base from "../../layouts/Base.astro";
+import file from "../../../data/setasides.json";
+import { daysLabel, money, prettyDate, urgency } from "../../lib/format";
+import { absolute, href } from "../../lib/url";
+import type { RadarRow } from "../../lib/types";
+
+interface Page {
+  id: string;
+  label: string;
+  lede: string;
+  contractor_count: number;
+  recompete_count: number;
+  notice_count: number;
+  obligation: number;
+  contractors: { name: string; slug: string; amount: number; state?: string; tags?: string[] }[];
+  recompetes: RadarRow[];
+  notices: { title: string; agency: string; posted: string; link: string; type: string }[];
+}
+export function getStaticPaths() {
+  const pages = (file as { set_asides: Page[] }).set_asides;
+  return pages.map((page) => ({ params: { id: page.id }, props: { page } }));
+}
+interface Props { page: Page; }
+const { page } = Astro.props;
+const description = `${page.label} federal contractors, recompetes, and SAM.gov notices. ${page.contractor_count} profiled firms.`;
+---
+
+<Base title={`${page.label} contractors and recompetes`} description={description} schema={{ "@context": "https://schema.org", "@type": "CollectionPage", name: page.label, description, url: absolute(`set-asides/${page.id}/`) }}>
+  <div class="wrap page-head">
+    <p class="crumbs"><a href={href()}>Home</a> / <a href={href("set-asides/")}>Set-asides</a> / {page.label}</p>
+    <p class="eyebrow">Set-aside</p>
+    <h1>{page.label}</h1>
+    <p class="lede">{page.lede} {money(page.obligation)} in reported obligations across {page.contractor_count.toLocaleString("en-US")} profiled firms. Business type comes from the USAspending recipient record. Solicitation set-asides come from SAM.gov.</p>
+  </div>
+  <section class="wrap section">
+    <h2>Contractors</h2>
+    <div class="cards" style="margin-top:0.8rem;">
+      {page.contractors.map((row) => (
+        <article class="card">
+          <h3>{row.slug ? <a href={href(`contractors/${row.slug}/`)}>{row.name}</a> : row.name}</h3>
+          <div class="amount num">{money(row.amount)}</div>
+          <p class="meta-line">{row.state || ""}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+  <section class="wrap section">
+    <h2>Recompetes held by these firms</h2>
+    {page.recompetes.length ? (
+      <div class="panel" style="margin-top:0.8rem;">
+        <table>
+          <thead><tr><th>Contract</th><th>Incumbent</th><th>Agency</th><th>Obligated</th><th>End</th><th>Left</th></tr></thead>
+          <tbody>
+            {page.recompetes.map((row) => (
+              <tr data-end={row.end} data-urgency={urgency(row.days)}>
+                <td data-label="Contract"><div class="desc">{row.description}</div></td>
+                <td data-label="Incumbent">{row.slug ? <a href={href(`contractors/${row.slug}/`)}>{row.incumbent}</a> : row.incumbent}</td>
+                <td data-label="Agency">{row.agency}{row.state ? ` · ${row.state}` : ""}</td>
+                <td class="num" data-label="Obligated">{money(row.amount)}</td>
+                <td class="num" data-label="End">{prettyDate(row.end)}</td>
+                <td data-label="Left"><span class="days-pill"><span data-days-label>{daysLabel(row.days)}</span></span></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    ) : <p class="empty">None of the tracked awards for these firms end inside the horizon.</p>}
+  </section>
+  <section class="wrap section">
+    <h2>Open notices</h2>
+    <div class="stack" style="margin-top:0.8rem;">
+      {page.notices.length ? page.notices.map((notice) => (
+        <a class="notice" href={notice.link} target="_blank" rel="noopener noreferrer">
+          <header><h3>{notice.title}</h3><span class="tag">{notice.type}</span></header>
+          <p class="meta-line">{notice.agency} · Posted {prettyDate(notice.posted)}</p>
+        </a>
+      )) : <p class="empty">No current notice in this snapshot uses this set-aside.</p>}
+    </div>
+  </section>
+</Base>

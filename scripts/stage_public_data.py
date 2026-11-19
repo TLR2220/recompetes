@@ -18,6 +18,9 @@ NEEDED = [
     "opportunities.json",
     "index.json",
     "sponsors.json",
+    "highlights.json",
+    "states.json",
+    "setasides.json",
 ]
 
 

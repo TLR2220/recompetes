@@ -1,6 +1,10 @@
 ---
 import Base from "../../layouts/Base.astro";
-import { meta, opportunities } from "../../lib/data";
+import opportunitiesFile from "../../../data/opportunities.json";
+import { meta } from "../../lib/data";
+import type { Opportunity } from "../../lib/types";
+
+const opportunities = (opportunitiesFile as { opportunities: Opportunity[] }).opportunities;
 import { openNotice, prettyDate } from "../../lib/format";
 import { href } from "../../lib/url";
 
@@ -54,7 +58,7 @@ const description = "Latest active contract notices from the public SAM.gov Cont
       <p class="count-line" data-filter-count></p>
     </div>
     <div class="stack">
-      {opportunities.map((notice) => (
+      {opportunities.slice(0, 120).map((notice) => (
         <a
           class="notice"
           href={notice.link}

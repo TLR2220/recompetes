@@ -5,6 +5,7 @@ interface SlimContractor {
   state: string;
   amount: number;
   profiled: boolean;
+  tags?: string[];
   top_naics: string;
   top_agency: string;
   usaspending_url: string;
@@ -85,7 +86,7 @@ export async function runSearch(root: HTMLElement): Promise<void> {
       return;
     }
     const groups: string[] = [];
-    const firmHits = contractors.filter((row) => includes(q, row.name, row.uei, row.state, row.top_naics, row.top_agency)).slice(0, 12);
+    const firmHits = contractors.filter((row) => includes(q, row.name, row.uei, row.state, row.top_naics, row.top_agency, ...(row.tags || []))).slice(0, 15);
     const agencyHits = agencies.filter((row) => includes(q, row.name, row.code)).slice(0, 8);
     const naicsHits = naics.filter((row) => includes(q, row.code, row.name, row.sector)).slice(0, 8);
     const radarHits = recompetes.filter((row) => includes(q, row.incumbent, row.description, row.agency, row.naics, row.award_id)).slice(0, 8);

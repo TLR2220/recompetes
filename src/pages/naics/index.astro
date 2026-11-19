@@ -1,6 +1,10 @@
 ---
 import Base from "../../layouts/Base.astro";
-import { meta, naicsPages } from "../../lib/data";
+import naicsFile from "../../../data/naics.json";
+import { meta } from "../../lib/data";
+import type { NaicsPage } from "../../lib/types";
+
+const naicsPages = (naicsFile as { naics: NaicsPage[] }).naics;
 import { money } from "../../lib/format";
 import { href } from "../../lib/url";
 
