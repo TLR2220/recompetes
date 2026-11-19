@@ -135,10 +135,10 @@ p { margin: 0; }
 .site-nav a {
   text-decoration: none;
   color: var(--muted);
-  padding: 0.4rem 0.7rem;
+  padding: 0.35rem 0.5rem;
   border-radius: 999px;
   white-space: nowrap;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
 }
 .site-nav a[aria-current="page"],
 .site-nav a:hover { color: var(--ink); background: var(--bg-elev); }
