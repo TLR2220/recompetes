@@ -58,16 +58,19 @@ jobs:
 
       - name: Configure GitHub Pages
         id: pages
+        continue-on-error: true
         uses: actions/configure-pages@v5
 
       - name: Resolve site URL and base path
         id: site
         run: |
+          # Repository variables win. Otherwise publish the GitHub Pages project site.
           BASE="${{ vars.BASE_PATH }}"
           SITE="${{ vars.SITE_URL }}"
           if [ -z "$BASE" ]; then BASE="${{ steps.pages.outputs.base_path }}"; fi
           if [ -z "$SITE" ]; then SITE="${{ steps.pages.outputs.origin }}"; fi
-          if [ -z "$BASE" ]; then BASE="/"; fi
+          if [ -z "$BASE" ] || [ "$BASE" = "/" ]; then BASE="/recompetes"; fi
+          if [ -z "$SITE" ] || [ "$SITE" = "https://tlr2220.github.io" ]; then SITE="https://tlr2220.github.io/recompetes"; fi
           echo "base=$BASE" >> "$GITHUB_OUTPUT"
           echo "site=$SITE" >> "$GITHUB_OUTPUT"
 
