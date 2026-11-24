@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T00:05:26.675136+00:00",
+  "generated_at": "2026-11-24T22:37:46.731176+00:00",
   "labels": {
     "obligations_window": "Oct 1, 2023 – Nov 24, 2026",
     "awards_since": "Oct 1, 2019",
@@ -10,7 +10,7 @@
   },
   "counts": {
     "profiled": 2758,
-    "searchable": 11169,
+    "searchable": 12415,
     "recompetes": 4914,
     "recompetes_all": 5004,
     "states": 56,
@@ -25,21 +25,21 @@
   "sources": {
     "usaspending": {
       "ok": true,
-      "fetched_at": "2026-11-24T00:05:26.675228+00:00",
+      "fetched_at": "2026-11-24T22:37:46.731267+00:00",
       "error": null,
       "kept_previous": false,
       "contractors": 2758,
-      "searchable": 11169,
+      "searchable": 12415,
       "recompetes": 4914,
       "failures": 0
     },
     "sam": {
       "ok": true,
-      "fetched_at": "2026-11-24T00:05:16.030688+00:00",
+      "fetched_at": "2026-11-24T22:37:31.105876+00:00",
       "error": null,
       "kept_previous": false,
       "notices": 1800,
-      "extract_modified": "Mon, 23 Nov 2026 04:30:18 GMT"
+      "extract_modified": "Tue, 24 Nov 2026 04:30:19 GMT"
     }
   }
 }
