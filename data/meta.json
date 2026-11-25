@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-24T22:37:46.731176+00:00",
+  "generated_at": "2026-11-25T21:50:37.251706+00:00",
   "labels": {
-    "obligations_window": "Oct 1, 2023 – Nov 24, 2026",
+    "obligations_window": "Oct 1, 2023 – Nov 25, 2026",
     "awards_since": "Oct 1, 2019",
     "recompete_horizon": "18 months",
     "recompete_horizon_days": 540,
@@ -10,9 +10,9 @@
   },
   "counts": {
     "profiled": 2758,
-    "searchable": 12415,
-    "recompetes": 4914,
-    "recompetes_all": 5004,
+    "searchable": 13345,
+    "recompetes": 4909,
+    "recompetes_all": 5003,
     "states": 56,
     "notices": 1800
   },
@@ -25,21 +25,21 @@
   "sources": {
     "usaspending": {
       "ok": true,
-      "fetched_at": "2026-11-24T22:37:46.731267+00:00",
+      "fetched_at": "2026-11-25T21:50:37.251806+00:00",
       "error": null,
       "kept_previous": false,
       "contractors": 2758,
-      "searchable": 12415,
-      "recompetes": 4914,
+      "searchable": 13345,
+      "recompetes": 4909,
       "failures": 0
     },
     "sam": {
       "ok": true,
-      "fetched_at": "2026-11-24T22:37:31.105876+00:00",
+      "fetched_at": "2026-11-25T21:50:28.841518+00:00",
       "error": null,
       "kept_previous": false,
       "notices": 1800,
-      "extract_modified": "Tue, 24 Nov 2026 04:30:19 GMT"
+      "extract_modified": "Wed, 25 Nov 2026 04:30:19 GMT"
     }
   }
 }
