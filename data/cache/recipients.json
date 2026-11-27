@@ -11,7 +11,7 @@
       "recipient_id": "779b3e3e-364f-7cbc-28a4-a2b4484b86f4-C",
       "name": "LOCKHEED MARTIN CORPORATION",
       "uei": "XFJMYSYFJEK4",
-      "amount": 38143286751,
+      "amount": 38142438375,
       "tags": []
     },
     "d5ab5f51-db3a-a26f-96a1-1b24c3e2802c-C": {
@@ -32,7 +32,7 @@
       "recipient_id": "b54de748-ee64-a1e6-546e-e7007b054797-C",
       "name": "MCKESSON CORPORATION",
       "uei": "S1RUKWWRYFL6",
-      "amount": 35837941938,
+      "amount": 35839235193,
       "tags": []
     },
     "cce9df51-3950-87f4-0b34-4353d5a08f32-C": {
@@ -76,7 +76,7 @@
       "recipient_id": "edc402f7-abac-eafe-2aae-3fdcd8d1bb8a-C",
       "name": "AMERISOURCEBERGEN DRUG CORP",
       "uei": "KABZK8W6PQT3",
-      "amount": 20119439378,
+      "amount": 20119448921,
       "tags": []
     },
     "b52d549e-73f7-a818-8c63-4a75904c9df5-C": {
@@ -106,7 +106,7 @@
       "recipient_id": "455555be-773d-eab1-1e6b-7b94400b757e-C",
       "name": "GENERAL DYNAMICS INFORMATION TECHNOLOGY, INC.",
       "uei": "SMNWM6HN79X5",
-      "amount": 14667500642,
+      "amount": 14668129442,
       "tags": []
     },
     "fa0b2d2c-6660-adbe-e0ea-4035b15e4cbd-C": {
@@ -120,14 +120,14 @@
       "recipient_id": "d64537c9-5482-dd40-cdd4-5cf07b66329d-C",
       "name": "SIKORSKY AIRCRAFT CORPORATION",
       "uei": "UTJWTSLMFNG4",
-      "amount": 13433094648,
+      "amount": 13433136772,
       "tags": []
     },
     "20af0683-f17d-1f8f-38ee-2f11bd124559-C": {
       "recipient_id": "20af0683-f17d-1f8f-38ee-2f11bd124559-C",
       "name": "SCIENCE APPLICATIONS INTERNATIONAL CORPORATION",
       "uei": "MMLKPW9JLX64",
-      "amount": 13101487367,
+      "amount": 13101518370,
       "tags": []
     },
     "1eb5d9d6-aabf-3228-e6ab-79cf9729c9d7-C": {
@@ -141,7 +141,7 @@
       "recipient_id": "fe5366b4-84c8-12ff-126f-f123de29819c-C",
       "name": "AMENTUM SERVICES, INC.",
       "uei": "QEMLRQA7PLG4",
-      "amount": 11736785062,
+      "amount": 11736880994,
       "tags": []
     },
     "27de0316-220e-8297-411f-f99b6f60443a-C": {
@@ -169,7 +169,7 @@
       "recipient_id": "d41a6b8a-9d6a-0d28-7e24-989e31731aad-C",
       "name": "ACCENTURE FEDERAL SERVICES LLC",
       "uei": "C47BNA8GM833",
-      "amount": 11156259872,
+      "amount": 11156361606,
       "tags": []
     },
     "6d990129-9566-ff86-e9ae-7c6eeef1df7c-C": {
@@ -190,7 +190,7 @@
       "recipient_id": "3c1a340d-2613-1609-93ce-eb1aba0559b5-C",
       "name": "CONSOLIDATED NUCLEAR SECURITY, LLC",
       "uei": "EWV8QKG1JUV7",
-      "amount": 10012466103,
+      "amount": 9968273480,
       "tags": []
     },
     "28eee911-76af-7147-f760-4ec5f90bec2d-C": {
@@ -204,7 +204,7 @@
       "recipient_id": "92663aec-4451-0476-502b-d8c6919e98e0-C",
       "name": "DELOITTE CONSULTING LLP",
       "uei": "CKV2L9GZKJK3",
-      "amount": 9686421628,
+      "amount": 9688771450,
       "tags": [
         "sdvosb",
         "small"
@@ -298,7 +298,7 @@
       "recipient_id": "f59302ac-85a9-ee1a-4813-9b07f3377a40-C",
       "name": "SAVANNAH RIVER NUCLEAR SOLUTIONS LLC",
       "uei": "XLQ7CKUSQSD5",
-      "amount": 7836211488,
+      "amount": 7911119941,
       "tags": []
     },
     "bed6217b-c46e-3951-fe4c-dab140bb2125-C": {
@@ -333,14 +333,14 @@
       "recipient_id": "6e76fa33-2d96-c636-941c-bca1997db076-C",
       "name": "CALIFORNIA INSTITUTE OF TECHNOLOGY",
       "uei": "YC1YP79BFD19",
-      "amount": 6905620648,
+      "amount": 6916921040,
       "tags": []
     },
     "4eae43e5-e1f1-0e77-b2fe-09a12a9a552c-C": {
       "recipient_id": "4eae43e5-e1f1-0e77-b2fe-09a12a9a552c-C",
       "name": "THE JOHNS HOPKINS UNIVERSITY APPLIED PHYSICS LABORATORY LLC",
       "uei": "C1HBCJ9RMBV3",
-      "amount": 6707606736,
+      "amount": 6707604409,
       "tags": []
     },
     "7e9ba6ab-3f37-4abd-4708-bdeecb64ea02-C": {
@@ -354,14 +354,14 @@
       "recipient_id": "129fccb1-783c-9fd1-7b6d-6ddea65ace79-C",
       "name": "PERATON INC.",
       "uei": "ZBPQEJVECCT4",
-      "amount": 6672093430,
+      "amount": 6671936205,
       "tags": []
     },
     "4e74aeb5-dd21-20a7-63bd-e9f934d69583-C": {
       "recipient_id": "4e74aeb5-dd21-20a7-63bd-e9f934d69583-C",
       "name": "CARAHSOFT TECHNOLOGY CORP",
       "uei": "DT8KJHZXVJH5",
-      "amount": 6541706701,
+      "amount": 6550585754,
       "tags": []
     },
     "9e9725ba-e023-684e-6d7f-f9de4201578f-C": {
@@ -382,7 +382,7 @@
       "recipient_id": "66092799-9c72-fde6-e008-9d381191aed2-C",
       "name": "GENERAL ELECTRIC COMPANY",
       "uei": "E3HYKKLT5ZT1",
-      "amount": 6424273423,
+      "amount": 6424284922,
       "tags": []
     },
     "cbd00b80-79b9-687c-5847-be4d1bf8750e-C": {
@@ -459,7 +459,7 @@
       "recipient_id": "3612de0a-9635-3846-a5a1-7f555fba52df-C",
       "name": "DELL FEDERAL SYSTEMS L.P",
       "uei": "N1C5QLNPJLS4",
-      "amount": 5250559795,
+      "amount": 5251746834,
       "tags": []
     },
     "feff6bf5-0c8a-4590-0796-eec837a63efa-C": {
@@ -603,7 +603,7 @@
       "recipient_id": "9df6f273-648d-cf72-c4ef-346f414c585c-C",
       "name": "THE REGENTS OF THE UNIVERSITY OF CALIFORNIA",
       "uei": "PKK5TD16N4H1",
-      "amount": 4164529781,
+      "amount": 4185033947,
       "tags": []
     },
     "e2d7a16e-029f-ce0e-97dc-8b32fa6dc1d1-C": {
@@ -624,7 +624,7 @@
       "recipient_id": "d86df7af-f6c1-a07a-ccc4-ec74331bafc5-C",
       "name": "CGI FEDERAL INC.",
       "uei": "TRKEP1HEBNS5",
-      "amount": 3975233432,
+      "amount": 3982701551,
       "tags": []
     },
     "9232b26d-789d-bdd2-5a6d-28714f1dfa2c-C": {
@@ -645,7 +645,7 @@
       "recipient_id": "6cbea0a9-b56a-1fd8-3dee-e808ea373a4b-C",
       "name": "THE AEROSPACE CORPORATION",
       "uei": "YA8LJBJCND19",
-      "amount": 3862004225,
+      "amount": 3862054225,
       "tags": []
     },
     "2e141abe-fe8f-7ddc-e6a3-8bb2165836be-C": {
@@ -701,7 +701,7 @@
       "recipient_id": "34029cc2-a3ce-6e12-3143-ed585c513530-C",
       "name": "DEFENSE SYSTEMS AND SOLUTIONS",
       "uei": "NWKQVQED4C81",
-      "amount": 3550817894,
+      "amount": 3550258352,
       "tags": [
         "small"
       ]
@@ -881,7 +881,7 @@
       "recipient_id": "625ff1da-e9a2-cbdc-c8b3-fdd521fd1efc-C",
       "name": "MINBURN TECHNOLOGY GROUP, LLC",
       "uei": "WN8JFVZTBCA5",
-      "amount": 3036932036,
+      "amount": 3037275395,
       "tags": [
         "sdvosb",
         "small"
@@ -891,7 +891,7 @@
       "recipient_id": "3792ca7f-d5d2-d89c-872b-8c64e4e6390e-C",
       "name": "FCN, INC.",
       "uei": "JEANDJTZ8HJ3",
-      "amount": 3012737481,
+      "amount": 3013984671,
       "tags": [
         "wosb",
         "small"
@@ -936,7 +936,7 @@
       "recipient_id": "2a4d3db7-e268-7b36-3610-c75337f0b7e1-C",
       "name": "FOUR POINTS TECHNOLOGY, L.L.C.",
       "uei": "H1KHJPJH9R51",
-      "amount": 2837371571,
+      "amount": 2837383806,
       "tags": [
         "sdvosb",
         "small"
@@ -1048,7 +1048,7 @@
       "recipient_id": "f1addd3f-8f09-bd87-cec8-f143401629ba-C",
       "name": "NOBLE SUPPLY & LOGISTICS, LLC",
       "uei": "YLE5AAYNVPK6",
-      "amount": 2539012712,
+      "amount": 2539020478,
       "tags": [
         "small"
       ]
@@ -1506,7 +1506,7 @@
       "recipient_id": "e0f8746a-9a3b-810a-257a-cae2d63868da-C",
       "name": "NEW TECH SOLUTIONS, INC.",
       "uei": "XK11LLUL61A7",
-      "amount": 1449203098,
+      "amount": 1449219072,
       "tags": [
         "8a",
         "small"
@@ -2205,7 +2205,7 @@
       "recipient_id": "70cfcc5e-6463-439c-995c-5d2e7305f4ac-C",
       "name": "FLEET VEHICLE SOURCE INC",
       "uei": "CGAKREGGN9J3",
-      "amount": 1116950630,
+      "amount": 1118832466,
       "tags": [
         "sdvosb",
         "small"
@@ -2257,7 +2257,7 @@
       "recipient_id": "99253b24-712b-034b-e1a4-77c8e86b4b5b-C",
       "name": "COUNTERTRADE PRODUCTS, INC.",
       "uei": "CN4KSKX2UQY5",
-      "amount": 1081491313,
+      "amount": 1081533053,
       "tags": [
         "wosb",
         "small"
@@ -2627,7 +2627,7 @@
       "recipient_id": "b8d01603-144c-7b0c-ecf0-24060cd72b94-C",
       "name": "AFFIGENT, LLC",
       "uei": "M46UYYHVH4B1",
-      "amount": 889098807,
+      "amount": 889136244,
       "tags": [
         "small"
       ]
@@ -2926,7 +2926,7 @@
       "recipient_id": "456a17c9-3bd9-f107-77ee-816e474d173e-C",
       "name": "STERLING COMPUTERS CORPORATION",
       "uei": "YZTLALWM4UC7",
-      "amount": 765987937,
+      "amount": 766045642,
       "tags": [
         "wosb",
         "small"
@@ -3000,7 +3000,7 @@
       "recipient_id": "72ca0d6d-bfb3-664d-fa88-47cacc8687d3-C",
       "name": "ADVANCED COMPUTER CONCEPTS, INC.",
       "uei": "CGE8ABMZLZN9",
-      "amount": 751243721,
+      "amount": 751280384,
       "tags": [
         "wosb",
         "small"
@@ -3103,7 +3103,7 @@
       "recipient_id": "d8f9524f-faae-66f1-0094-c37a117d7b3b-C",
       "name": "TECOLOTE RESEARCH, INC.",
       "uei": "EETHKKLA2VB4",
-      "amount": 621440228,
+      "amount": 621558228,
       "tags": [
         "small"
       ]
@@ -3217,7 +3217,7 @@
       "recipient_id": "2f9b400e-dc80-c49f-f49b-d0f639359e45-C",
       "name": "METGREEN SOLUTIONS INC",
       "uei": "J4TDZHLCUGW3",
-      "amount": 712372858,
+      "amount": 713073139,
       "tags": [
         "sdvosb",
         "small"
@@ -3436,7 +3436,7 @@
       "recipient_id": "decd8e4d-0c57-0c5c-0a05-c76dce02e356-C",
       "name": "COLOSSAL CONTRACTING LLC",
       "uei": "F4M9NB1HD785",
-      "amount": 646493707,
+      "amount": 650782521,
       "tags": [
         "sdvosb",
         "small"
@@ -3480,7 +3480,7 @@
       "recipient_id": "5ea95424-348d-c9fa-169a-c0d1cadb40fe-C",
       "name": "DETYENS SHIPYARDS INC",
       "uei": "VLXGTHQE5ES7",
-      "amount": 642709378,
+      "amount": 643681878,
       "tags": [
         "small"
       ]
@@ -3626,7 +3626,7 @@
       "recipient_id": "2a71ed51-39c8-082f-31a0-f31d55a0a651-C",
       "name": "SOFTWARE INFORMATION RESOURCE CORP.",
       "uei": "EJJMMJHYDFH6",
-      "amount": 609829639,
+      "amount": 611115701,
       "tags": [
         "wosb",
         "hubzone",
@@ -4142,7 +4142,7 @@
       "recipient_id": "89489661-f708-11de-514b-32f2cf26a42d-C",
       "name": "AKIMA INFRASTRUCTURE PROTECTION LLC",
       "uei": "WGN2KJJD27Q3",
-      "amount": 528852029,
+      "amount": 536087029,
       "tags": [
         "8a",
         "small"
@@ -4516,7 +4516,7 @@
       "recipient_id": "3b8298c2-5bfd-7fc4-bb07-ad4c20d92543-C",
       "name": "DH TECHNOLOGIES, INC.",
       "uei": "NKC2AB3ESFP5",
-      "amount": 480709239,
+      "amount": 481652215,
       "tags": [
         "hubzone",
         "small"
@@ -4556,7 +4556,7 @@
       "recipient_id": "dbdc578b-4796-bcec-5cb8-74a02da492f5-C",
       "name": "CHEROKEE NATION STRATEGIC PROGRAMS, L.L.C.",
       "uei": "PQNNHF72NNM6",
-      "amount": 469750441,
+      "amount": 469674087,
       "tags": [
         "8a",
         "small"
@@ -4577,7 +4577,7 @@
       "recipient_id": "42cd8754-63c7-5fcd-2bef-651175ecc88f-C",
       "name": "AXLE INFORMATICS, LLC",
       "uei": "J4DNP7JJ1MU3",
-      "amount": 474313987,
+      "amount": 474391187,
       "tags": [
         "wosb",
         "small"
@@ -4752,7 +4752,7 @@
       "recipient_id": "9a6c669e-e695-7865-3325-57e8c87590ee-C",
       "name": "KAMPI COMPONENTS CO INC",
       "uei": "XX2WFHJEFB45",
-      "amount": 451634883,
+      "amount": 451648192,
       "tags": [
         "small"
       ]
@@ -4782,7 +4782,7 @@
       "recipient_id": "84a05e3b-8abe-6d1d-7ed7-2027ad5179fc-C",
       "name": "SWISH DATA CORPORATION",
       "uei": "DMERLBE3JR53",
-      "amount": 435032255,
+      "amount": 437924122,
       "tags": [
         "sdvosb",
         "hubzone",
@@ -4831,7 +4831,7 @@
       "recipient_id": "839e805e-7095-0376-08b1-f1e61beb9b66-C",
       "name": "MICROTECHNOLOGIES LLC",
       "uei": "CL69E7KATK59",
-      "amount": 448008713,
+      "amount": 449270098,
       "tags": [
         "sdvosb",
         "small"
@@ -5211,7 +5211,7 @@
       "recipient_id": "729e2015-0309-7429-56c8-a6446b735171-C",
       "name": "IMPRES TECHNOLOGY SOLUTIONS, INC",
       "uei": "MSSQQ551LG41",
-      "amount": 406956135,
+      "amount": 406996021,
       "tags": [
         "8a",
         "hubzone",
@@ -6221,7 +6221,7 @@
       "recipient_id": "70e674ba-2d79-d6bb-37c8-a03189735d37-C",
       "name": "PANAMERICA COMPUTERS, INC.",
       "uei": "DPQEDJ6CXZM5",
-      "amount": 319273936,
+      "amount": 330888796,
       "tags": [
         "wosb",
         "hubzone",
@@ -6567,7 +6567,7 @@
       "recipient_id": "8eaa67d5-d00c-3cb4-380e-f36cc9937a18-C",
       "name": "JJR SOLUTIONS LLC",
       "uei": "FTEMBMQ3SGR5",
-      "amount": 282997370,
+      "amount": 291307724,
       "tags": [
         "sdvosb",
         "small"
@@ -6595,7 +6595,7 @@
       "recipient_id": "385fc558-6774-83d9-9b51-953dec04283b-C",
       "name": "BAHFED CORP",
       "uei": "TQ2KDQLRL8F1",
-      "amount": 317688244,
+      "amount": 317928388,
       "tags": [
         "hubzone",
         "small"
@@ -6628,7 +6628,7 @@
       "recipient_id": "854dd877-03d8-4083-8892-11c59f0901c3-C",
       "name": "MAYVIN, INC.",
       "uei": "E57CG415HEZ5",
-      "amount": 312147815,
+      "amount": 312092480,
       "tags": [
         "wosb",
         "small"
@@ -6899,7 +6899,7 @@
       "recipient_id": "efa6a83f-5d3d-3a3c-6916-68ced5ef4e9c-C",
       "name": "SABEL SYSTEMS TECHNOLOGY SOLUTIONS, LLC",
       "uei": "F65SGFW2TUC6",
-      "amount": 215554223,
+      "amount": 215851625,
       "tags": [
         "8a",
         "wosb",
@@ -6995,7 +6995,7 @@
       "recipient_id": "b8e9bca3-d236-b6e9-1384-a45afa5d9e98-C",
       "name": "REGAN TECHNOLOGIES CORP",
       "uei": "PJ2BS3KYWKS5",
-      "amount": 290561510,
+      "amount": 290551510,
       "tags": [
         "sdvosb",
         "small"
@@ -7126,7 +7126,7 @@
       "recipient_id": "4c61a834-8a33-b7ca-aaa3-d58f9baf2e49-C",
       "name": "REDHAWK IT SOLUTIONS, LLC",
       "uei": "QGAAEMCMJXQ7",
-      "amount": 288641448,
+      "amount": 288644238,
       "tags": [
         "8a",
         "sdvosb",
@@ -7732,7 +7732,7 @@
       "recipient_id": "27d1396e-6220-99d3-ebf0-a775a91d36b6-C",
       "name": "RELI GROUP INC",
       "uei": "ZZEFBLYZN5B1",
-      "amount": 206820480,
+      "amount": 208267415,
       "tags": [
         "8a",
         "hubzone",
@@ -8118,7 +8118,7 @@
       "recipient_id": "b3bf0045-a393-0c84-7e1c-41efc4b25c9e-C",
       "name": "ENTERPRISE TECHNOLOGY SOLUTIONS, INC.",
       "uei": "FBRMCGPMN963",
-      "amount": 187854318,
+      "amount": 187886077,
       "tags": [
         "wosb",
         "hubzone",
@@ -8730,7 +8730,7 @@
       "recipient_id": "9cd24b58-a671-a799-ae92-711cd203182e-C",
       "name": "SOUTH DADE AIR CONDITIONING & REFRIGERATION INC",
       "uei": "ZJMTAL6MZLU4",
-      "amount": 237891214,
+      "amount": 237943608,
       "tags": [
         "8a",
         "sdvosb",
@@ -9048,7 +9048,7 @@
       "recipient_id": "9371b086-8782-4452-2811-e33b46e17b11-C",
       "name": "VETERANS HEALTHCARE SUPPLY SOLUTIONS, INC",
       "uei": "TLTXKMLQEYU9",
-      "amount": 220690790,
+      "amount": 220712513,
       "tags": [
         "sdvosb",
         "small"
@@ -9279,7 +9279,7 @@
       "recipient_id": "6c0b9afa-897b-2d84-f27a-801d255c174f-C",
       "name": "CHEROKEE NATION SYSTEM SOLUTIONS LLC",
       "uei": "FMWVU3EYSVF7",
-      "amount": 217870459,
+      "amount": 218812333,
       "tags": [
         "8a",
         "hubzone",
@@ -9468,7 +9468,7 @@
       "recipient_id": "3d44c8b0-2734-4831-ffaf-05360b5dde88-C",
       "name": "KONIAG PROFESSIONAL SERVICES, LLC",
       "uei": "LE5DMBV7HME5",
-      "amount": 210970040,
+      "amount": 210994534,
       "tags": [
         "8a",
         "small"
@@ -9907,7 +9907,7 @@
       "recipient_id": "48bdf281-7735-5050-a5e0-d45de41b7923-C",
       "name": "ARLLUK TECHNOLOGY SOLUTIONS LLC",
       "uei": "YH7RBH5GJYJ8",
-      "amount": 200629572,
+      "amount": 201489828,
       "tags": [
         "8a",
         "small"
@@ -10907,7 +10907,7 @@
       "recipient_id": "de156356-1833-fefa-04df-719370121423-C",
       "name": "FEDSTORE CORPORATION",
       "uei": "CA6PTFD9GKK3",
-      "amount": 182198942,
+      "amount": 182637557,
       "tags": [
         "sdvosb",
         "small"
@@ -11017,7 +11017,7 @@
       "recipient_id": "431e5735-d2f4-1c03-fc19-ed3e83ce771a-C",
       "name": "COMPUTER WORLD SERVICES, CORP.",
       "uei": "SELVLQN46MM7",
-      "amount": 85740047,
+      "amount": 90140047,
       "tags": [
         "hubzone",
         "small"
@@ -11261,7 +11261,7 @@
       "recipient_id": "fc99aa23-55ce-5d09-0e4e-f649218385c4-C",
       "name": "CHICKASAW STRATEGIC POINTE, LLC",
       "uei": "NQQJBJ3BBS28",
-      "amount": 166338185,
+      "amount": 166427286,
       "tags": [
         "8a",
         "hubzone",
@@ -11363,7 +11363,7 @@
       "recipient_id": "7db9cee9-fc9b-1639-3c5a-f90c99ae6dbf-C",
       "name": "MICROHEALTH LLC",
       "uei": "C1RQANT6CG57",
-      "amount": 176001339,
+      "amount": 179118540,
       "tags": [
         "8a",
         "sdvosb",
@@ -11722,7 +11722,7 @@
       "recipient_id": "9dfd2b83-39c3-ad19-bc47-d1e4709fe735-C",
       "name": "TITAN-AUXO, LLC",
       "uei": "NKRTU726LYL7",
-      "amount": 169249709,
+      "amount": 172123957,
       "tags": [
         "sdvosb",
         "small"
@@ -13243,7 +13243,7 @@
       "recipient_id": "359fb325-4a44-d7cf-9b50-98e293a445ef-C",
       "name": "OLGA H BARRIOS",
       "uei": "Z1NYY8TDZYH1",
-      "amount": 149767067,
+      "amount": 151083067,
       "tags": [
         "sdvosb",
         "wosb",
@@ -35617,8 +35617,11 @@
       "recipient_id": "1bbfba62-219d-c42a-21fe-b06e1703cbd6-C",
       "name": "TRC GOVERNMENT SERVICES, LLC",
       "uei": "TJJLCM586UX1",
-      "amount": 49975925,
-      "tags": []
+      "amount": 142434,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
     },
     "065385dd-aefa-066e-79b2-e2e2def9acc9-C": {
       "recipient_id": "065385dd-aefa-066e-79b2-e2e2def9acc9-C",
@@ -42024,8 +42027,9 @@
       "recipient_id": "f3e0554f-f1c1-31ab-18fc-26190dffad0c-C",
       "name": "BALDI BROS. INCORPORATED",
       "uei": "DE6JFFZJ8EK3",
-      "amount": 40797664,
+      "amount": 66881,
       "tags": [
+        "hubzone",
         "small"
       ]
     },
@@ -46314,9 +46318,10 @@
       "recipient_id": "c2962da2-505c-0a3a-9046-f50ef326e2c3-C",
       "name": "GOVPARTS LLC",
       "uei": "LG85KGGJEL96",
-      "amount": 32592039,
+      "amount": 115403,
       "tags": [
         "wosb",
+        "hubzone",
         "small"
       ]
     },
@@ -51852,9 +51857,10 @@
       "recipient_id": "8eab37e9-2dcd-a7e9-6dbf-ce03d47b7a0d-C",
       "name": "ETELLIGENT GROUP LLC",
       "uei": "Q8P1NKN5ECY1",
-      "amount": 30761132,
+      "amount": 116538,
       "tags": [
         "8a",
+        "hubzone",
         "small"
       ]
     },
@@ -60029,10 +60035,11 @@
       "recipient_id": "0529bf28-b6a1-81b4-abd2-4d958e1aab2e-C",
       "name": "ADEPTUS SOLUTIONS, INC.",
       "uei": "VVWFL9QPNCZ2",
-      "amount": 15225522,
+      "amount": 141603,
       "tags": [
         "8a",
         "wosb",
+        "hubzone",
         "small"
       ]
     },
@@ -71735,10 +71742,11 @@
       "recipient_id": "f45eaaa6-95ec-2dfc-055e-5e139a08fc74-C",
       "name": "RED CREEK SOLUTIONS LLC",
       "uei": "UWJSNXTHDGK8",
-      "amount": 8588294,
+      "amount": 119388,
       "tags": [
         "8a",
         "wosb",
+        "hubzone",
         "small"
       ]
     },
@@ -82939,8 +82947,11 @@
       "recipient_id": "b82c00e0-55f7-580b-c38b-6ff4e109c35d-C",
       "name": "TMC TECHNOLOGIES OF WEST VIRGINIA CORP",
       "uei": "RBWGZG3FLMB7",
-      "amount": 26347241,
-      "tags": []
+      "amount": 150000,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
     },
     "e8ee9ce0-7614-d58f-a023-149830a4bc42-C": {
       "recipient_id": "e8ee9ce0-7614-d58f-a023-149830a4bc42-C",
@@ -86778,9 +86789,10 @@
       "recipient_id": "935e9a89-a0e3-1c34-627b-c375a4b5966c-C",
       "name": "AMERICAN DEFENSE COMPONENTS, LLC",
       "uei": "D7SNCRZ8KJ34",
-      "amount": 6683728,
+      "amount": 99022,
       "tags": [
         "sdvosb",
+        "hubzone",
         "small"
       ]
     },
@@ -96388,9 +96400,10 @@
       "recipient_id": "b2d49317-ed9a-cfa5-2a57-2d0d95268ac8-C",
       "name": "ASO INTERNATIONAL GROUP INC.",
       "uei": "MYMNRZLNKQG3",
-      "amount": 4506565,
+      "amount": 153587,
       "tags": [
         "8a",
+        "hubzone",
         "small"
       ]
     },
@@ -98193,9 +98206,10 @@
       "recipient_id": "cd8b262a-4db9-1dde-40d9-dfc434c34615-C",
       "name": "AFCO LLC",
       "uei": "N8PLK963HLC9",
-      "amount": 4010096,
+      "amount": 70886,
       "tags": [
         "sdvosb",
+        "hubzone",
         "small"
       ]
     },
@@ -99637,9 +99651,10 @@
       "recipient_id": "417e92ff-a8c1-2af6-687e-1d5c687a59f4-C",
       "name": "CRYSTAL CLEAR MAINTENANCE, INC",
       "uei": "FLVFZEMQZ653",
-      "amount": 3374824,
+      "amount": 83270,
       "tags": [
         "sdvosb",
+        "hubzone",
         "small"
       ]
     },
@@ -108077,10 +108092,11 @@
       "recipient_id": "d11aef34-c07b-1e1f-00e0-2186fcd4a3fe-C",
       "name": "CORBROOK, LLC",
       "uei": "J2LBE5GRYS44",
-      "amount": 3115085,
+      "amount": 164924,
       "tags": [
         "8a",
         "wosb",
+        "hubzone",
         "small"
       ]
     },
@@ -108131,9 +108147,10 @@
       "recipient_id": "8f2fb985-56ed-5da4-bc69-52e2ac11e5f9-C",
       "name": "CONSTRUCTIVE BUILDING SOLUTIONS INC",
       "uei": "N8SWCC16G4G5",
-      "amount": 2972893,
+      "amount": 63756,
       "tags": [
         "8a",
+        "hubzone",
         "small"
       ]
     },
@@ -111059,10 +111076,11 @@
       "recipient_id": "c0a2cfcc-a987-3d66-38a4-926a68afa575-C",
       "name": "DYNAMIK, INC.",
       "uei": "HYDNJRF3MG73",
-      "amount": 2297372,
+      "amount": 61603,
       "tags": [
         "sdvosb",
         "wosb",
+        "hubzone",
         "small"
       ]
     },
@@ -116442,10 +116460,11 @@
       "recipient_id": "fb2ae024-191d-3dc0-5d28-e373ed0b6b16-C",
       "name": "SC-B CONSULTING INCORPORATED",
       "uei": "LJF5QK7NELH9",
-      "amount": 2632589,
+      "amount": 64419,
       "tags": [
         "8a",
         "wosb",
+        "hubzone",
         "small"
       ]
     },
@@ -117379,9 +117398,10 @@
       "recipient_id": "082935f3-9cfd-7cdb-56c5-4a3dc57ae413-C",
       "name": "ALTIMA CONSTRUCTION INC",
       "uei": "E5MNYJ7TK8R6",
-      "amount": 2154240,
+      "amount": 78660,
       "tags": [
         "8a",
+        "hubzone",
         "small"
       ]
     },
@@ -119577,9 +119597,10 @@
       "recipient_id": "6fdedbe3-12d1-349c-2faf-f86cc4941c0b-C",
       "name": "BRAVE ONE CONTRACT AGENCY, LLC",
       "uei": "CF7CD7MEY1A7",
-      "amount": 1835141,
+      "amount": 57588,
       "tags": [
         "sdvosb",
+        "hubzone",
         "small"
       ]
     },
@@ -119698,9 +119719,10 @@
       "recipient_id": "87315b35-aab3-8d57-97eb-346976730e8d-C",
       "name": "MILITARY AIRLIFT EXPERTS LLC (MILAIRX LLC)",
       "uei": "VNA7VMF85NL4",
-      "amount": 1815882,
+      "amount": 104768,
       "tags": [
         "sdvosb",
+        "hubzone",
         "small"
       ]
     },
@@ -120181,9 +120203,10 @@
       "recipient_id": "712d3b1d-6545-9acc-25d7-6ec1b3a00a7c-C",
       "name": "SYTE CORPORATION",
       "uei": "MT47RLFTJB23",
-      "amount": 1735446,
+      "amount": 69178,
       "tags": [
         "sdvosb",
+        "hubzone",
         "small"
       ]
     },
@@ -128117,6 +128140,2806 @@
         "hubzone",
         "small"
       ]
+    },
+    "f31b21c2-ad82-f82a-2487-a13ef2c0655c-C": {
+      "recipient_id": "f31b21c2-ad82-f82a-2487-a13ef2c0655c-C",
+      "name": "COGENT SOLUTIONS INC.",
+      "uei": "L4LHN6923621",
+      "amount": 176945,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "de6fd588-19c8-d21b-d87c-a752027e45f5-C": {
+      "recipient_id": "de6fd588-19c8-d21b-d87c-a752027e45f5-C",
+      "name": "INTEGRITY EXCAVATION & FOREST SERVICES LLC",
+      "uei": "LRJ7JBSKUCR4",
+      "amount": 175885,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "1d2f0d3d-5dd7-cd55-c92f-5b5bbbdc47d8-C": {
+      "recipient_id": "1d2f0d3d-5dd7-cd55-c92f-5b5bbbdc47d8-C",
+      "name": "D & O SECURITY SOLUTIONS, LLC",
+      "uei": "K14EKN1WT8E1",
+      "amount": 175158,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "bc62179f-11f3-33cd-d2fe-6062754212c1-C": {
+      "recipient_id": "bc62179f-11f3-33cd-d2fe-6062754212c1-C",
+      "name": "RJS GUAM LLC",
+      "uei": "X38BSFNEQM75",
+      "amount": 174713,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "26631cdd-35eb-4d9e-ef06-941659993a38-C": {
+      "recipient_id": "26631cdd-35eb-4d9e-ef06-941659993a38-C",
+      "name": "CARVER CONSTRUCTION, LLC",
+      "uei": "WS6WEJRRSFB5",
+      "amount": 174609,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "8537c7ad-5f61-452a-3fea-0b4513ba5e5b-C": {
+      "recipient_id": "8537c7ad-5f61-452a-3fea-0b4513ba5e5b-C",
+      "name": "ARTIK ADS, LLC",
+      "uei": "M3XFRRS7FCK4",
+      "amount": 174569,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "6321afb6-aa89-4257-ce66-01bcec1b5235-C": {
+      "recipient_id": "6321afb6-aa89-4257-ce66-01bcec1b5235-C",
+      "name": "THOMAS & SKINNER INC",
+      "uei": "ZXALGKNJN4F3",
+      "amount": 171597,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "f570c6f7-1b71-4b9c-ffcc-8688d72a38a5-C": {
+      "recipient_id": "f570c6f7-1b71-4b9c-ffcc-8688d72a38a5-C",
+      "name": "CURRY AND ASSOCIATES INC.",
+      "uei": "KRP7H7M12L58",
+      "amount": 170256,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "1dbabd97-72b2-6b6d-4c75-b04ecdf52b46-C": {
+      "recipient_id": "1dbabd97-72b2-6b6d-4c75-b04ecdf52b46-C",
+      "name": "JAMCO VENTURES LLC",
+      "uei": "EHASYEQPZYS3",
+      "amount": 170116,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "1edc37bc-fcff-1635-94a8-cfeea40c77f7-C": {
+      "recipient_id": "1edc37bc-fcff-1635-94a8-cfeea40c77f7-C",
+      "name": "GREGORY, THOMAS",
+      "uei": "W8JKS4M14QS4",
+      "amount": 169993,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "5e6de2c3-0e4b-63f3-14c0-7f9a06e9131c-C": {
+      "recipient_id": "5e6de2c3-0e4b-63f3-14c0-7f9a06e9131c-C",
+      "name": "JR TRI-STATE GENERAL CONTRACTING GROUP, INC.",
+      "uei": "KJLTLNEV5E11",
+      "amount": 168394,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "f7b7c4ab-d96a-94c5-faed-65ee1a09dd27-C": {
+      "recipient_id": "f7b7c4ab-d96a-94c5-faed-65ee1a09dd27-C",
+      "name": "THE I-MAGE CORPORATION",
+      "uei": "UGJTX3G95AU6",
+      "amount": 168290,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "2290ae19-9aa5-0a6d-0a3d-728dbfaf5937-C": {
+      "recipient_id": "2290ae19-9aa5-0a6d-0a3d-728dbfaf5937-C",
+      "name": "AXIS, LLC",
+      "uei": "SEG3YG6K6A44",
+      "amount": 168011,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "5236fbb1-7748-b3ae-7819-0fd8b8cab754-C": {
+      "recipient_id": "5236fbb1-7748-b3ae-7819-0fd8b8cab754-C",
+      "name": "POWIS CONTRACTING INC",
+      "uei": "ZG4CDS3CN9J1",
+      "amount": 167704,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "2c301b18-783b-da98-bad2-707fa3b734d6-C": {
+      "recipient_id": "2c301b18-783b-da98-bad2-707fa3b734d6-C",
+      "name": "MFDEXPORT LLC",
+      "uei": "TKG1TQF9JJV7",
+      "amount": 167381,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "359da371-5f97-8dc9-31bb-ba8665a3e1ac-C": {
+      "recipient_id": "359da371-5f97-8dc9-31bb-ba8665a3e1ac-C",
+      "name": "PROVIDENCE ENVIRONMENTAL CONCEPTS AND SERVICES LLC",
+      "uei": "EUXHMC4VM7Y9",
+      "amount": 165872,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "b86151b1-7ca1-008e-8a2a-fe4298420082-C": {
+      "recipient_id": "b86151b1-7ca1-008e-8a2a-fe4298420082-C",
+      "name": "MOUNTAIN MAN WOOD PROJECTS",
+      "uei": "FKNAKN623DU3",
+      "amount": 162291,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "24621063-db7d-b4f9-4916-7d5bae168302-C": {
+      "recipient_id": "24621063-db7d-b4f9-4916-7d5bae168302-C",
+      "name": "SKYE'S JANITORIAL, LLC",
+      "uei": "NQKPMCB54VW1",
+      "amount": 161807,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "5b88a77d-71e2-c641-daa3-20bca55c82da-C": {
+      "recipient_id": "5b88a77d-71e2-c641-daa3-20bca55c82da-C",
+      "name": "APS FIRECO LLC",
+      "uei": "WHKWMF8ZJY54",
+      "amount": 161250,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "c0a9362d-8bc7-33a1-36b4-042501ccba2d-C": {
+      "recipient_id": "c0a9362d-8bc7-33a1-36b4-042501ccba2d-C",
+      "name": "TRILOGIC SYSTEMS CORPORATION",
+      "uei": "K6LKL4BYZGZ6",
+      "amount": 161143,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "d494dce9-58a1-41d4-f6af-229d02b43bfc-C": {
+      "recipient_id": "d494dce9-58a1-41d4-f6af-229d02b43bfc-C",
+      "name": "VISION RESEARCH GROUP LLC",
+      "uei": "YJKQKW6R4BM1",
+      "amount": 160086,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "0d15df7f-4c05-1c2d-53a0-8e078957e196-C": {
+      "recipient_id": "0d15df7f-4c05-1c2d-53a0-8e078957e196-C",
+      "name": "BW ENTERPRISES, LLC",
+      "uei": "ZAJQUYTHUZF3",
+      "amount": 159147,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "481d832d-2719-caca-fff9-e67a2c75ae43-C": {
+      "recipient_id": "481d832d-2719-caca-fff9-e67a2c75ae43-C",
+      "name": "CROMEDY CONSTRUCTION CORP",
+      "uei": "FHD6CX2FGUQ7",
+      "amount": 158533,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "10dda80c-b39c-6d06-8d63-5f78e4752a4e-C": {
+      "recipient_id": "10dda80c-b39c-6d06-8d63-5f78e4752a4e-C",
+      "name": "DUI, INCORPORADO",
+      "uei": "NRB7CBFA3XC8",
+      "amount": 158118,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "676fd1a3-cd5b-3029-04bb-3212884e0298-C": {
+      "recipient_id": "676fd1a3-cd5b-3029-04bb-3212884e0298-C",
+      "name": "SYNERGY DEVELOPMENT PARTNERS, LLC",
+      "uei": "R3F7JNRKN5B1",
+      "amount": 157985,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "cb8b924a-1ad9-8208-5c43-cac5c5bf0bb3-C": {
+      "recipient_id": "cb8b924a-1ad9-8208-5c43-cac5c5bf0bb3-C",
+      "name": "TUTKA, LLC",
+      "uei": "HHRLCQYCPP88",
+      "amount": 155804,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "ab29651c-0f8d-ab6b-0c01-0c373a4bc97e-C": {
+      "recipient_id": "ab29651c-0f8d-ab6b-0c01-0c373a4bc97e-C",
+      "name": "ALLIED GROUP LLC",
+      "uei": "NAWXKT1CBV43",
+      "amount": 155561,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "0b195ff1-dd35-8e03-6a07-6fe082da72fd-C": {
+      "recipient_id": "0b195ff1-dd35-8e03-6a07-6fe082da72fd-C",
+      "name": "WEGOALLPLACES LLC",
+      "uei": "X6FWLRKHLM76",
+      "amount": 155000,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "efd960b4-93e2-0eb0-f147-74bf38c63780-C": {
+      "recipient_id": "efd960b4-93e2-0eb0-f147-74bf38c63780-C",
+      "name": "JAMIES INTERIORS, INC",
+      "uei": "YQALZKCHMB71",
+      "amount": 154999,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "4e9a9ae4-a990-3803-f5e2-82b2999fabe9-C": {
+      "recipient_id": "4e9a9ae4-a990-3803-f5e2-82b2999fabe9-C",
+      "name": "LINC RESEARCH, INC.",
+      "uei": "UMXLL6KL4ZG1",
+      "amount": 154995,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "062e682d-c39c-9b5e-06e2-d8c860b53d7c-C": {
+      "recipient_id": "062e682d-c39c-9b5e-06e2-d8c860b53d7c-C",
+      "name": "J & S TRUCKING I, INC",
+      "uei": "YTX8NB9U1GA6",
+      "amount": 154432,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "8f88ef68-85c5-ea3a-aed4-6e1926938ff2-C": {
+      "recipient_id": "8f88ef68-85c5-ea3a-aed4-6e1926938ff2-C",
+      "name": "COMP ENVIRONMENTAL INC",
+      "uei": "MT3KN89GJFK9",
+      "amount": 153946,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "27c80b43-3a09-e4e9-adf9-4d929ac55a9c-C": {
+      "recipient_id": "27c80b43-3a09-e4e9-adf9-4d929ac55a9c-C",
+      "name": "LARRANAGA TRUCKING INC",
+      "uei": "ESPMHMMKKWK5",
+      "amount": 153640,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "2489898b-17be-cbdb-9a00-b737368b1f7f-C": {
+      "recipient_id": "2489898b-17be-cbdb-9a00-b737368b1f7f-C",
+      "name": "WEB-HED TECHNOLOGIES, LLC",
+      "uei": "L7KBLCN4YJX9",
+      "amount": 152460,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "9e3932d7-3add-7b5d-ecdc-f634463cbed7-C": {
+      "recipient_id": "9e3932d7-3add-7b5d-ecdc-f634463cbed7-C",
+      "name": "GEORGIA WATER SPORTS LLC",
+      "uei": "LM3NZJMQB9W8",
+      "amount": 152184,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "c556e17f-49c7-bb22-dd40-edfa572bb2c1-C": {
+      "recipient_id": "c556e17f-49c7-bb22-dd40-edfa572bb2c1-C",
+      "name": "CARIBBEAN PRODUCE EXCHANGE LLC",
+      "uei": "EXH5XTYLLLT6",
+      "amount": 151500,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "768f32df-12f1-01d0-f7a3-e791207fc87a-C": {
+      "recipient_id": "768f32df-12f1-01d0-f7a3-e791207fc87a-C",
+      "name": "SANVINET INC.",
+      "uei": "HNQ6NN8DFZZ5",
+      "amount": 150357,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "01e684a0-4fdf-728b-37ef-8d43c06099c9-C": {
+      "recipient_id": "01e684a0-4fdf-728b-37ef-8d43c06099c9-C",
+      "name": "M & P SERVICES, INC",
+      "uei": "TJA4M6CHXLK7",
+      "amount": 150040,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "3b6a6fd2-2da8-78e7-9b67-c9a8d2c17c79-C": {
+      "recipient_id": "3b6a6fd2-2da8-78e7-9b67-c9a8d2c17c79-C",
+      "name": "A & J CONSTRUCTION MANAGEMENT, LLC",
+      "uei": "M8J4Y4TFFEG3",
+      "amount": 149909,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "fa0fb682-59e3-d2c2-1ff2-2fc323768115-C": {
+      "recipient_id": "fa0fb682-59e3-d2c2-1ff2-2fc323768115-C",
+      "name": "CHRISTOPHER I. OYOLOKOR SR.",
+      "uei": "N3Y5N3YXG155",
+      "amount": 148880,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "a2df8ef7-d6ac-a6fc-a58e-144ddc60805d-C": {
+      "recipient_id": "a2df8ef7-d6ac-a6fc-a58e-144ddc60805d-C",
+      "name": "R K SOFTWARE INC",
+      "uei": "YQXWRZ4A1FN5",
+      "amount": 147314,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "93bfc380-6ce1-e18d-4077-3ed455601141-C": {
+      "recipient_id": "93bfc380-6ce1-e18d-4077-3ed455601141-C",
+      "name": "DATA POINT LLC",
+      "uei": "ERWDVJDSA3T3",
+      "amount": 146557,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "c99ff9ad-de2b-ed76-a00a-db5f1d316d9d-C": {
+      "recipient_id": "c99ff9ad-de2b-ed76-a00a-db5f1d316d9d-C",
+      "name": "SOLVANCY LLC",
+      "uei": "EQANPJG2TB74",
+      "amount": 146550,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "0f71334d-4ab3-f250-ffab-3146fda70060-C": {
+      "recipient_id": "0f71334d-4ab3-f250-ffab-3146fda70060-C",
+      "name": "J C CHEEK CONTRACTORS INC",
+      "uei": "V9MVS14XMCM8",
+      "amount": 146352,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "6232240a-1afa-dad1-ecf0-754b2754ddcc-C": {
+      "recipient_id": "6232240a-1afa-dad1-ecf0-754b2754ddcc-C",
+      "name": "EVCO PARTNERS LP",
+      "uei": "JJGJPJNVDRP6",
+      "amount": 146185,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "05818947-dfa8-be66-b027-29d35042fabb-C": {
+      "recipient_id": "05818947-dfa8-be66-b027-29d35042fabb-C",
+      "name": "VECTOR FEDERAL SOLUTIONS LLC",
+      "uei": "E58ZKGAJBUP4",
+      "amount": 144519,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "0de8fb52-71cc-bf35-1f0f-6d2c1da2ac68-C": {
+      "recipient_id": "0de8fb52-71cc-bf35-1f0f-6d2c1da2ac68-C",
+      "name": "STRATEGIC DEFENSE AND LOGISTICS INC",
+      "uei": "D3Q6C6SHZ9M8",
+      "amount": 144328,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "10993f93-3a99-dc6c-1cea-c10ef2bea3cb-C": {
+      "recipient_id": "10993f93-3a99-dc6c-1cea-c10ef2bea3cb-C",
+      "name": "M - W ELECTRIC, INC.",
+      "uei": "KQ3TLUMQ8VQ9",
+      "amount": 143273,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "7945e200-e0c0-224c-36a4-2372e38905aa-C": {
+      "recipient_id": "7945e200-e0c0-224c-36a4-2372e38905aa-C",
+      "name": "NORTH EAST KNITTING, INC.",
+      "uei": "PB7ZTKBBNU44",
+      "amount": 142615,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "e256d25c-2aaa-a94f-6702-173fd5d6daaf-C": {
+      "recipient_id": "e256d25c-2aaa-a94f-6702-173fd5d6daaf-C",
+      "name": "I.A.P. CONTRACTORS, L.L.C",
+      "uei": "Q1RMDB6L1MU7",
+      "amount": 142536,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "03e762d3-15c6-a045-b77b-d10cfb1fd27d-C": {
+      "recipient_id": "03e762d3-15c6-a045-b77b-d10cfb1fd27d-C",
+      "name": "PACIFIC BIOMEDICAL SERVICES, INC",
+      "uei": "MZBJYLPUA7K8",
+      "amount": 141259,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "99f3268b-687a-c4fa-d68c-4671cba28884-C": {
+      "recipient_id": "99f3268b-687a-c4fa-d68c-4671cba28884-C",
+      "name": "BEATTYS SERVICES INC",
+      "uei": "LZ9PKLCP9KU3",
+      "amount": 141179,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "6e8b5f4a-914d-ac11-7323-b876fdf74577-C": {
+      "recipient_id": "6e8b5f4a-914d-ac11-7323-b876fdf74577-C",
+      "name": "ABOUTWEB, LLC",
+      "uei": "LRKDFMLDMTT7",
+      "amount": 140929,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "175ef474-861b-a9af-daf0-5fa2f5a07782-C": {
+      "recipient_id": "175ef474-861b-a9af-daf0-5fa2f5a07782-C",
+      "name": "SBH SERVICES INC",
+      "uei": "RXKXEGMWDAG5",
+      "amount": 140502,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "ea0218fd-d727-6942-704f-9629c8e38f87-C": {
+      "recipient_id": "ea0218fd-d727-6942-704f-9629c8e38f87-C",
+      "name": "TECHNIQUE SOLUTIONS INC",
+      "uei": "KJG7V6JAHA53",
+      "amount": 140153,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "3a438aa9-9e50-7850-bb1e-8f1aa61ab763-C": {
+      "recipient_id": "3a438aa9-9e50-7850-bb1e-8f1aa61ab763-C",
+      "name": "CARIBE GENERAL CONSTRUCTORS, INC",
+      "uei": "N8M2T8SLB435",
+      "amount": 140000,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "6918eb47-aea7-084b-36e5-c5a875b54abf-C": {
+      "recipient_id": "6918eb47-aea7-084b-36e5-c5a875b54abf-C",
+      "name": "PRACTICON INC",
+      "uei": "LCM5WNBDJAX6",
+      "amount": 139637,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "8fbf7fd4-5f67-0382-67ed-3dc9d8d4434b-C": {
+      "recipient_id": "8fbf7fd4-5f67-0382-67ed-3dc9d8d4434b-C",
+      "name": "KIT CONTRACTING LLC",
+      "uei": "FWFKEFLA33J1",
+      "amount": 139542,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "a86fdfca-978f-7f0d-ea86-46b9c1eb493a-C": {
+      "recipient_id": "a86fdfca-978f-7f0d-ea86-46b9c1eb493a-C",
+      "name": "BLACKHORSE MANAGEMENT, LLC",
+      "uei": "TX4KYR857C73",
+      "amount": 137810,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "8aab6004-8d51-70b6-8ab7-21de934a9702-C": {
+      "recipient_id": "8aab6004-8d51-70b6-8ab7-21de934a9702-C",
+      "name": "METAL-FLEX WELDED BELLOWS, INC.",
+      "uei": "SN3XFT4F9UL5",
+      "amount": 137345,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "473109e8-dbca-6f0f-9f30-ca9d1687ef1f-C": {
+      "recipient_id": "473109e8-dbca-6f0f-9f30-ca9d1687ef1f-C",
+      "name": "X FIELD SERVICES LLC",
+      "uei": "LTZ2FAS47LX3",
+      "amount": 137150,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "71660e5e-ccda-0b04-ec3c-d821383f7392-C": {
+      "recipient_id": "71660e5e-ccda-0b04-ec3c-d821383f7392-C",
+      "name": "GLOBAL INDIRECT MARKETS LLC",
+      "uei": "HYWQWZ877RH1",
+      "amount": 135546,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "111e8e8b-15e0-2642-531b-f2ad54450e08-C": {
+      "recipient_id": "111e8e8b-15e0-2642-531b-f2ad54450e08-C",
+      "name": "WILLMORE AG SERVICES, INC.",
+      "uei": "Z936KFYTT4T9",
+      "amount": 134728,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "e671d97e-c3b7-95ce-f61c-67364e22aa38-C": {
+      "recipient_id": "e671d97e-c3b7-95ce-f61c-67364e22aa38-C",
+      "name": "KOORS CONTRACTING LLC",
+      "uei": "C1P6AM6KRE58",
+      "amount": 133149,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "a1820644-ed83-43a0-9d29-3db293a56e5a-C": {
+      "recipient_id": "a1820644-ed83-43a0-9d29-3db293a56e5a-C",
+      "name": "NEAR SPACE CORP",
+      "uei": "DPLPQNTEK7W7",
+      "amount": 131750,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "1dd825c5-1693-7594-150c-8d32bbaf4f2d-C": {
+      "recipient_id": "1dd825c5-1693-7594-150c-8d32bbaf4f2d-C",
+      "name": "PACKAGED AGILE LLC",
+      "uei": "ZBQJW2SBNRF6",
+      "amount": 130000,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "37889e84-a3df-5aa1-dc54-6cc84ad5cf6a-C": {
+      "recipient_id": "37889e84-a3df-5aa1-dc54-6cc84ad5cf6a-C",
+      "name": "TOMS TIMBER LLC",
+      "uei": "KGPJWMACYK77",
+      "amount": 129759,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "7996bb0b-e4b4-132b-cbec-2677544159a8-C": {
+      "recipient_id": "7996bb0b-e4b4-132b-cbec-2677544159a8-C",
+      "name": "AMS CONSULTING AND DESIGN. INC",
+      "uei": "TH2ZULPHFJS8",
+      "amount": 129000,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "a107416f-db0a-c969-46ed-cc57110b9418-C": {
+      "recipient_id": "a107416f-db0a-c969-46ed-cc57110b9418-C",
+      "name": "STOBIE CONSTRUCTION LLC",
+      "uei": "UVRYNNKCF2N6",
+      "amount": 128754,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "39cc8cfd-a2ca-8560-feb0-22c504597add-C": {
+      "recipient_id": "39cc8cfd-a2ca-8560-feb0-22c504597add-C",
+      "name": "NOEL FIRE LLC",
+      "uei": "NZBRMYBMMV25",
+      "amount": 128600,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "3b9e6b50-85e8-527a-acf6-6396389fa3a3-C": {
+      "recipient_id": "3b9e6b50-85e8-527a-acf6-6396389fa3a3-C",
+      "name": "STAPLETON ENTERPRISES LLC",
+      "uei": "SSLLKKMVUJA3",
+      "amount": 127675,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "488c3bf9-ce44-f494-b143-291c63e230c2-C": {
+      "recipient_id": "488c3bf9-ce44-f494-b143-291c63e230c2-C",
+      "name": "VETERANS PRE-CONSTRUCTION & VISUAL SOLUTIONS, LLC",
+      "uei": "FAPZQ1BR9L58",
+      "amount": 127542,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "8be5bf7f-cf7c-c993-e4cd-af4169f64c9f-C": {
+      "recipient_id": "8be5bf7f-cf7c-c993-e4cd-af4169f64c9f-C",
+      "name": "KIRLIN CO",
+      "uei": "KQPHRF5A1SR9",
+      "amount": 127350,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "e9eefd00-0ccc-a1fd-08bf-d6f20c2053b2-C": {
+      "recipient_id": "e9eefd00-0ccc-a1fd-08bf-d6f20c2053b2-C",
+      "name": "NEW SOURCE CORPORATION",
+      "uei": "UADBNZZHLGG1",
+      "amount": 126903,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "a7b1671b-c09b-69f4-a091-26aba1eca39a-C": {
+      "recipient_id": "a7b1671b-c09b-69f4-a091-26aba1eca39a-C",
+      "name": "SMALLEN FAMILY LLC",
+      "uei": "XJJ1HU9HG5J9",
+      "amount": 126702,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "3db3e7e7-f6da-38ea-5a4a-97662ba7babe-C": {
+      "recipient_id": "3db3e7e7-f6da-38ea-5a4a-97662ba7babe-C",
+      "name": "MEADOWGATE TECHNOLOGIES LLC",
+      "uei": "TW2SHAU5ZQS6",
+      "amount": 125000,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "3205316c-dc02-6f34-3e09-71fc838c7198-C": {
+      "recipient_id": "3205316c-dc02-6f34-3e09-71fc838c7198-C",
+      "name": "MASSEY DEFENSE SERVICES LLC",
+      "uei": "ML9WF1LFS7B7",
+      "amount": 124262,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "843bbfe8-9566-c7e0-2ebd-384931046754-C": {
+      "recipient_id": "843bbfe8-9566-c7e0-2ebd-384931046754-C",
+      "name": "KIM GARDNER, INC.",
+      "uei": "FNPQNCFCPK78",
+      "amount": 123410,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "47a390c6-92c7-cabb-60bc-8ad642abe741-C": {
+      "recipient_id": "47a390c6-92c7-cabb-60bc-8ad642abe741-C",
+      "name": "PLANET PARTNERSHIPS LLC",
+      "uei": "E5CHMKAP2AD8",
+      "amount": 123324,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "0ad411b1-4939-6bd2-9569-b7beb9fba9bc-C": {
+      "recipient_id": "0ad411b1-4939-6bd2-9569-b7beb9fba9bc-C",
+      "name": "ARBOLA, INC.",
+      "uei": "GJM9ZZPDW3Y3",
+      "amount": 122238,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "babdc67f-3046-43e3-21c0-884b64bf64ca-C": {
+      "recipient_id": "babdc67f-3046-43e3-21c0-884b64bf64ca-C",
+      "name": "COMPUTER SOLUTIONS OF MIDDLE GEORGIA INC",
+      "uei": "UN9THDKMNJ46",
+      "amount": 122192,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "afed1fd5-adfb-e992-d48e-8eb859f3c528-C": {
+      "recipient_id": "afed1fd5-adfb-e992-d48e-8eb859f3c528-C",
+      "name": "CALIFORNIA PACIFIC TECHNICAL SERVICES LLC",
+      "uei": "F2CMZ4JJGDP3",
+      "amount": 121864,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "619ebf94-2e3d-0cba-297f-435b1f62b74d-C": {
+      "recipient_id": "619ebf94-2e3d-0cba-297f-435b1f62b74d-C",
+      "name": "3T FEDERAL SOLUTIONS LLC",
+      "uei": "WPF1UWGEQGU1",
+      "amount": 121677,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "54b4e5e8-73d7-317c-f855-19cb443fb56a-C": {
+      "recipient_id": "54b4e5e8-73d7-317c-f855-19cb443fb56a-C",
+      "name": "ARNOLD ELECTRIC INC",
+      "uei": "UNR9GAK3JST3",
+      "amount": 121300,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "8daba137-891b-a00b-ef34-3160846ba9c1-C": {
+      "recipient_id": "8daba137-891b-a00b-ef34-3160846ba9c1-C",
+      "name": "NETCOMPLIANCE ENVIRONMENTAL SERVICES LLC",
+      "uei": "QQ43VRHCNY77",
+      "amount": 120355,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "990f21bf-1624-ce13-cb05-e6f23cd7cb85-C": {
+      "recipient_id": "990f21bf-1624-ce13-cb05-e6f23cd7cb85-C",
+      "name": "6TH AVENUE GROUP LLC",
+      "uei": "SN7BLNDWMNS5",
+      "amount": 120240,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "efccc6da-d0a5-097b-f881-917333f43db8-C": {
+      "recipient_id": "efccc6da-d0a5-097b-f881-917333f43db8-C",
+      "name": "RESILIENT SOLUTIONS 21, LLC",
+      "uei": "XJLNUJ68XJF3",
+      "amount": 120000,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "c9c12fd6-44ec-08e2-7fd2-20db5b84961b-C": {
+      "recipient_id": "c9c12fd6-44ec-08e2-7fd2-20db5b84961b-C",
+      "name": "ADZTECH & PUBLIC RELATIONS",
+      "uei": "MRWBL8LDS615",
+      "amount": 118721,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "3428e671-659c-0a36-921a-36d64dfdea64-C": {
+      "recipient_id": "3428e671-659c-0a36-921a-36d64dfdea64-C",
+      "name": "CARTER-LAMBERT DIVISIONS LLC",
+      "uei": "YVW6NE58LJN1",
+      "amount": 118164,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "b3e5af62-5a32-b35a-223a-e7ff3e261dfa-C": {
+      "recipient_id": "b3e5af62-5a32-b35a-223a-e7ff3e261dfa-C",
+      "name": "NEWTURN SOLUTIONS, INC.",
+      "uei": "H64QRWG73H71",
+      "amount": 118094,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "9fe8a9f2-2d84-762b-ac4e-95153e57c295-C": {
+      "recipient_id": "9fe8a9f2-2d84-762b-ac4e-95153e57c295-C",
+      "name": "PAUL BOLLING",
+      "uei": "GNWKJDXLAZC8",
+      "amount": 117675,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "50485b55-a27e-0790-4a56-4aca0fec9ec0-C": {
+      "recipient_id": "50485b55-a27e-0790-4a56-4aca0fec9ec0-C",
+      "name": "TRADECONNECTT, LLC",
+      "uei": "D3EQCF8MBRL5",
+      "amount": 117571,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "e9f2f699-e34a-37f7-0c7c-4674fdabc8a9-C": {
+      "recipient_id": "e9f2f699-e34a-37f7-0c7c-4674fdabc8a9-C",
+      "name": "SEASON KILGORE",
+      "uei": "L3DHF2NEP5B3",
+      "amount": 117526,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "6c797e06-2556-028b-3cf1-9ab17815adf4-C": {
+      "recipient_id": "6c797e06-2556-028b-3cf1-9ab17815adf4-C",
+      "name": "THOMAS D. WHITE",
+      "uei": "TNJ4G354LJV1",
+      "amount": 115354,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "962f3b72-5d0e-dd57-bbed-8ecf35b420c4-C": {
+      "recipient_id": "962f3b72-5d0e-dd57-bbed-8ecf35b420c4-C",
+      "name": "HTW & ASSOCIATES, P.A.",
+      "uei": "ME7GEEJ8S2Z7",
+      "amount": 115000,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "268b5158-c817-9c67-fdac-4bb9b7db4c2f-C": {
+      "recipient_id": "268b5158-c817-9c67-fdac-4bb9b7db4c2f-C",
+      "name": "EVERGREEN CONSTRUCTION & CONSULTING INC",
+      "uei": "ZLNQPARGVQV7",
+      "amount": 114554,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "11fbcf90-0d2f-6567-70f3-ac42b3a6c346-C": {
+      "recipient_id": "11fbcf90-0d2f-6567-70f3-ac42b3a6c346-C",
+      "name": "CHAPARRAL CONSTRUCTION L.L.C.",
+      "uei": "MLGGT9KG5P56",
+      "amount": 110854,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "7d45c45d-eadb-9a11-2007-416dbabaedaa-C": {
+      "recipient_id": "7d45c45d-eadb-9a11-2007-416dbabaedaa-C",
+      "name": "ENVIRO SAFETY COMPLIANCE ALTERNATIVE INC",
+      "uei": "CA7DU9RD7J11",
+      "amount": 109763,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "e5859a18-17da-19d7-a1cc-8962e15be7a5-C": {
+      "recipient_id": "e5859a18-17da-19d7-a1cc-8962e15be7a5-C",
+      "name": "ACCESS COMMUNICATIONS GROUP LLC",
+      "uei": "W3LULATDDA99",
+      "amount": 109547,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "764399ec-94e6-5b43-6396-e3f544fe9933-C": {
+      "recipient_id": "764399ec-94e6-5b43-6396-e3f544fe9933-C",
+      "name": "KEYSTONE ECOLOGICAL SERVICES, LLC",
+      "uei": "Y124B648HYH7",
+      "amount": 109000,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "7366c552-788b-dd17-0210-44e9b7db57f2-C": {
+      "recipient_id": "7366c552-788b-dd17-0210-44e9b7db57f2-C",
+      "name": "QUASARS-JPI JV LLC",
+      "uei": "D29FCU9AJVN7",
+      "amount": 108191,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "c91020c3-33e9-5fcd-7542-614e6cdc887e-C": {
+      "recipient_id": "c91020c3-33e9-5fcd-7542-614e6cdc887e-C",
+      "name": "SASS INDUSTRIES INC.",
+      "uei": "EYVUJ2957FN7",
+      "amount": 108040,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "56f3d78d-1142-ca84-7d8e-37b69b43f23a-C": {
+      "recipient_id": "56f3d78d-1142-ca84-7d8e-37b69b43f23a-C",
+      "name": "EAGLE ENGINEERING & LAND DEVELOPMENT, INC.",
+      "uei": "Y78EEJMQC655",
+      "amount": 108033,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "1c3d2069-3bd2-aec4-a9f1-f21e2bfb212d-C": {
+      "recipient_id": "1c3d2069-3bd2-aec4-a9f1-f21e2bfb212d-C",
+      "name": "REMAC INC",
+      "uei": "HPF8DXD2Q7P1",
+      "amount": 107803,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "d8da4a43-105b-716d-5f79-0c193d168d3a-C": {
+      "recipient_id": "d8da4a43-105b-716d-5f79-0c193d168d3a-C",
+      "name": "AGGRIGATOR, INC.",
+      "uei": "SW85KK7GSZ54",
+      "amount": 106792,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "e9509632-444f-2d11-d971-4e220d636b82-C": {
+      "recipient_id": "e9509632-444f-2d11-d971-4e220d636b82-C",
+      "name": "AARON W BRESSOUD",
+      "uei": "UXYRVGTBNLZ5",
+      "amount": 106586,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "f2da7bc0-cac9-1092-ba60-d46668e65d8a-C": {
+      "recipient_id": "f2da7bc0-cac9-1092-ba60-d46668e65d8a-C",
+      "name": "NVS CORPORATE SERVICES, INC",
+      "uei": "PU5SQJJPE383",
+      "amount": 105766,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "6944d954-0790-fa69-69b8-95d5c7ede101-C": {
+      "recipient_id": "6944d954-0790-fa69-69b8-95d5c7ede101-C",
+      "name": "BOND INC",
+      "uei": "CQN9Z5LTEA73",
+      "amount": 105563,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "6e28f127-c52a-93e6-a89f-73ee3cafda16-C": {
+      "recipient_id": "6e28f127-c52a-93e6-a89f-73ee3cafda16-C",
+      "name": "SPOTLESS JANITORIAL SERVICES INC",
+      "uei": "FMPELR96MJ24",
+      "amount": 105527,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "edc24fd5-ad43-f86a-7a8b-29e9c63bfd62-C": {
+      "recipient_id": "edc24fd5-ad43-f86a-7a8b-29e9c63bfd62-C",
+      "name": "L & B LABORATORIES INC",
+      "uei": "CYUCKHGBLJA7",
+      "amount": 105440,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "cfe30747-5331-758c-6098-7ce762d48fe4-C": {
+      "recipient_id": "cfe30747-5331-758c-6098-7ce762d48fe4-C",
+      "name": "LAKOTA SOFTWARE SOLUTIONS, INC",
+      "uei": "JHVSG1RZWFW6",
+      "amount": 105424,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "16e79e94-09bc-86fb-771f-eba43eac9b9e-C": {
+      "recipient_id": "16e79e94-09bc-86fb-771f-eba43eac9b9e-C",
+      "name": "J.C. GONZALEZ, INC.",
+      "uei": "RJTXJCE7Q1R3",
+      "amount": 104583,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "bce00335-16a8-1195-604d-f4268ba0cedd-C": {
+      "recipient_id": "bce00335-16a8-1195-604d-f4268ba0cedd-C",
+      "name": "NATIONAL MAGNETICS GROUP, INC.",
+      "uei": "LEXRAQYKY538",
+      "amount": 104187,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "6cc1a17b-0c26-aae0-508d-990de6756237-C": {
+      "recipient_id": "6cc1a17b-0c26-aae0-508d-990de6756237-C",
+      "name": "JR LANDSCAPE & FACILITY MANAGEMENT LLC",
+      "uei": "NT3LPXJLJWA3",
+      "amount": 103333,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "3f7a0865-96da-f9ab-74a0-066ae4639805-C": {
+      "recipient_id": "3f7a0865-96da-f9ab-74a0-066ae4639805-C",
+      "name": "ELIJAH P. ISRAEL LLC",
+      "uei": "GMPJCNLXWGL3",
+      "amount": 103287,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "46a6094d-fe19-d6f4-c790-80e11afbe0d4-C": {
+      "recipient_id": "46a6094d-fe19-d6f4-c790-80e11afbe0d4-C",
+      "name": "LEDAMARK INC",
+      "uei": "PK1BX692B228",
+      "amount": 103178,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "0928a83d-2c62-b550-385f-30dae7e22f36-C": {
+      "recipient_id": "0928a83d-2c62-b550-385f-30dae7e22f36-C",
+      "name": "RL ALVAREZ CONSTRUCTION, LLC",
+      "uei": "E1PVEGGV5TF7",
+      "amount": 102768,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "a90450ea-78ed-49df-b95a-15ee874f2bea-C": {
+      "recipient_id": "a90450ea-78ed-49df-b95a-15ee874f2bea-C",
+      "name": "SANTIE'S WHOLESALE OIL COMPANY",
+      "uei": "LJ4MFSXKK1K9",
+      "amount": 102505,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "bff7fe83-6800-c42d-5fde-0410e3247ee3-C": {
+      "recipient_id": "bff7fe83-6800-c42d-5fde-0410e3247ee3-C",
+      "name": "THE ARCHIE CORPORATION LLC",
+      "uei": "LES5MMLX3PZ8",
+      "amount": 102471,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "37b267a2-56c4-5c4e-4779-e1ce38264d53-C": {
+      "recipient_id": "37b267a2-56c4-5c4e-4779-e1ce38264d53-C",
+      "name": "TIBERIAN DEVELOPMENT GROUP LLC",
+      "uei": "FCWPCYN7Y6K4",
+      "amount": 101462,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "ac651f14-cd59-c9b7-9fe9-e0f45baefa33-C": {
+      "recipient_id": "ac651f14-cd59-c9b7-9fe9-e0f45baefa33-C",
+      "name": "FRANKLIN'S SERVICES UNLIMITED INC.",
+      "uei": "SW55S67VJ8V9",
+      "amount": 101103,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "2f6e7c0b-787d-7dbd-e780-a1ace7ac8230-C": {
+      "recipient_id": "2f6e7c0b-787d-7dbd-e780-a1ace7ac8230-C",
+      "name": "BUBO LEARNING DESIGN, LLC",
+      "uei": "EE71M2292YL4",
+      "amount": 100948,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "872b93bb-4bd8-32d4-2be2-5a67298dc5a7-C": {
+      "recipient_id": "872b93bb-4bd8-32d4-2be2-5a67298dc5a7-C",
+      "name": "PRUITT, DARRYL",
+      "uei": "YNK6AEMQ4QM1",
+      "amount": 100499,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "88aa8301-fa36-8dd9-009c-f9fdb3a86e0a-C": {
+      "recipient_id": "88aa8301-fa36-8dd9-009c-f9fdb3a86e0a-C",
+      "name": "SOCIO-ECOLOGICAL CONCEPTS LLC",
+      "uei": "E9JKE25CLH87",
+      "amount": 100000,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "9ef8ec55-80f3-3094-6a0c-e9857412b2aa-C": {
+      "recipient_id": "9ef8ec55-80f3-3094-6a0c-e9857412b2aa-C",
+      "name": "TRIANGLE ENVIRONMENTAL HEALTH INITIATIVE LLC",
+      "uei": "X6EJJK2HHMF1",
+      "amount": 100000,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "bcfb65a2-8aa3-233b-5fcd-5abfc70fa4c3-C": {
+      "recipient_id": "bcfb65a2-8aa3-233b-5fcd-5abfc70fa4c3-C",
+      "name": "VOYAGER MEDICAL LLC",
+      "uei": "YNUSCKWBGW87",
+      "amount": 99777,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "3ce4b39e-656e-f96a-6d5e-ecc9d982f00e-C": {
+      "recipient_id": "3ce4b39e-656e-f96a-6d5e-ecc9d982f00e-C",
+      "name": "PREMIER CONTRACTING & TECHNICAL SERVICES, INC.",
+      "uei": "QDNVTAHPXL51",
+      "amount": 99482,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "1780d3de-844c-529a-fda4-d35648033cb6-C": {
+      "recipient_id": "1780d3de-844c-529a-fda4-d35648033cb6-C",
+      "name": "PATRIOT STRATEGY AND DEVELOPMENT LLC",
+      "uei": "CX58JQA6QSW5",
+      "amount": 99004,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "32d6f739-1cc9-953a-a26b-b2df263b2e6d-C": {
+      "recipient_id": "32d6f739-1cc9-953a-a26b-b2df263b2e6d-C",
+      "name": "GREGORY EQUIPMENT, INC",
+      "uei": "W1ZTND6NFDU6",
+      "amount": 98593,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "e13a85b0-ca3d-1c1e-41f7-92c9aaeaba77-C": {
+      "recipient_id": "e13a85b0-ca3d-1c1e-41f7-92c9aaeaba77-C",
+      "name": "AMARATEK, INC.",
+      "uei": "LBSGEB2ECHG9",
+      "amount": 97221,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "e50ac17a-1c81-3df3-1a37-dddf378e4ced-C": {
+      "recipient_id": "e50ac17a-1c81-3df3-1a37-dddf378e4ced-C",
+      "name": "CARL R. JONES EXCAVATING AND HAULING, LLC",
+      "uei": "RL8NUXCMJQK3",
+      "amount": 96179,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "89595c02-e03a-ef70-8b73-447f544234c3-C": {
+      "recipient_id": "89595c02-e03a-ef70-8b73-447f544234c3-C",
+      "name": "SAM THOMPSON ENTERPRISES, INC",
+      "uei": "E51BPZE2VKL3",
+      "amount": 96150,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "8d41cdbb-a6f8-b47c-e960-103c264c13d1-C": {
+      "recipient_id": "8d41cdbb-a6f8-b47c-e960-103c264c13d1-C",
+      "name": "DICKERSON PETROLEUM INC",
+      "uei": "N747NWLBKVL7",
+      "amount": 95517,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "7359ccc3-231e-0e28-b536-9273498c41ba-C": {
+      "recipient_id": "7359ccc3-231e-0e28-b536-9273498c41ba-C",
+      "name": "B-W GRAPHICS, INC.",
+      "uei": "ESHCG9J2WJE7",
+      "amount": 95157,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "76bba56f-b130-db65-c623-9b18a5d6bcb7-C": {
+      "recipient_id": "76bba56f-b130-db65-c623-9b18a5d6bcb7-C",
+      "name": "BMA SERVICES, LLC",
+      "uei": "NNQGC3ZUD9W6",
+      "amount": 95000,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "f9eb7e98-5380-3356-ec39-0e44d6b3ff5e-C": {
+      "recipient_id": "f9eb7e98-5380-3356-ec39-0e44d6b3ff5e-C",
+      "name": "RED CANYON SOFTWARE, INC.",
+      "uei": "H96CGQGDABF1",
+      "amount": 94960,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "6be72af6-3def-5599-6417-a2d1b60c4a11-C": {
+      "recipient_id": "6be72af6-3def-5599-6417-a2d1b60c4a11-C",
+      "name": "ANDREA RABE",
+      "uei": "JBBGAPTX9GL5",
+      "amount": 94837,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "e4f93c78-fbdd-3248-c202-4a3139d3a616-C": {
+      "recipient_id": "e4f93c78-fbdd-3248-c202-4a3139d3a616-C",
+      "name": "RAYNOLD L TOBIASSON",
+      "uei": "NB3HSEAEF595",
+      "amount": 94394,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "78f399f3-baa2-2aaa-dd6c-7f09ff0aa446-C": {
+      "recipient_id": "78f399f3-baa2-2aaa-dd6c-7f09ff0aa446-C",
+      "name": "SWEEPER METAL FABRICATORS CORP.",
+      "uei": "NC4GV6Z4BBD5",
+      "amount": 94017,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "5b0c96c8-4d40-dc7a-5b81-f8db279c6558-C": {
+      "recipient_id": "5b0c96c8-4d40-dc7a-5b81-f8db279c6558-C",
+      "name": "BLUE STEEL MARINE, LLC",
+      "uei": "MQHTLLFUHQL6",
+      "amount": 93914,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "fa073c39-4c55-dfe4-2030-901ff8d8ecb6-C": {
+      "recipient_id": "fa073c39-4c55-dfe4-2030-901ff8d8ecb6-C",
+      "name": "TECHNICAL MARKETING SYSTEMS, INC.",
+      "uei": "HJ3FM4QY1J13",
+      "amount": 93889,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "af808e8c-ae36-bfb7-345f-fef1ac5de11e-C": {
+      "recipient_id": "af808e8c-ae36-bfb7-345f-fef1ac5de11e-C",
+      "name": "TEXOLA INC",
+      "uei": "E21NWPQASN27",
+      "amount": 93778,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "dedca5d3-a306-4f00-0679-8da2e401508b-C": {
+      "recipient_id": "dedca5d3-a306-4f00-0679-8da2e401508b-C",
+      "name": "ALAS LLC",
+      "uei": "KKJBSPHGM963",
+      "amount": 93645,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "43dd4d4a-bb36-6a1e-1de5-eb11512555d0-C": {
+      "recipient_id": "43dd4d4a-bb36-6a1e-1de5-eb11512555d0-C",
+      "name": "R & S LOWNDES MANAGEMENT, L.LC.",
+      "uei": "J2RXFJBMG5S5",
+      "amount": 92614,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "92b0bdd8-be8a-6278-e6df-47b06b6f8e64-C": {
+      "recipient_id": "92b0bdd8-be8a-6278-e6df-47b06b6f8e64-C",
+      "name": "NEW GARDEN DESIGN, INC",
+      "uei": "GJZ3YM9YFPL7",
+      "amount": 92258,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "1b84bd09-eede-18ef-4e07-f05ccefd2f91-C": {
+      "recipient_id": "1b84bd09-eede-18ef-4e07-f05ccefd2f91-C",
+      "name": "406H2O LLC",
+      "uei": "HK6LRGV2CQ44",
+      "amount": 92059,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "dc22860f-6056-98b5-0f33-8adfac00c486-C": {
+      "recipient_id": "dc22860f-6056-98b5-0f33-8adfac00c486-C",
+      "name": "COMANCHE NATION CONSTRUCTION, LLC",
+      "uei": "NZ6ALLJLGJ38",
+      "amount": 91960,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "e273367a-b49a-d167-beaa-de7e9f1d03c6-C": {
+      "recipient_id": "e273367a-b49a-d167-beaa-de7e9f1d03c6-C",
+      "name": "MCGARR, ADONICA S",
+      "uei": "J9VKQSL68AX4",
+      "amount": 91916,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "3174794e-98a1-ac1f-d28d-fa20b31f4221-C": {
+      "recipient_id": "3174794e-98a1-ac1f-d28d-fa20b31f4221-C",
+      "name": "OCHOCO MANUFACTURING CORP",
+      "uei": "VT6BLZJ78PH3",
+      "amount": 91635,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "e643428f-9935-37ed-944d-658fe909eb6f-C": {
+      "recipient_id": "e643428f-9935-37ed-944d-658fe909eb6f-C",
+      "name": "GH PARTS & COMPONENTS, INC.",
+      "uei": "F64PWMUJ2N31",
+      "amount": 90728,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "16fdbb4d-1018-e805-196e-9ed114725be9-C": {
+      "recipient_id": "16fdbb4d-1018-e805-196e-9ed114725be9-C",
+      "name": "CHOCTAW MANUFACTURING DEFENSE CONTRACTORS, INC.",
+      "uei": "CA5CELU21GR1",
+      "amount": 90556,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "1a808691-3744-f537-37df-f391c9f33715-C": {
+      "recipient_id": "1a808691-3744-f537-37df-f391c9f33715-C",
+      "name": "WILSON CHAPMAN AND ASSOCIATES LLC",
+      "uei": "HKB3CKZ31LJ7",
+      "amount": 89431,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "c54dea89-88de-1d77-c4c1-8818896cf079-C": {
+      "recipient_id": "c54dea89-88de-1d77-c4c1-8818896cf079-C",
+      "name": "NOVA COMMERCIAL COMPANY, INC.",
+      "uei": "RV6VM6UWUGL6",
+      "amount": 89381,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "05361b1a-7c75-b07f-12bb-d20c8c9ff414-C": {
+      "recipient_id": "05361b1a-7c75-b07f-12bb-d20c8c9ff414-C",
+      "name": "R O ANDERSON ENGINEERING INC",
+      "uei": "C2UKGFBXXKC7",
+      "amount": 88756,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "ed7ab94a-8a5c-0ece-769b-13fb8daec5a4-C": {
+      "recipient_id": "ed7ab94a-8a5c-0ece-769b-13fb8daec5a4-C",
+      "name": "BLUESKY MAST, LLC",
+      "uei": "SSJFKN97ZW94",
+      "amount": 88451,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "518e7b97-f29b-cecc-e784-7a99b5b4e4f9-C": {
+      "recipient_id": "518e7b97-f29b-cecc-e784-7a99b5b4e4f9-C",
+      "name": "CONTRACT MANAGEMENT INC",
+      "uei": "FFM7EBGPLLY7",
+      "amount": 87898,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "49b767e2-16ad-1245-36d3-2a792b5eac91-C": {
+      "recipient_id": "49b767e2-16ad-1245-36d3-2a792b5eac91-C",
+      "name": "GUAM PAK EXPRESS, INC",
+      "uei": "L7MSMURHCSU7",
+      "amount": 87893,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "8049c491-89a3-146c-cf16-ab58bfe313da-C": {
+      "recipient_id": "8049c491-89a3-146c-cf16-ab58bfe313da-C",
+      "name": "BONNEVILLE CONTRACTING AND TECHNOLOGY GROUP LLC",
+      "uei": "ULMJGT56N755",
+      "amount": 87480,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "79955732-0968-cf8d-bee7-6b2b9ac67294-C": {
+      "recipient_id": "79955732-0968-cf8d-bee7-6b2b9ac67294-C",
+      "name": "TIMBERLINE ENVIRONMENTAL SERVICES, INC",
+      "uei": "M7PKP57L2JM3",
+      "amount": 87360,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "c1ee3d9e-2cb7-f6e7-3f10-73e9db1dc4f6-C": {
+      "recipient_id": "c1ee3d9e-2cb7-f6e7-3f10-73e9db1dc4f6-C",
+      "name": "G.S.S.I SOLUTIONS INC.",
+      "uei": "PFXAGKE2Q7D1",
+      "amount": 87285,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "c42db41b-8c2b-f8e4-72b3-c525f344899c-C": {
+      "recipient_id": "c42db41b-8c2b-f8e4-72b3-c525f344899c-C",
+      "name": "TOP OF THE LINE SERVICES, LLC",
+      "uei": "JCVLNNGTNK84",
+      "amount": 87000,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "4e020a71-4959-9242-de12-ebd0a3ee8f13-C": {
+      "recipient_id": "4e020a71-4959-9242-de12-ebd0a3ee8f13-C",
+      "name": "B. C. & G. WEITHMAN CONSTRUCTION COMPANY",
+      "uei": "KKTTE1F6GQ83",
+      "amount": 86101,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "302d7e6b-175d-e7f4-ce32-534896472d8d-C": {
+      "recipient_id": "302d7e6b-175d-e7f4-ce32-534896472d8d-C",
+      "name": "PEAWER ENTERPRISES LLC",
+      "uei": "KCLQY5W3KSE6",
+      "amount": 86006,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "b5d57e87-33e7-fe3b-e2ba-3bb5b7e6b279-C": {
+      "recipient_id": "b5d57e87-33e7-fe3b-e2ba-3bb5b7e6b279-C",
+      "name": "ALLISON-SIERRA, INC.",
+      "uei": "GY6MDTJZ3WK4",
+      "amount": 85799,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "37e25359-15dc-1c46-8328-9a7800797283-C": {
+      "recipient_id": "37e25359-15dc-1c46-8328-9a7800797283-C",
+      "name": "B & C WILDLAND CONTRACTING LLC",
+      "uei": "N3GHX7F281F2",
+      "amount": 85736,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "de482028-cd14-22a5-39d5-a957e61f4fa7-C": {
+      "recipient_id": "de482028-cd14-22a5-39d5-a957e61f4fa7-C",
+      "name": "MASSIE MFG INC",
+      "uei": "Z85KGJU2SB39",
+      "amount": 85331,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "9c006f24-c408-adcf-272a-6b092925944e-C": {
+      "recipient_id": "9c006f24-c408-adcf-272a-6b092925944e-C",
+      "name": "POTOMAC RESTORATION INC.",
+      "uei": "KB18R6MKVQS9",
+      "amount": 84984,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "98590248-2a47-ddd4-c4cf-34c9061264b9-C": {
+      "recipient_id": "98590248-2a47-ddd4-c4cf-34c9061264b9-C",
+      "name": "TAURAN MANAGEMENT GROUP LLC",
+      "uei": "CEPKGDDEDA18",
+      "amount": 84283,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "ff6aa5c4-ba80-2e2e-afbe-f9588874968a-C": {
+      "recipient_id": "ff6aa5c4-ba80-2e2e-afbe-f9588874968a-C",
+      "name": "PACIFIC OFFICE SOLUTIONS LLC",
+      "uei": "QF6NVLBB6DN3",
+      "amount": 84167,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "640fff87-9f97-cc00-aa3e-43ba55fba909-C": {
+      "recipient_id": "640fff87-9f97-cc00-aa3e-43ba55fba909-C",
+      "name": "ECONOSMART PROPERTY SERVICES LLC",
+      "uei": "XG4NWKNM82B4",
+      "amount": 83724,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "5bece2c7-711c-5199-a3ff-aea930cabb22-C": {
+      "recipient_id": "5bece2c7-711c-5199-a3ff-aea930cabb22-C",
+      "name": "STALLER ENTERPRISES INC",
+      "uei": "LLRSL4KT9CA9",
+      "amount": 83648,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "b39dc4e7-736f-be6e-addf-ac053cd0db95-C": {
+      "recipient_id": "b39dc4e7-736f-be6e-addf-ac053cd0db95-C",
+      "name": "KENT JOHNSON",
+      "uei": "VQA4FV3QUKJ7",
+      "amount": 82783,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "2b47752a-4150-d68e-f980-e8f350d5d11d-C": {
+      "recipient_id": "2b47752a-4150-d68e-f980-e8f350d5d11d-C",
+      "name": "RE FASTENERS, LLC",
+      "uei": "LQYYMBKN39X3",
+      "amount": 82029,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "4a4adc8d-6de3-5283-7380-257c23a539ef-C": {
+      "recipient_id": "4a4adc8d-6de3-5283-7380-257c23a539ef-C",
+      "name": "LANCASTER ALLOYS COMPANY, INC.",
+      "uei": "J19QG7HL5NT4",
+      "amount": 81921,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "38d9c6f7-5d8d-82b3-6d96-f9f6c12e993f-C": {
+      "recipient_id": "38d9c6f7-5d8d-82b3-6d96-f9f6c12e993f-C",
+      "name": "BLACK HOOP ENTERPRISES LLC",
+      "uei": "PHSFMLMNMJ24",
+      "amount": 81609,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "d5c0c8eb-9eea-853d-cb28-243656f5cd45-C": {
+      "recipient_id": "d5c0c8eb-9eea-853d-cb28-243656f5cd45-C",
+      "name": "DMC CONSULTANTS INC",
+      "uei": "EKNKGYNZ9887",
+      "amount": 81000,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "1025fe60-e76a-6234-da7a-a07144c7593a-C": {
+      "recipient_id": "1025fe60-e76a-6234-da7a-a07144c7593a-C",
+      "name": "DIGNOS, INC.",
+      "uei": "PYKSZWUERDE6",
+      "amount": 80539,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "3e33aa38-22b7-670d-30a6-deeb4cc615e4-C": {
+      "recipient_id": "3e33aa38-22b7-670d-30a6-deeb4cc615e4-C",
+      "name": "ALLSTAR ECOLOGY LLC",
+      "uei": "JSCKTWT4JKB3",
+      "amount": 80466,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "177c711b-1b71-fcc8-a77e-345d77dec8a5-C": {
+      "recipient_id": "177c711b-1b71-fcc8-a77e-345d77dec8a5-C",
+      "name": "CHIEF TECHNOLOGIES LLC",
+      "uei": "LAGTLJW7NTJ3",
+      "amount": 80350,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "6518220b-b986-7dcc-5b57-4d13c8b714c3-C": {
+      "recipient_id": "6518220b-b986-7dcc-5b57-4d13c8b714c3-C",
+      "name": "BENCHMARK BIODIESEL, INC.",
+      "uei": "FLEMQP2EWA26",
+      "amount": 80082,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "8b99a854-563d-de79-0bb4-3ceced279b4e-C": {
+      "recipient_id": "8b99a854-563d-de79-0bb4-3ceced279b4e-C",
+      "name": "GRABER CONSTRUCTION AND EXCAVATION INC",
+      "uei": "H4LZU2SZ4BH3",
+      "amount": 80000,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "c2459979-d1b8-d6e6-261e-6a9d59cb9df4-C": {
+      "recipient_id": "c2459979-d1b8-d6e6-261e-6a9d59cb9df4-C",
+      "name": "GREYSTONE SERVICES LLC",
+      "uei": "N6H9YN625S11",
+      "amount": 79689,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "bbda9298-c199-450e-be10-09fa6c82196c-C": {
+      "recipient_id": "bbda9298-c199-450e-be10-09fa6c82196c-C",
+      "name": "MCCALLISTER CONTRACT SERVICES, INC",
+      "uei": "LBR4N6FVLJF9",
+      "amount": 79562,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "e2d9e6f9-122e-c41a-d196-09355f1334ee-C": {
+      "recipient_id": "e2d9e6f9-122e-c41a-d196-09355f1334ee-C",
+      "name": "7GENS, LLC",
+      "uei": "EZCHKHAAY9V7",
+      "amount": 79480,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "818b88d2-0ddf-716e-97d3-e08fdb8965f7-C": {
+      "recipient_id": "818b88d2-0ddf-716e-97d3-e08fdb8965f7-C",
+      "name": "SIGNAL MOUNTAIN NETWORKS, LLC",
+      "uei": "QHSXFAD12MB3",
+      "amount": 79223,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "d33c430b-fd6a-2343-faa6-52317de0ca33-C": {
+      "recipient_id": "d33c430b-fd6a-2343-faa6-52317de0ca33-C",
+      "name": "FASTING ENTERPRISES, INC",
+      "uei": "DRPKKLLCYMJ5",
+      "amount": 78828,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "f1a1bc79-fc50-04c6-e6cf-b9d8f68011d2-C": {
+      "recipient_id": "f1a1bc79-fc50-04c6-e6cf-b9d8f68011d2-C",
+      "name": "DIAMOND PILLAR LLC",
+      "uei": "N9UFUSEL1WY7",
+      "amount": 78625,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "47378285-8063-bc46-736e-1cb719910a0d-C": {
+      "recipient_id": "47378285-8063-bc46-736e-1cb719910a0d-C",
+      "name": "BLUE STAR INTEGRATIVE STUDIO LLC",
+      "uei": "YEEKN6HAT1W4",
+      "amount": 77970,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "95fead79-314d-c0a4-d825-a9407ee58642-C": {
+      "recipient_id": "95fead79-314d-c0a4-d825-a9407ee58642-C",
+      "name": "FIRE PROS LLC",
+      "uei": "YK9WH4JPTQH5",
+      "amount": 77787,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "665a000a-4b14-1604-327a-30f000837307-C": {
+      "recipient_id": "665a000a-4b14-1604-327a-30f000837307-C",
+      "name": "J T S CONSTRUCTION, INC",
+      "uei": "EJVUE4KFCKU4",
+      "amount": 77776,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "70c8fd1a-0e7e-9dd5-6a08-472ef7c97fd5-C": {
+      "recipient_id": "70c8fd1a-0e7e-9dd5-6a08-472ef7c97fd5-C",
+      "name": "LP CONTRACTING LLC",
+      "uei": "E9D7KTZ2XRE7",
+      "amount": 77732,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "18a24389-a2e5-bbe2-fe51-2709f77fc7c6-C": {
+      "recipient_id": "18a24389-a2e5-bbe2-fe51-2709f77fc7c6-C",
+      "name": "COOPER ZIETZ ENGINEERS, INC.",
+      "uei": "GL7JKJ4MVVG9",
+      "amount": 77209,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "bc75afaf-6a60-905f-22d4-a3eca66bf964-C": {
+      "recipient_id": "bc75afaf-6a60-905f-22d4-a3eca66bf964-C",
+      "name": "TRIPLE DEUCE MILITARY CONSULTING LLC",
+      "uei": "ZG8YL7JUJXM7",
+      "amount": 76651,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "98c58677-8832-51f2-5701-e6f4e07285d2-C": {
+      "recipient_id": "98c58677-8832-51f2-5701-e6f4e07285d2-C",
+      "name": "MANGAS GLOBAL SOLUTIONS INC",
+      "uei": "UK4JNDYAYK45",
+      "amount": 76169,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "80c8ae82-f8ad-bc19-8b3f-981398159dc5-C": {
+      "recipient_id": "80c8ae82-f8ad-bc19-8b3f-981398159dc5-C",
+      "name": "PAUL D HAMILTON",
+      "uei": "HL82KU7ZMU61",
+      "amount": 76164,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "407712cd-9004-8602-6f58-e652e1f16fbc-C": {
+      "recipient_id": "407712cd-9004-8602-6f58-e652e1f16fbc-C",
+      "name": "ACO REMODELING & CONSTRUCTION INC.",
+      "uei": "JJ7CTZM3UJ17",
+      "amount": 76071,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "7f09b176-8f30-3e7a-aad0-6a0407600e32-C": {
+      "recipient_id": "7f09b176-8f30-3e7a-aad0-6a0407600e32-C",
+      "name": "K A DAY LLC",
+      "uei": "E79RTQ4HAGN8",
+      "amount": 75629,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "2a64b1a7-a4b8-683c-e0e5-4e941b755f33-C": {
+      "recipient_id": "2a64b1a7-a4b8-683c-e0e5-4e941b755f33-C",
+      "name": "A & A HOLDINGS CORPORATION",
+      "uei": "GEBAR2WF37L6",
+      "amount": 75490,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "d25c14ab-aedc-eaff-79bc-dc8511652717-C": {
+      "recipient_id": "d25c14ab-aedc-eaff-79bc-dc8511652717-C",
+      "name": "MVP SPORTSWEAR, INC",
+      "uei": "QJDHVWFWUGM6",
+      "amount": 75432,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "88266b74-9772-1d9a-df5a-80fd420cb81e-C": {
+      "recipient_id": "88266b74-9772-1d9a-df5a-80fd420cb81e-C",
+      "name": "AIR DATA SOLUTIONS LLC",
+      "uei": "MZMAH6L4SCS3",
+      "amount": 75351,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "50e4ac34-cb2c-cabd-e78e-97ba54ebbf4a-C": {
+      "recipient_id": "50e4ac34-cb2c-cabd-e78e-97ba54ebbf4a-C",
+      "name": "ORDNANCE HOLDINGS, INC",
+      "uei": "K4HLRTMEV333",
+      "amount": 75300,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "29e84fb1-bd61-85b4-fdbd-5d113f2d7f74-C": {
+      "recipient_id": "29e84fb1-bd61-85b4-fdbd-5d113f2d7f74-C",
+      "name": "ISCAR GSE CORP",
+      "uei": "SGABJCBEB7J8",
+      "amount": 74451,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "04ace72f-fa98-170c-8e6f-a16b023f4063-C": {
+      "recipient_id": "04ace72f-fa98-170c-8e6f-a16b023f4063-C",
+      "name": "DAVIS CONTRACTING LP",
+      "uei": "XKBXUDAD8WN9",
+      "amount": 74080,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "e560898d-bb9e-d7d0-42e4-758f070395d8-C": {
+      "recipient_id": "e560898d-bb9e-d7d0-42e4-758f070395d8-C",
+      "name": "PRECISE INFORMATION SYSTEMS & PROFESSIONAL SERVICES INC",
+      "uei": "LGW2AL2MZ4A5",
+      "amount": 72939,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "5ca140d8-2eec-da43-01ae-2edcb294a0b0-C": {
+      "recipient_id": "5ca140d8-2eec-da43-01ae-2edcb294a0b0-C",
+      "name": "ARVCO CONTAINER CORPORATION",
+      "uei": "R3TLM8SYUHA3",
+      "amount": 72587,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "d0476b71-5c9f-e73b-77de-d0c7bbdb1735-C": {
+      "recipient_id": "d0476b71-5c9f-e73b-77de-d0c7bbdb1735-C",
+      "name": "SUNRISE SANITATION SERVICES INC",
+      "uei": "LFNQP3ESCVV5",
+      "amount": 72470,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "9bf2b834-d681-ae99-e0bc-0c458554082c-C": {
+      "recipient_id": "9bf2b834-d681-ae99-e0bc-0c458554082c-C",
+      "name": "A3 PRO WEST, INC.",
+      "uei": "JL4JZPJLJJ65",
+      "amount": 72258,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "7436fb88-fc49-6f09-ec9b-f0684de624ce-C": {
+      "recipient_id": "7436fb88-fc49-6f09-ec9b-f0684de624ce-C",
+      "name": "NOR-KEM DISTRIBUTORS INC",
+      "uei": "J85DVGVUHS18",
+      "amount": 71787,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "b3de29be-38b5-a167-c990-cff1b85a709b-C": {
+      "recipient_id": "b3de29be-38b5-a167-c990-cff1b85a709b-C",
+      "name": "DOCUMENT SYSTEMS, INCORPORATED",
+      "uei": "M78JJR84FSG7",
+      "amount": 71762,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "dd210080-145a-ad7c-4a56-d077f0d9bee6-C": {
+      "recipient_id": "dd210080-145a-ad7c-4a56-d077f0d9bee6-C",
+      "name": "NORTH ZONE FALLERS, INC",
+      "uei": "SNRZPLZLP9D7",
+      "amount": 71431,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "02868418-d406-e836-2688-7586f724ae98-C": {
+      "recipient_id": "02868418-d406-e836-2688-7586f724ae98-C",
+      "name": "J & H DIESEL SERVICE, INC.",
+      "uei": "HGW6FS16CT15",
+      "amount": 71283,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "128bc38f-ddcf-f180-52d0-fc5895093c29-C": {
+      "recipient_id": "128bc38f-ddcf-f180-52d0-fc5895093c29-C",
+      "name": "JCD ENGINEERING, INC.",
+      "uei": "G8LNQB761KC3",
+      "amount": 71027,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "63644069-43a1-c57d-e80e-b729b5f2498e-C": {
+      "recipient_id": "63644069-43a1-c57d-e80e-b729b5f2498e-C",
+      "name": "FLICK LUMBER CO., INC.",
+      "uei": "QGFNJAPXYYJ9",
+      "amount": 69936,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "4677801d-cdfe-af24-7ef3-a8f8c37b10b5-C": {
+      "recipient_id": "4677801d-cdfe-af24-7ef3-a8f8c37b10b5-C",
+      "name": "AIR WEST MECHANICAL CONSTRUCTION, INC.",
+      "uei": "WJCKNMDTKQV7",
+      "amount": 69878,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "a629e841-a577-0c88-4301-885f62cb0957-C": {
+      "recipient_id": "a629e841-a577-0c88-4301-885f62cb0957-C",
+      "name": "1 POINT PROCUREMENT SOLUTIONS, LLC",
+      "uei": "EAJ9N7LUNUK8",
+      "amount": 69348,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "8a1dbdab-4273-6031-68ca-39472765d072-C": {
+      "recipient_id": "8a1dbdab-4273-6031-68ca-39472765d072-C",
+      "name": "APLUS OPTIMUM SERVICES, LLC",
+      "uei": "FZUKHQLNN1D6",
+      "amount": 69318,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "ee7f02a1-99f4-4c32-63cc-7e77ed51270b-C": {
+      "recipient_id": "ee7f02a1-99f4-4c32-63cc-7e77ed51270b-C",
+      "name": "WELLER",
+      "uei": "W554SH816KE7",
+      "amount": 69231,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "12456e94-f2f0-eda9-ec22-c0d54f3fecac-C": {
+      "recipient_id": "12456e94-f2f0-eda9-ec22-c0d54f3fecac-C",
+      "name": "DOOR ADO EQUIPMENT SPECIALTIES, CORP.",
+      "uei": "XJ91P8RVBMK5",
+      "amount": 69221,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "2f30b6e5-dbfc-ffde-67ad-723aeb5cd961-C": {
+      "recipient_id": "2f30b6e5-dbfc-ffde-67ad-723aeb5cd961-C",
+      "name": "WILSON DEPENDABLE SERVICES LLC",
+      "uei": "J13PZKRDWMG6",
+      "amount": 69100,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "2d7bc676-b37e-149e-755a-10ffc0f98ef5-C": {
+      "recipient_id": "2d7bc676-b37e-149e-755a-10ffc0f98ef5-C",
+      "name": "BURMAN CONSTRUCTION, LLC",
+      "uei": "HXL5KFC8LKM7",
+      "amount": 68965,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "44176ddf-4bc5-5590-4831-a679ee977e6a-C": {
+      "recipient_id": "44176ddf-4bc5-5590-4831-a679ee977e6a-C",
+      "name": "SILVER WOLF ENTERPRISES CORP",
+      "uei": "FUNFX9CLBJ41",
+      "amount": 68950,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "aa039953-3683-6879-0348-bf757a9ab894-C": {
+      "recipient_id": "aa039953-3683-6879-0348-bf757a9ab894-C",
+      "name": "LIBERTY LABELS LLC",
+      "uei": "L4W4PFE2DGH4",
+      "amount": 68316,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "56a5b2c1-b92a-7a18-ef1c-085ac6da65d6-C": {
+      "recipient_id": "56a5b2c1-b92a-7a18-ef1c-085ac6da65d6-C",
+      "name": "RF MAINTENANCE SERVICES LLC",
+      "uei": "EQTDVBLCR8J6",
+      "amount": 68138,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "0c035def-2d61-ec2c-5e82-a3060d82b961-C": {
+      "recipient_id": "0c035def-2d61-ec2c-5e82-a3060d82b961-C",
+      "name": "ECODRAIN LLC",
+      "uei": "Q3F5VZUGHBS1",
+      "amount": 67928,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "c17ac271-5229-2e79-e683-836492e1569c-C": {
+      "recipient_id": "c17ac271-5229-2e79-e683-836492e1569c-C",
+      "name": "MARTY DAGOSTINO",
+      "uei": "GNB6EK5TCMC3",
+      "amount": 67600,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "4b3fe6c8-1ee9-62a7-73e5-04c5612e3a42-C": {
+      "recipient_id": "4b3fe6c8-1ee9-62a7-73e5-04c5612e3a42-C",
+      "name": "D. G. & S. COMPANY",
+      "uei": "F58JVZSKGWS9",
+      "amount": 67424,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "a90453b8-c245-8d14-e9d0-02009e917f23-C": {
+      "recipient_id": "a90453b8-c245-8d14-e9d0-02009e917f23-C",
+      "name": "NAVETECH SOLUTIONS, LLC",
+      "uei": "GGXSBYJCPP15",
+      "amount": 67354,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "ac38a26e-d609-bb54-1679-fdee3e85f046-C": {
+      "recipient_id": "ac38a26e-d609-bb54-1679-fdee3e85f046-C",
+      "name": "REACTION CO",
+      "uei": "TG61QYMMJSM7",
+      "amount": 66730,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "2be9a4e7-c3ed-c1db-7963-8da9729ffe48-C": {
+      "recipient_id": "2be9a4e7-c3ed-c1db-7963-8da9729ffe48-C",
+      "name": "LIBERTY HILL COMPANY",
+      "uei": "CCU9GJNFFUY1",
+      "amount": 66695,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "3ddb685f-36f9-95f1-6abe-3ea0561a0b94-C": {
+      "recipient_id": "3ddb685f-36f9-95f1-6abe-3ea0561a0b94-C",
+      "name": "VIRTUAL TECHNOLOGY",
+      "uei": "GTYLX6HVQ1J5",
+      "amount": 66679,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "c8469a60-ad36-5111-ff73-086f43b5134a-C": {
+      "recipient_id": "c8469a60-ad36-5111-ff73-086f43b5134a-C",
+      "name": "RIDGE IT CYBER LLC",
+      "uei": "HU4QZD2NHJM3",
+      "amount": 66093,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "2968c9ee-6f48-1367-e6e4-38c784feed82-C": {
+      "recipient_id": "2968c9ee-6f48-1367-e6e4-38c784feed82-C",
+      "name": "HARNEY ROCK & PAVING CO.",
+      "uei": "T21MDPSXS7G7",
+      "amount": 65687,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "3177dad3-77ce-7ef4-9191-3bf964552070-C": {
+      "recipient_id": "3177dad3-77ce-7ef4-9191-3bf964552070-C",
+      "name": "ON TRACK COACHING LLC",
+      "uei": "WH24L2GV86Q3",
+      "amount": 65375,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "b85e3336-e362-74df-3c1a-c985d7e62641-C": {
+      "recipient_id": "b85e3336-e362-74df-3c1a-c985d7e62641-C",
+      "name": "MYLES CONSULTING GROUP LLC",
+      "uei": "SU4ZCS5BJEU8",
+      "amount": 63518,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "2422c339-4e4c-7a5c-56ad-f85b53277b3b-C": {
+      "recipient_id": "2422c339-4e4c-7a5c-56ad-f85b53277b3b-C",
+      "name": "HRUCKUS LLC",
+      "uei": "JDPKDCW8CBK7",
+      "amount": 63225,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "d4dc8303-c6ce-12ef-ce1a-52f8881b8255-C": {
+      "recipient_id": "d4dc8303-c6ce-12ef-ce1a-52f8881b8255-C",
+      "name": "JIREH LOGISTIC ASAP LLC",
+      "uei": "EBTLG1JCF936",
+      "amount": 63059,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "150b52a2-a277-3e38-ff10-810109f3361c-C": {
+      "recipient_id": "150b52a2-a277-3e38-ff10-810109f3361c-C",
+      "name": "CORWIN HEALTH PHYSICS INC",
+      "uei": "TDKKL6AN5R23",
+      "amount": 62481,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "57bd9bf7-6c05-2b1b-71ed-05c120023bbf-C": {
+      "recipient_id": "57bd9bf7-6c05-2b1b-71ed-05c120023bbf-C",
+      "name": "MAMAVA, INC.",
+      "uei": "XT35SKMT1YP9",
+      "amount": 62451,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "9534794f-62d7-1b29-92de-050827110451-C": {
+      "recipient_id": "9534794f-62d7-1b29-92de-050827110451-C",
+      "name": "CARVER WATER TECHNOLOGY LLC",
+      "uei": "RU25MM5ZCB84",
+      "amount": 62348,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "9730d900-c76e-41fb-b421-312426f20a18-C": {
+      "recipient_id": "9730d900-c76e-41fb-b421-312426f20a18-C",
+      "name": "DEAN JACKSON",
+      "uei": "QM63Z62HXNW3",
+      "amount": 61827,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "381054ab-49e8-b0f1-736d-d4f943dcfa8f-C": {
+      "recipient_id": "381054ab-49e8-b0f1-736d-d4f943dcfa8f-C",
+      "name": "BROXTON DESIGN & DEVELOPMENT, INC.",
+      "uei": "YM2DM7Q6PLH5",
+      "amount": 61434,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "15f00064-69d4-287a-d23b-dc31444f6cce-C": {
+      "recipient_id": "15f00064-69d4-287a-d23b-dc31444f6cce-C",
+      "name": "PRECISION COMMUNICATIONS INC.",
+      "uei": "WM32RF3JZP17",
+      "amount": 60907,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "e857bd4b-5f46-5344-0228-293f516f5206-C": {
+      "recipient_id": "e857bd4b-5f46-5344-0228-293f516f5206-C",
+      "name": "RUBIX STRATEGIES LLC",
+      "uei": "XDWWTKLJ8KS3",
+      "amount": 60265,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "7488c56d-fa7b-229b-aeb0-d552577553a8-C": {
+      "recipient_id": "7488c56d-fa7b-229b-aeb0-d552577553a8-C",
+      "name": "AO INC",
+      "uei": "GS61B1UZNRS1",
+      "amount": 60060,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "499e62a3-e305-a92f-008e-62b7b5bfb68b-C": {
+      "recipient_id": "499e62a3-e305-a92f-008e-62b7b5bfb68b-C",
+      "name": "BIO-JANITORIAL SERVICE INC",
+      "uei": "H8QCR8K9JEN6",
+      "amount": 59576,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "9786178c-64f3-f978-a489-37ee0a907583-C": {
+      "recipient_id": "9786178c-64f3-f978-a489-37ee0a907583-C",
+      "name": "3LI LLC",
+      "uei": "JDBWTEJG2MA7",
+      "amount": 59459,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "a078ffa0-86d9-cd12-57f4-228c7810ec41-C": {
+      "recipient_id": "a078ffa0-86d9-cd12-57f4-228c7810ec41-C",
+      "name": "WALTER W JONES",
+      "uei": "HVGGPNWH5BS5",
+      "amount": 59250,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "400e4b04-d6bd-8d72-a971-159625caad13-C": {
+      "recipient_id": "400e4b04-d6bd-8d72-a971-159625caad13-C",
+      "name": "SDB CONSULTANTS, LTD.",
+      "uei": "RKE9VPDF46Z5",
+      "amount": 59027,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "72ed7984-8eef-1e5d-bb43-b631d4f45307-C": {
+      "recipient_id": "72ed7984-8eef-1e5d-bb43-b631d4f45307-C",
+      "name": "ROMTEC INC",
+      "uei": "GHLZEAA8BLS9",
+      "amount": 58934,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "51ff04cf-8a4f-3891-2f17-80f2d867e957-C": {
+      "recipient_id": "51ff04cf-8a4f-3891-2f17-80f2d867e957-C",
+      "name": "COGNIAI, INC.",
+      "uei": "NB6AYG13DCK6",
+      "amount": 58185,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "46fb4413-29f3-4623-a442-df98cbbb7709-C": {
+      "recipient_id": "46fb4413-29f3-4623-a442-df98cbbb7709-C",
+      "name": "GOVSPHERE, INC.",
+      "uei": "FMWLM6A3FCE4",
+      "amount": 57875,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "23c23f84-a2d7-ac06-b286-e3e6a6d13b3e-C": {
+      "recipient_id": "23c23f84-a2d7-ac06-b286-e3e6a6d13b3e-C",
+      "name": "IRONRIDGE CONSTRUCTION LLC",
+      "uei": "U2NTSNA1C7Z9",
+      "amount": 57600,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "290569a6-1643-3554-f006-8e064dfa249e-C": {
+      "recipient_id": "290569a6-1643-3554-f006-8e064dfa249e-C",
+      "name": "AHTNA GLOBAL LLC",
+      "uei": "NPCLRJ4MNSJ9",
+      "amount": 57462,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "c14b9821-d99a-4a20-d6f7-cd52e870a73b-C": {
+      "recipient_id": "c14b9821-d99a-4a20-d6f7-cd52e870a73b-C",
+      "name": "CADILLAC FABRICATION INC",
+      "uei": "X86LABR6LMM5",
+      "amount": 57400,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "1a1873f1-26c9-64ba-7f22-d88d9a08f492-C": {
+      "recipient_id": "1a1873f1-26c9-64ba-7f22-d88d9a08f492-C",
+      "name": "UPPER PENINSULA CONCRETE PIPE CO.",
+      "uei": "NB6JM5FU8BN1",
+      "amount": 57148,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "2c10842a-ffa6-9bc8-0e99-5709127c1181-C": {
+      "recipient_id": "2c10842a-ffa6-9bc8-0e99-5709127c1181-C",
+      "name": "TRAVERSE BAY MANUFACTURING, INC.",
+      "uei": "DPQLH4LKHGM3",
+      "amount": 55791,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "5e32f5ca-4f0b-8c60-91a8-b342209d56c0-C": {
+      "recipient_id": "5e32f5ca-4f0b-8c60-91a8-b342209d56c0-C",
+      "name": "SCARBROUGH'S ENTERPRISES LLC",
+      "uei": "HLTAHGFUMNB4",
+      "amount": 55219,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "7a5a9ed4-4b7e-f875-292f-fe00b1189b44-C": {
+      "recipient_id": "7a5a9ed4-4b7e-f875-292f-fe00b1189b44-C",
+      "name": "THE VISTAS GROUP GLOBAL INC",
+      "uei": "C6UCVFLG6AK5",
+      "amount": 55030,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "47656404-d394-1b2f-e8c6-e776856eac12-C": {
+      "recipient_id": "47656404-d394-1b2f-e8c6-e776856eac12-C",
+      "name": "IRON CITY PIPE & SUPPLY CO",
+      "uei": "L11FA4KJ3CJ1",
+      "amount": 54776,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "1f50c278-f9df-ab65-8a2e-cc661925e78d-C": {
+      "recipient_id": "1f50c278-f9df-ab65-8a2e-cc661925e78d-C",
+      "name": "AMERICAN INDUSTRIAL COMPANY, LLC",
+      "uei": "NN9EZSGTV1N5",
+      "amount": 54773,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "431ea538-2581-4c86-cf8d-fe9a21b51e97-C": {
+      "recipient_id": "431ea538-2581-4c86-cf8d-fe9a21b51e97-C",
+      "name": "CLAIM REVOLUTION, LLC",
+      "uei": "P3A2PQA2L4B8",
+      "amount": 54505,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "f597ed11-661f-20a4-a527-4099a9c4265f-C": {
+      "recipient_id": "f597ed11-661f-20a4-a527-4099a9c4265f-C",
+      "name": "MISSION FIRST, LLC",
+      "uei": "H42KUFFDGPB3",
+      "amount": 54106,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "3d36a9c7-1766-393d-7253-6a9d891780ee-C": {
+      "recipient_id": "3d36a9c7-1766-393d-7253-6a9d891780ee-C",
+      "name": "COASTAL ENVIRONMENTAL GROUP INC.",
+      "uei": "YKKCRN9754L9",
+      "amount": 53112,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "6608eb52-44cd-3b2d-188e-5fadb6c73fdc-C": {
+      "recipient_id": "6608eb52-44cd-3b2d-188e-5fadb6c73fdc-C",
+      "name": "VENTURE BUSINESS STRATEGIES CORP.",
+      "uei": "D85QMMN1C1E5",
+      "amount": 52500,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "a8593ed0-5f85-7aae-1761-cb5155feda9e-C": {
+      "recipient_id": "a8593ed0-5f85-7aae-1761-cb5155feda9e-C",
+      "name": "CHRISTOPHER MICHAEL KAAMASEE",
+      "uei": "LZT8F9QL3268",
+      "amount": 52380,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "0e448bcd-29ba-9379-8d90-26b485d3d80b-C": {
+      "recipient_id": "0e448bcd-29ba-9379-8d90-26b485d3d80b-C",
+      "name": "SOUTHERN INSULATION INC",
+      "uei": "THKNJN1JX447",
+      "amount": 52200,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "940ed010-58ae-4989-6f3c-b3c71fe2669e-C": {
+      "recipient_id": "940ed010-58ae-4989-6f3c-b3c71fe2669e-C",
+      "name": "ULTRA TECH EXTRUSTIONS OF TENNESSEE INC",
+      "uei": "DBAKMWAS1KC3",
+      "amount": 51663,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "43f9d67e-658b-0b99-ebed-a5a497ffe8ad-C": {
+      "recipient_id": "43f9d67e-658b-0b99-ebed-a5a497ffe8ad-C",
+      "name": "STEMA WELDING LLC",
+      "uei": "H3HUGRS7KGB1",
+      "amount": 51114,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "f33e0efb-1b7e-35fc-9dc4-f33639c8f930-C": {
+      "recipient_id": "f33e0efb-1b7e-35fc-9dc4-f33639c8f930-C",
+      "name": "GREGORY DALE MILLS",
+      "uei": "MCZHQP5SPS45",
+      "amount": 51112,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "2a13eba8-655b-8cc9-cc1d-6b6dee87a364-C": {
+      "recipient_id": "2a13eba8-655b-8cc9-cc1d-6b6dee87a364-C",
+      "name": "KNF CONSTRUCTION INC",
+      "uei": "WQ1KM2XHXLH7",
+      "amount": 50363,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "1df762dc-873e-f1ef-6b4c-3fe3ed0fd59a-C": {
+      "recipient_id": "1df762dc-873e-f1ef-6b4c-3fe3ed0fd59a-C",
+      "name": "AKRE LOGGING LLC",
+      "uei": "NNT5S4ZM5CJ8",
+      "amount": 50253,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "0b725bbc-1b4a-714d-ff9c-2d04512d9631-C": {
+      "recipient_id": "0b725bbc-1b4a-714d-ff9c-2d04512d9631-C",
+      "name": "INLAND EMPIRE COMPONENTS, INC.",
+      "uei": "HVZ6DBNKLG87",
+      "amount": 50192,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "8215b645-b02e-b9cb-e648-fd72ec522df9-C": {
+      "recipient_id": "8215b645-b02e-b9cb-e648-fd72ec522df9-C",
+      "name": "WEST CASCADES TIMBER LLC",
+      "uei": "SX6DTB9CR5W5",
+      "amount": 50020,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "487d6236-4b06-f923-6491-c69115d8c79f-C": {
+      "recipient_id": "487d6236-4b06-f923-6491-c69115d8c79f-C",
+      "name": "ROWCON, LLC",
+      "uei": "LG69BJGNV316",
+      "amount": 49661,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "cdaf42d2-d0fc-7055-52ba-d121eada8625-C": {
+      "recipient_id": "cdaf42d2-d0fc-7055-52ba-d121eada8625-C",
+      "name": "WALGA MTE LLC",
+      "uei": "KVLPKWFDFRX3",
+      "amount": 49656,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "6a3cce96-ea8f-fde0-f1aa-3fd979359246-C": {
+      "recipient_id": "6a3cce96-ea8f-fde0-f1aa-3fd979359246-C",
+      "name": "PROVISION CONSTRUCTION INC",
+      "uei": "G3L1S7V9N977",
+      "amount": 49310,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "aa3e4a53-b56a-b953-294c-ac05916dc057-C": {
+      "recipient_id": "aa3e4a53-b56a-b953-294c-ac05916dc057-C",
+      "name": "OXUS CONSULTING GROUP, LLC",
+      "uei": "JA5QG7FB4CG3",
+      "amount": 49202,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "f6e2db63-16af-8d2c-c334-cef42eb54fc0-C": {
+      "recipient_id": "f6e2db63-16af-8d2c-c334-cef42eb54fc0-C",
+      "name": "CALDWELL'S AUTO LLC",
+      "uei": "LEH7G1WE7MC9",
+      "amount": 48744,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "88d69f18-43d5-f770-ec22-5a63f72799c9-C": {
+      "recipient_id": "88d69f18-43d5-f770-ec22-5a63f72799c9-C",
+      "name": "TYSAM TECH, LLC",
+      "uei": "YZKMGZ7NT8J6",
+      "amount": 48685,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
+    },
+    "280bdbba-0982-1673-14d4-6bf258ed28a6-C": {
+      "recipient_id": "280bdbba-0982-1673-14d4-6bf258ed28a6-C",
+      "name": "PATRICK'S PLUMBING & HEATING, INC.",
+      "uei": "CXJEHDM7P6J8",
+      "amount": 48033,
+      "tags": [
+        "hubzone",
+        "small"
+      ]
     }
   },
   "streams": {
@@ -128126,6 +130949,6 @@
     "service_disabled_veteran_owned_business": 30,
     "women_owned_small_business": 30,
     "hubzone_firm": 0,
-    "hubzone": 21
+    "hubzone": 24
   }
 }
